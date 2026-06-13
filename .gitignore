@@ -1,0 +1,24 @@
+# --- secret: Materials Project API key (never publish) ---
+01_data/mp_key.txt
+**/mp_key.txt
+
+# --- 17GB recreatable virtualenv (use 05_config_envs/requirements.txt) ---
+05_config_envs/bioceramics_venv/
+
+# --- python / latex build artifacts ---
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+mainNotes.bib
+
+# --- OS cruft ---
+.DS_Store
+
+# manuscript & figure artifacts (kept on Anvil, excluded from the code+data repo)
+03_figures/
+04_manuscript/

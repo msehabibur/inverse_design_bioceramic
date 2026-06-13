@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the accompanying manuscript."
+title: "Inverse Design of Bioceramics by Machine Learning"
+authors:
+  - family-names: "Hoque Nowrin"
+    given-names: "Jwerai"
+  - family-names: "Zafar"
+    given-names: "Saifuddin"
+  - family-names: "Rahman"
+    given-names: "Md Habibur"
+    email: "rahma103@purdue.edu"
+    affiliation: "School of Materials Engineering, Purdue University"
+date-released: "2026-06-12"
+url: "https://github.com/msehabibur/inverse_design_bioceramic"
