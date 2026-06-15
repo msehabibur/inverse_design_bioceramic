@@ -37,7 +37,7 @@ from pymoo.optimize import minimize
 # --- design targets: enamel mechanical fingerprint ---
 TARGET_E, TARGET_H, TARGET_RHO = 85.0, 4.0, 3.0      # GPa, GPa, g/cm^3
 # fitness weights -- trust modulus & density more than the weak hardness model
-W_E, W_H, W_RHO = 0.50, 0.15, 0.35
+W_E, W_H, W_RHO = 0.588, 0.0, 0.412   # hardness EXCLUDED from objective (weak R2, collinear with E)
 
 # --- biocompatible cations + their typical oxidation states ---
 CHARGE = {"Zr": 4, "Ti": 4, "Si": 4, "Ce": 4, "P": 5,

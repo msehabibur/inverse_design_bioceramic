@@ -77,11 +77,8 @@ def score(cands_csv, target, B):
     d = featurize(pd.DataFrame({"formula": [c.reduced_formula for c in comps]}))
     cf = B["comp_feats"]
     d[cf] = d[cf].fillna(B["mean_feats"])
-    vpa = B["vol"]["model"].predict(d[cf])
-    mass = np.array([c.weight / c.num_atoms for c in comps])
-    rho = AMU * mass / vpa
-    full = d[cf].copy(); full["density"] = rho; full["vol_per_atom"] = vpa
-    E = 10 ** B["m"].predict(full[B["full_feats"]].values)
+    # use the GA's own saved prediction so S6 matches Tables I/S1 exactly (reviewer fix)
+    E = src["pred_modulus_GPa"].values
     dd, _ = B["nn"].kneighbors(B["scaler"].transform(d[cf].values))
     ad = dd.mean(axis=1)
     rows = []

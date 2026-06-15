@@ -36,7 +36,7 @@ from pymoo.optimize import minimize
 
 # --- design targets: Ti-6Al-4V mechanical fingerprint ---
 TARGET_E, TARGET_H, TARGET_RHO = 110.0, 3.5, 4.4
-W_E, W_H, W_RHO = 0.50, 0.15, 0.35    # same weights as enamel/dentin for comparability
+W_E, W_H, W_RHO = 0.588, 0.0, 0.412   # hardness EXCLUDED from objective (weak R2, collinear with E)    # same weights as enamel/dentin for comparability
 
 # --- biocompatible cation pool (same as enamel showcase) ---
 CHARGE = {"Zr": 4, "Ti": 4, "Si": 4, "Ce": 4, "P": 5,

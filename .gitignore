@@ -22,3 +22,11 @@ mainNotes.bib
 # manuscript & figure artifacts (kept on Anvil, excluded from the code+data repo)
 03_figures/
 04_manuscript/
+
+# run artifacts / backups (not part of the package)
+01_data/_*.log
+01_data/_*.out
+01_data/_pre_rerun/
+01_data/_compile_status.txt
+**/*.slurm
+01_data/cc.log

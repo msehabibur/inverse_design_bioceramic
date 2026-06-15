@@ -35,7 +35,7 @@ from pymoo.optimize import minimize
 
 # --- dentin mechanical fingerprint ---
 TARGET_E, TARGET_H, TARGET_RHO = 20.0, 0.7, 2.1
-W_E, W_H, W_RHO = 0.50, 0.15, 0.35      # same weights as enamel for comparability
+W_E, W_H, W_RHO = 0.588, 0.0, 0.412   # hardness EXCLUDED from objective (weak R2, collinear with E)      # same weights as enamel for comparability
 
 # --- bone-mineral cation pool + typical oxidation states ---
 CHARGE = {"Ca": 2, "P": 5, "Si": 4, "Mg": 2,
@@ -88,6 +88,9 @@ def score_batch(comps):
     fit = (W_E * np.abs(E - TARGET_E) / TARGET_E
            + W_H * np.abs(H - TARGET_H) / TARGET_H
            + W_RHO * np.abs(rho - TARGET_RHO) / TARGET_RHO)
+    # bone-mineral constraint (reviewer #9): require Ca and (P or Si); penalise others
+    _dd = [c.get_el_amt_dict() for c in comps]
+    fit = fit + np.array([0.0 if ('Ca' in d and ('P' in d or 'Si' in d)) else 5.0 for d in _dd])
     return fit, E, H, rho
 
 

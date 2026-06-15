@@ -33,6 +33,12 @@ import pandas as pd
 from pymatgen.core import Composition
 from pymatgen.analysis.phase_diagram import PhaseDiagram
 from mp_api.client import MPRester
+# --- compat shim: MP server returns entries referencing old pymatgen module paths ---
+import sys as _sys, importlib as _il
+for _o, _n in {'pymatgen.core.entries': 'pymatgen.entries.computed_entries',
+               'pymatgen.analysis.compatibility': 'pymatgen.entries.compatibility'}.items():
+    try: _sys.modules[_o] = _il.import_module(_n)
+    except Exception: pass
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from paths import DATA
 

@@ -54,7 +54,7 @@ GREY   = "#777777"
 AMU_PER_A3_TO_GCC = 1.66054
 
 TARGET_E, TARGET_H, TARGET_RHO = 20.0, 0.7, 2.1
-W_E, W_H, W_RHO = 0.50, 0.15, 0.35
+W_E, W_H, W_RHO = 0.588, 0.0, 0.412   # hardness excluded (matches production GA)
 CHARGE = {"Ca": 2, "P": 5, "Si": 4, "Mg": 2,
           "Na": 1, "Sr": 2, "K": 1, "Al": 3}
 CATIONS = list(CHARGE)
@@ -137,6 +137,8 @@ def score_batch(comps):
     fit = (W_E * np.abs(E - TARGET_E) / TARGET_E
            + W_H * np.abs(H - TARGET_H) / TARGET_H
            + W_RHO * np.abs(rho - TARGET_RHO) / TARGET_RHO)
+    _dd = [c.get_el_amt_dict() for c in comps]
+    fit = fit + np.array([0.0 if ('Ca' in d and ('P' in d or 'Si' in d)) else 5.0 for d in _dd])
     return fit, E, H, rho
 
 

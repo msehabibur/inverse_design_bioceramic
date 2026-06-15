@@ -59,7 +59,7 @@ AMU_PER_A3_TO_GCC = 1.66054
 
 # Enamel targets + GA cation pool (matches inverse_ga.py)
 TARGET_E, TARGET_H, TARGET_RHO = 85.0, 4.0, 3.0
-W_E, W_H, W_RHO = 0.50, 0.15, 0.35
+W_E, W_H, W_RHO = 0.588, 0.0, 0.412   # hardness excluded (matches production GA)
 CHARGE = {"Zr": 4, "Ti": 4, "Si": 4, "Ce": 4, "P": 5,
           "Al": 3, "Y": 3, "La": 3, "Ca": 2, "Mg": 2, "Sr": 2}
 CATIONS = list(CHARGE)
