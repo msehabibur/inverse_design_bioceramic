@@ -112,6 +112,11 @@ for sc, (charge, modf, volf, target) in POOLS.items():
 pd.DataFrame(rows).to_csv(os.path.join(DATA, "enumeration_modulus.csv"), index=False)
 
 # ---- figure: reachable modulus distribution vs target -------------------
+plt.rcParams.update({
+    "font.family": ["Arial Narrow", "Arial", "DejaVu Sans"],
+    "font.size": 14, "axes.titlesize": 16, "axes.labelsize": 15,
+    "xtick.labelsize": 13, "ytick.labelsize": 13, "legend.fontsize": 13,
+})
 fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}
 allrows = pd.DataFrame(rows)
@@ -119,12 +124,12 @@ for j, (sc, n, floor, target, nreach) in enumerate(summary):
     sub = allrows[allrows.showcase == sc]["pred_modulus_GPa"].values
     ax = axes[j]
     ax.hist(sub, bins=60, color=COL[sc], alpha=0.8)
-    ax.axvline(target, ls=":", color="black", lw=2, label=f"target {target:.0f} GPa")
-    ax.axvline(floor, ls="--", color="red", lw=1.6, label=f"floor {floor:.0f} GPa")
+    ax.axvline(target, ls=":", color="black", lw=2, label=f"Target {target:.0f} GPa")
+    ax.axvline(floor, ls="--", color="red", lw=1.6, label=f"Floor {floor:.0f} GPa")
     ax.set_title(f"{sc.capitalize()}: {n} reachable oxides", loc="left")
-    ax.set_xlabel("predicted Young's modulus (GPa)")
-    ax.set_ylabel("count")
-    ax.legend(frameon=False, fontsize=9)
+    ax.set_xlabel("Predicted Young's modulus (GPa)")
+    ax.set_ylabel("Count")
+    ax.legend(frameon=False)
 fig.tight_layout()
 fig.savefig(os.path.join(MANUSCRIPT, "Figure9_enumeration.png"), dpi=200, bbox_inches="tight")
 print("saved -> Figure9_enumeration.png + data/enumeration_modulus.csv")

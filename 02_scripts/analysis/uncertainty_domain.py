@@ -116,6 +116,11 @@ for sc, *_ in JOBS:
     print(f"[{sc}] target inside 90% PI {int(s.target_in_interval.sum())}/{len(s)}; "
           f"in-domain {int(s.in_domain.sum())}/{len(s)}")
 
+plt.rcParams.update({
+    "font.family": ["Arial Narrow", "Arial", "DejaVu Sans"],
+    "font.size": 14, "axes.titlesize": 16, "axes.labelsize": 15,
+    "xtick.labelsize": 13, "ytick.labelsize": 13, "legend.fontsize": 13,
+})
 fig, ax = plt.subplots(1, 3, figsize=(16, 5))
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}
 for j, (sc, _, target, _) in enumerate(JOBS):
@@ -123,10 +128,10 @@ for j, (sc, _, target, _) in enumerate(JOBS):
     x = np.arange(len(s)); yv = s["pred_E_GPa"].values
     ax[j].errorbar(x, yv, yerr=[yv - s["E_lo_GPa"].values, s["E_hi_GPa"].values - yv],
                    fmt="o", color=COL[sc], capsize=3, lw=1.2, ms=5)
-    ax[j].axhline(target, ls=":", color="#D97F33", lw=1.8, label=f"target {target:.0f} GPa")
-    ax[j].set_title(f"{sc.capitalize()}  (90% conformal PI)", loc="left")
-    ax[j].set_xlabel("candidate (ranked)"); ax[j].set_ylabel("predicted Young's modulus (GPa)")
-    ax[j].legend(frameon=False, fontsize=9)
+    ax[j].axhline(target, ls=":", color="#D97F33", lw=1.8, label=f"Target {target:.0f} GPa")
+    ax[j].set_title(f"{sc.capitalize()}  (90% conformal prediction interval)", loc="left")
+    ax[j].set_xlabel("Candidate (ranked)"); ax[j].set_ylabel("Predicted Young's modulus (GPa)")
+    ax[j].legend(frameon=False)
 fig.tight_layout()
 fig.savefig(os.path.join(MANUSCRIPT, "Figure8_uncertainty.png"), dpi=200, bbox_inches="tight")
 print("saved -> Figure8_uncertainty.png + uncertainty_intervals.csv")
