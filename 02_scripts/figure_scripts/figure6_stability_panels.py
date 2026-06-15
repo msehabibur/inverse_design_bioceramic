@@ -8,9 +8,9 @@ The figure has 2 rows x 3 columns matching the visual rhythm of figures 3-5:
          candidate's composition.  Within a chemsys, lower (more negative)
          means the GA composition needs a deeper formation energy to lie on
          the hull -- i.e. a 'harder' stability target.
-    (a)  Showcase 1  --  enamel candidates
-    (b)  Showcase 2  --  dentin candidates
-    (c)  Showcase 3  --  implant-interface candidates
+    (a)  Case Study 1  --  enamel candidates
+    (b)  Case Study 2  --  dentin candidates
+    (c)  Case Study 3  --  implant-interface candidates
 
   Row 2: cross-showcase context.
     (d)  Chemsys coverage  --  number of MP entries available in each unique
@@ -60,9 +60,9 @@ SHOWCASE_COLOR = {
     "implant": GREEN,
 }
 SHOWCASE_LABEL = {
-    "enamel":  "Showcase 1 — Enamel",
-    "dentin":  "Showcase 2 — Dentin",
-    "implant": "Showcase 3 — Implant",
+    "enamel":  "Case Study 1 — Enamel",
+    "dentin":  "Case Study 2 — Dentin",
+    "implant": "Case Study 3 — Implant",
 }
 
 df = pd.read_csv(os.path.join(DATA, "stability_check.csv"))
