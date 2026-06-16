@@ -1,5 +1,7 @@
 # Inverse Design of Bioceramics by Machine Learning — Code & Data
 
+![AI-Driven Dental Bioceramic Design](AI-Driven_Dental_Bioceramic_Design.png)
+
 Reproducibility package (**code + output data**) for the machine-learning inverse
 design of dental/biomedical ceramics. A gradient-boosting surrogate trained on
 Materials Project oxides maps composition → mechanical properties (Young's modulus
