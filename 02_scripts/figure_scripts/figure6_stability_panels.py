@@ -33,16 +33,16 @@ import matplotlib.pyplot as plt
 
 plt.rcParams.update({
     "font.family":       ["Arial Narrow", "Arial", "Helvetica Neue", "DejaVu Sans"],
-    "font.size":         32,
+    "font.size":         34,
     "font.weight":       "normal",
-    "axes.titlesize":    32,
+    "axes.titlesize":    34,
     "axes.titleweight":  "normal",
-    "axes.labelsize":    32,
+    "axes.labelsize":    34,
     "axes.labelweight":  "normal",
-    "xtick.labelsize":   30,
-    "ytick.labelsize":   30,
-    "legend.fontsize":   30,
-    "figure.titlesize":  32,
+    "xtick.labelsize":   32,
+    "ytick.labelsize":   32,
+    "legend.fontsize":   32,
+    "figure.titlesize":  34,
     "figure.titleweight":"normal",
 })
 
@@ -83,7 +83,7 @@ for col, sc in enumerate(["enamel", "dentin", "implant"]):
     ax.set_ylabel("Hull energy at composition\n(eV/atom)")
     panel = "abc"[col]
     ax.set_title(f"({panel})  {SHOWCASE_LABEL[sc]}", loc="left")
-    ax.tick_params(axis="x", rotation=0, labelsize=28)
+    ax.tick_params(axis="x", rotation=0, labelsize=30)
 
 
 # (d) chemsys coverage --------------------------------------------------------
@@ -98,7 +98,7 @@ ax.barh(chemsys_df["chemsys"], chemsys_df["n_mp_entries"], color=bar_colors,
 ax.set_xlabel("Materials Project entries")
 ax.set_ylabel("")
 ax.set_title("(d)  Chemistry coverage", loc="left")
-ax.tick_params(axis="x", labelsize=28)
+ax.tick_params(axis="x", labelsize=30)
 ax.margins(y=0.01)
 ax.set_xlim(0, chemsys_df["n_mp_entries"].max() * 1.22)
 # show only a few y-tick labels (every Nth) at a larger, readable font
@@ -106,7 +106,7 @@ _n = len(chemsys_df)
 _step = max(1, _n // 6)
 _pos = list(range(0, _n, _step))
 ax.set_yticks(_pos)
-ax.set_yticklabels([chemsys_df["chemsys"].iloc[i] for i in _pos], fontsize=28)
+ax.set_yticklabels([chemsys_df["chemsys"].iloc[i] for i in _pos], fontsize=30)
 
 
 # (e) hull energy vs predicted modulus -- all candidates --------------------
@@ -120,7 +120,7 @@ for sc in ["enamel", "dentin", "implant"]:
 ax.set_xlabel("Predicted modulus (GPa)")
 ax.set_ylabel("Hull energy (eV/atom)")
 ax.set_title("(e)  Hull energy vs predicted modulus", loc="left")
-ax.legend(loc="upper right", frameon=False, fontsize=28)
+ax.legend(loc="upper right", frameon=False, fontsize=30)
 ax.grid(alpha=0.25)
 
 

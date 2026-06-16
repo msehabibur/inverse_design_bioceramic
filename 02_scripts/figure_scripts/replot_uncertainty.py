@@ -9,10 +9,10 @@ from paths import DATA, MANUSCRIPT
 
 plt.rcParams.update({
     "font.family": ["Arial Narrow", "Arial", "Helvetica Neue", "DejaVu Sans"],
-    "font.size": 28, "font.weight": "normal",
-    "axes.titlesize": 28, "axes.titleweight": "normal",
-    "axes.labelsize": 28, "axes.labelweight": "normal",
-    "xtick.labelsize": 26, "ytick.labelsize": 26, "legend.fontsize": 26,
+    "font.size": 30, "font.weight": "normal",
+    "axes.titlesize": 30, "axes.titleweight": "normal",
+    "axes.labelsize": 30, "axes.labelweight": "normal",
+    "xtick.labelsize": 28, "ytick.labelsize": 28, "legend.fontsize": 28,
 })
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}
 TARGET = {"enamel": 85.0, "dentin": 20.0, "implant": 110.0}

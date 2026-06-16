@@ -114,8 +114,8 @@ pd.DataFrame(rows).to_csv(os.path.join(DATA, "enumeration_modulus.csv"), index=F
 # ---- figure: reachable modulus distribution vs target -------------------
 plt.rcParams.update({
     "font.family": ["Arial Narrow", "Arial", "DejaVu Sans"],
-    "font.size": 28, "axes.titlesize": 28, "axes.labelsize": 28,
-    "xtick.labelsize": 26, "ytick.labelsize": 26, "legend.fontsize": 26,
+    "font.size": 30, "axes.titlesize": 30, "axes.labelsize": 30,
+    "xtick.labelsize": 28, "ytick.labelsize": 28, "legend.fontsize": 28,
 })
 fig, axes = plt.subplots(1, 3, figsize=(19, 6.8))
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}

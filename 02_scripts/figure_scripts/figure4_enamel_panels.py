@@ -28,16 +28,16 @@ import matplotlib.pyplot as plt
 
 plt.rcParams.update({
     "font.family":       ["Arial Narrow", "Arial", "Helvetica Neue", "DejaVu Sans"],
-    "font.size":         32,
+    "font.size":         34,
     "font.weight":       "normal",
-    "axes.titlesize":    32,
+    "axes.titlesize":    34,
     "axes.titleweight":  "normal",
-    "axes.labelsize":    32,
+    "axes.labelsize":    34,
     "axes.labelweight":  "normal",
-    "xtick.labelsize":   30,
-    "ytick.labelsize":   30,
-    "legend.fontsize":   30,
-    "figure.titlesize":  32,
+    "xtick.labelsize":   32,
+    "ytick.labelsize":   32,
+    "legend.fontsize":   32,
+    "figure.titlesize":  34,
     "figure.titleweight":"normal",
 })
 
@@ -265,7 +265,7 @@ ax.text(0.98, TARGET_E, f"target = {TARGET_E:.0f} GPa",
 ax.set_xlabel("Candidate (ranked)")
 ax.set_ylabel("Predicted modulus (GPa)")
 ax.set_title("(f)  Top-15 candidates: modulus", loc="left")
-ax.tick_params(axis="x", rotation=0, labelsize=28)
+ax.tick_params(axis="x", rotation=0, labelsize=30)
 
 
 fig.tight_layout()

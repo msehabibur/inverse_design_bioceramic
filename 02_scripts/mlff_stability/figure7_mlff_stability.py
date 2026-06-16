@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 
 plt.rcParams.update({
     "font.family": ["Arial Narrow", "Arial", "DejaVu Sans"],
-    "font.size": 30, "font.weight": "normal",
-    "axes.titlesize": 30, "axes.labelsize": 30,
-    "xtick.labelsize": 26, "ytick.labelsize": 26, "legend.fontsize": 24,
+    "font.size": 32, "font.weight": "normal",
+    "axes.titlesize": 32, "axes.labelsize": 32,
+    "xtick.labelsize": 28, "ytick.labelsize": 28, "legend.fontsize": 26,
 })
 BASE = "/anvil/scratch/x-mrahman2/Purdue_Projects/Inverse_Design_of_Bioceramics_by_Machine_Learning/"
 S = BASE + "06_mlff_stability/"
@@ -38,29 +38,45 @@ fig, ax = plt.subplots(2, 2, figsize=(21, 15))
 d = df.sort_values("ehull_median").reset_index(drop=True)
 x = np.arange(len(d))
 colors = [COL[s] for s in d["showcase"]]
-lo = (d["ehull_median"] - d["ehull_min"]).clip(lower=0)
-hi = (d["ehull_max"] - d["ehull_median"]).clip(lower=0)
+# robust per-candidate spread: drop single-model below-hull / extreme outliers
+LOW, HIGH = -0.05, 2.5
+mcols = [m for m in MODELS if m in d.columns]
+rlo, rhi = [], []
+for _, row in d.iterrows():
+    vals = [row[m] for m in mcols if pd.notna(row[m]) and LOW <= row[m] <= HIGH]
+    if not vals:
+        vals = [row["ehull_median"]]
+    rlo.append(min(vals)); rhi.append(max(vals))
+rlo, rhi = np.array(rlo), np.array(rhi)
+lo = (d["ehull_median"].values - rlo).clip(min=0)
+hi = (rhi - d["ehull_median"].values).clip(min=0)
 ax[0, 0].bar(x, d["ehull_median"], color=colors, alpha=0.85)
 ax[0, 0].errorbar(x, d["ehull_median"], yerr=[lo, hi], fmt="none", ecolor="#333333", lw=1.3, capsize=3)
 ax[0, 0].axhline(0.05, ls=":", color="#C0392B", lw=2.5)
-ax[0, 0].text(1, 0.075, "Near-stable threshold (0.05)", color="#C0392B", fontsize=22, va="bottom")
+ax[0, 0].text(1, 0.10, "Near-stable threshold (0.05)", color="#C0392B", fontsize=24, va="bottom")
+ax[0, 0].set_ylim(0, max(rhi.max(), d["ehull_median"].max()) * 1.08)
 ax[0, 0].set_xlabel("Candidate (sorted)")
 ax[0, 0].set_ylabel("Energy above hull (eV/atom)")
 ax[0, 0].set_title("(a)  Six-model consensus stability", loc="left")
 hands = [plt.Rectangle((0, 0), 1, 1, color=COL[s]) for s in COL]
 ax[0, 0].legend(hands, [LAB[s] for s in COL], frameon=False, loc="upper left")
 
-# (b) per-model spread (strip)
-present = [m for m in MODELS if m in lng["model"].unique()]
-for j, m in enumerate(present):
-    v = lng[(lng.model == m)]["ehull"].dropna()
-    v = v[v.abs() <= 3]
-    xj = np.full(len(v), j) + np.random.RandomState(j).uniform(-0.18, 0.18, len(v))
-    ax[0, 1].scatter(xj, v, s=45, alpha=0.55, color="#1A6090", edgecolor="white", lw=0.5)
-    ax[0, 1].scatter([j], [v.median()], s=260, color="#C0392B", marker="_", lw=4)
-ax[0, 1].axhline(0, ls="-", color="#888888", lw=1.5)
-ax[0, 1].set_xticks(range(len(present)))
+# (b) per-model spread -- violin (outliers removed)
+present = [m for m in MODELS if m in df.columns]
+vdata = []
+for m in present:
+    v = df[m].dropna()
+    v = v[(v >= LOW) & (v <= HIGH)]
+    vdata.append(v.values)
+parts = ax[0, 1].violinplot(vdata, showmeans=False, showextrema=False, showmedians=False)
+for b in parts["bodies"]:
+    b.set_facecolor("#1A6090"); b.set_alpha(0.45); b.set_edgecolor("#1A6090"); b.set_linewidth(1.2)
+for j, v in enumerate(vdata):
+    ax[0, 1].scatter([j + 1], [np.median(v)], s=300, color="#C0392B", marker="_", lw=4, zorder=4)
+ax[0, 1].axhline(0.05, ls=":", color="#C0392B", lw=2)
+ax[0, 1].set_xticks(range(1, len(present) + 1))
 ax[0, 1].set_xticklabels([MLAB[m] for m in present], rotation=30, ha="right")
+ax[0, 1].set_ylim(0, max(v.max() for v in vdata) * 1.08)
 ax[0, 1].set_ylabel("Energy above hull (eV/atom)")
 ax[0, 1].set_title("(b)  Agreement across force fields", loc="left")
 
