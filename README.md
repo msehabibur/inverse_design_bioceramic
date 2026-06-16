@@ -5,7 +5,7 @@ design of dental/biomedical ceramics. A gradient-boosting surrogate trained on
 Materials Project oxides maps composition → mechanical properties (Young's modulus
 *E*, Vickers hardness *H*, density *ρ*); a genetic algorithm then *inverts* that
 surrogate to propose charge-balanced oxide compositions matching a prescribed
-property fingerprint. A Materials Project convex-hull check and several no-DFT
+property fingerprint. A six-model machine-learning force-field (MLFF) convex-hull analysis and several no-DFT
 robustness analyses close the loop.
 
 > **Authors:** Jwerai Hoque Nowrin · Saifuddin Zafar · Md Habibur Rahman
@@ -22,7 +22,7 @@ robustness analyses close the loop.
 | **1 — Enamel** | tooth enamel | *E* ≈ 85 GPa, *H* ≈ 4 GPa, *ρ* ≈ 3.0 g/cm³ | ✅ Sr–Ca–Mg–Si–P phospho-silicate family, e.g. SrCaSiP₂O₉ |
 | **2 — Dentin** | tooth dentin | *E* ≈ 20 GPa, *H* ≈ 0.7 GPa, *ρ* ≈ 2.1 g/cm³ | ❌ not reachable by single-phase oxides (~2× too stiff) — a hedged negative result |
 | **3 — Implant interface** | Ti-6Al-4V stiffness match | *E* ≈ 110 GPa, *ρ* ≈ 4.4 g/cm³ | ✅ La/Ce–Sr–P phospho-oxide family, e.g. La₂CeMg₂(PO₆)₂ |
-| **4 — Stability check** | all 45 GA candidates | MP convex hull | triage: all in well-studied chemsys; each decomposes into a 2–5-phase mixture |
+| **4 — Stability** | all 45 GA candidates | 6-MLFF convex hull | all 45 lie above the hull (median energy above hull 0.49 eV/atom across CHGNet, M3GNet, MACE, MatterSim, GRACE, SevenNet); each decomposes into a 2–5-phase mixture |
 
 The same pipeline is reused for all three design cases — **only the training-data
 slice, the genetic-algorithm cation pool, and the property target change.**
@@ -120,8 +120,8 @@ CSVs under `01_data/` — primarily `stability_check.csv`,
 - **Dentin:** no single-phase oxide reaches 20 GPa (best ~34–41 GPa) — corroborated by
   exhaustive enumeration and weight-free Pareto fronts.
 - **Implant:** La/Ce–Sr–P phospho-oxide family, predicted *E* 102–117 GPa.
-- **Stability triage:** all 45 candidates in well-studied chemsys; each decomposes into a
-  2–5-phase mixture (mean ~3) — a prioritised short list for downstream DFT/MLFF validation.
+- **Stability (6-MLFF convex hull):** all 45 candidates lie above the hull (median energy above hull
+  0.49 eV/atom, range 0.15–1.22; six-model consensus), each decomposing into 2–5 known phases.
 
 ---
 
@@ -129,8 +129,8 @@ CSVs under `01_data/` — primarily `stability_check.csv`,
 
 - Models predict MP-computed **elastic** properties — **not** flexural strength, fracture
   toughness, fatigue, or wear (microstructure-governed; absent from MP).
-- The GA does not enforce thermodynamic stability; Showcase 4 is a composition-only
-  convex-hull *triage*, not DFT/MLFF formation-energy validation.
+- The GA does not enforce thermodynamic stability; Showcase 4 assesses it post hoc with a six-model
+  MLFF convex hull. Energies above hull are upper bounds (random-structure relaxation via PyXtal).
 - Hardness and modulus are both algebraic functions of the same DFT *K*, *G* — partially
   collinear, not independent constraints.
 - Model error (MAE ≈ 24 GPa) exceeds the spread among top candidates, so fitness values

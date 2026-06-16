@@ -28,16 +28,16 @@ import matplotlib.pyplot as plt
 
 plt.rcParams.update({
     "font.family":       ["Arial Narrow", "Arial", "Helvetica Neue", "DejaVu Sans"],
-    "font.size":         22,
+    "font.size":         32,
     "font.weight":       "normal",
-    "axes.titlesize":    22,
+    "axes.titlesize":    32,
     "axes.titleweight":  "normal",
-    "axes.labelsize":    22,
+    "axes.labelsize":    32,
     "axes.labelweight":  "normal",
-    "xtick.labelsize":   22,
-    "ytick.labelsize":   22,
-    "legend.fontsize":   22,
-    "figure.titlesize":  22,
+    "xtick.labelsize":   30,
+    "ytick.labelsize":   30,
+    "legend.fontsize":   30,
+    "figure.titlesize":  32,
     "figure.titleweight":"normal",
 })
 
@@ -176,7 +176,7 @@ ds["short"] = [str(i + 1) for i in range(len(ds))]
 # Build the 2x3 figure
 # --------------------------------------------------------------------------
 print("Composing 2x3 figure ...")
-fig, axes = plt.subplots(2, 3, figsize=(16.5, 10.5))
+fig, axes = plt.subplots(2, 3, figsize=(20, 13.5))
 
 
 # (a) modulus ---------------------------------------------------------------
@@ -192,7 +192,7 @@ ax.set_yticks(ax.get_xticks())
 ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
 ax.set_xlabel("DFT Young's modulus (GPa)")
 ax.set_ylabel("ML-predicted modulus (GPa)")
-ax.set_title("(a)  Modulus  (5-fold CV)", loc="left")
+ax.set_title("(a)  Modulus", loc="left")
 ax.legend(loc="lower right", frameon=False)
 
 
@@ -209,7 +209,7 @@ ax.set_yticks(ax.get_xticks())
 ax.set_xlim(H_LO, H_HI); ax.set_ylim(H_LO, H_HI)
 ax.set_xlabel("Chen-model Vickers H (GPa)")
 ax.set_ylabel("ML-predicted hardness (GPa)")
-ax.set_title("(b)  Hardness  (5-fold CV)", loc="left")
+ax.set_title("(b)  Hardness", loc="left")
 ax.legend(loc="lower right", frameon=False)
 
 
@@ -224,9 +224,9 @@ ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
 ax.set_aspect("equal", "box")
 ax.set_yticks(ax.get_xticks())
 ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
-ax.set_xlabel("MP density (g/cm³)")
+ax.set_xlabel("Materials Project density (g/cm³)")
 ax.set_ylabel("Derived density from V/atom model (g/cm³)")
-ax.set_title("(c)  Density  (CV via V/atom)", loc="left")
+ax.set_title("(c)  Density", loc="left")
 ax.legend(loc="lower right", frameon=False)
 
 
@@ -265,7 +265,7 @@ ax.text(0.98, TARGET_E, f"target = {TARGET_E:.0f} GPa",
 ax.set_xlabel("Candidate (ranked)")
 ax.set_ylabel("Predicted modulus (GPa)")
 ax.set_title("(f)  Top-15 candidates: modulus", loc="left")
-ax.tick_params(axis="x", rotation=0, labelsize=15)
+ax.tick_params(axis="x", rotation=0, labelsize=28)
 
 
 fig.tight_layout()

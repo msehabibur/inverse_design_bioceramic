@@ -1,0 +1,614 @@
+sid,kind,showcase,rank,composition,reduced_formula,chemsys,mp_id,seed,nsites
+cand_enamel_01_s0,candidate,enamel,1,Sr2Ca4Si4P6O29,Sr2Ca4Si4P6O29,Ca-O-P-Si-Sr,,99,45
+cand_enamel_01_s1,candidate,enamel,1,Sr2Ca4Si4P6O29,Sr2Ca4Si4P6O29,Ca-O-P-Si-Sr,,6,45
+cand_enamel_01_s2,candidate,enamel,1,Sr2Ca4Si4P6O29,Sr2Ca4Si4P6O29,Ca-O-P-Si-Sr,,16,45
+cand_enamel_01_s3,candidate,enamel,1,Sr2Ca4Si4P6O29,Sr2Ca4Si4P6O29,Ca-O-P-Si-Sr,,187,45
+cand_enamel_01_s4,candidate,enamel,1,Sr2Ca4Si4P6O29,Sr2Ca4Si4P6O29,Ca-O-P-Si-Sr,,123,45
+cand_enamel_01_s5,candidate,enamel,1,Sr2Ca4Si4P6O29,Sr2Ca4Si4P6O29,Ca-O-P-Si-Sr,,83,45
+cand_enamel_01_s6,candidate,enamel,1,Sr2Ca4Si4P6O29,Sr2Ca4Si4P6O29,Ca-O-P-Si-Sr,,157,45
+cand_enamel_01_s7,candidate,enamel,1,Sr2Ca4Si4P6O29,Sr2Ca4Si4P6O29,Ca-O-P-Si-Sr,,195,45
+cand_enamel_02_s0,candidate,enamel,2,Sr2Ca6Si6P6O35,Sr2Ca6Si6P6O35,Ca-O-P-Si-Sr,,143,55
+cand_enamel_02_s1,candidate,enamel,2,Sr2Ca6Si6P6O35,Sr2Ca6Si6P6O35,Ca-O-P-Si-Sr,,149,55
+cand_enamel_02_s2,candidate,enamel,2,Sr2Ca6Si6P6O35,Sr2Ca6Si6P6O35,Ca-O-P-Si-Sr,,115,55
+cand_enamel_02_s3,candidate,enamel,2,Sr2Ca6Si6P6O35,Sr2Ca6Si6P6O35,Ca-O-P-Si-Sr,,164,55
+cand_enamel_02_s4,candidate,enamel,2,Sr2Ca6Si6P6O35,Sr2Ca6Si6P6O35,Ca-O-P-Si-Sr,,177,55
+cand_enamel_02_s5,candidate,enamel,2,Sr2Ca6Si6P6O35,Sr2Ca6Si6P6O35,Ca-O-P-Si-Sr,,157,55
+cand_enamel_02_s6,candidate,enamel,2,Sr2Ca6Si6P6O35,Sr2Ca6Si6P6O35,Ca-O-P-Si-Sr,,47,55
+cand_enamel_02_s7,candidate,enamel,2,Sr2Ca6Si6P6O35,Sr2Ca6Si6P6O35,Ca-O-P-Si-Sr,,221,55
+cand_enamel_03_s0,candidate,enamel,3,SrCaSiP2O9,SrCaSiP2O9,Ca-O-P-Si-Sr,,187,14
+cand_enamel_03_s1,candidate,enamel,3,SrCaSiP2O9,SrCaSiP2O9,Ca-O-P-Si-Sr,,75,14
+cand_enamel_03_s2,candidate,enamel,3,SrCaSiP2O9,SrCaSiP2O9,Ca-O-P-Si-Sr,,16,14
+cand_enamel_03_s3,candidate,enamel,3,SrCaSiP2O9,SrCaSiP2O9,Ca-O-P-Si-Sr,,143,14
+cand_enamel_03_s4,candidate,enamel,3,SrCaSiP2O9,SrCaSiP2O9,Ca-O-P-Si-Sr,,115,14
+cand_enamel_03_s5,candidate,enamel,3,SrCaSiP2O9,SrCaSiP2O9,Ca-O-P-Si-Sr,,10,14
+cand_enamel_03_s6,candidate,enamel,3,SrCaSiP2O9,SrCaSiP2O9,Ca-O-P-Si-Sr,,156,14
+cand_enamel_03_s7,candidate,enamel,3,SrCaSiP2O9,SrCaSiP2O9,Ca-O-P-Si-Sr,,99,14
+cand_enamel_04_s0,candidate,enamel,4,Ca2Mg2Al2P4O17,Ca2Mg2Al2P4O17,Al-Ca-Mg-O-P,,10,27
+cand_enamel_04_s1,candidate,enamel,4,Ca2Mg2Al2P4O17,Ca2Mg2Al2P4O17,Al-Ca-Mg-O-P,,83,27
+cand_enamel_04_s2,candidate,enamel,4,Ca2Mg2Al2P4O17,Ca2Mg2Al2P4O17,Al-Ca-Mg-O-P,,99,27
+cand_enamel_04_s3,candidate,enamel,4,Ca2Mg2Al2P4O17,Ca2Mg2Al2P4O17,Al-Ca-Mg-O-P,,162,27
+cand_enamel_04_s4,candidate,enamel,4,Ca2Mg2Al2P4O17,Ca2Mg2Al2P4O17,Al-Ca-Mg-O-P,,150,27
+cand_enamel_04_s5,candidate,enamel,4,Ca2Mg2Al2P4O17,Ca2Mg2Al2P4O17,Al-Ca-Mg-O-P,,2,27
+cand_enamel_04_s6,candidate,enamel,4,Ca2Mg2Al2P4O17,Ca2Mg2Al2P4O17,Al-Ca-Mg-O-P,,16,27
+cand_enamel_04_s7,candidate,enamel,4,Ca2Mg2Al2P4O17,Ca2Mg2Al2P4O17,Al-Ca-Mg-O-P,,111,27
+cand_enamel_05_s0,candidate,enamel,5,Sr2Mg2Al2P4O17,Sr2Mg2Al2P4O17,Al-Mg-O-P-Sr,,16,27
+cand_enamel_05_s1,candidate,enamel,5,Sr2Mg2Al2P4O17,Sr2Mg2Al2P4O17,Al-Mg-O-P-Sr,,162,27
+cand_enamel_05_s2,candidate,enamel,5,Sr2Mg2Al2P4O17,Sr2Mg2Al2P4O17,Al-Mg-O-P-Sr,,156,27
+cand_enamel_05_s3,candidate,enamel,5,Sr2Mg2Al2P4O17,Sr2Mg2Al2P4O17,Al-Mg-O-P-Sr,,191,27
+cand_enamel_05_s4,candidate,enamel,5,Sr2Mg2Al2P4O17,Sr2Mg2Al2P4O17,Al-Mg-O-P-Sr,,123,27
+cand_enamel_05_s5,candidate,enamel,5,Sr2Mg2Al2P4O17,Sr2Mg2Al2P4O17,Al-Mg-O-P-Sr,,6,27
+cand_enamel_05_s6,candidate,enamel,5,Sr2Mg2Al2P4O17,Sr2Mg2Al2P4O17,Al-Mg-O-P-Sr,,157,27
+cand_enamel_05_s7,candidate,enamel,5,Sr2Mg2Al2P4O17,Sr2Mg2Al2P4O17,Al-Mg-O-P-Sr,,177,27
+cand_enamel_06_s0,candidate,enamel,6,Ca6Mg2Si6P6O35,Ca6Mg2Si6P6O35,Ca-Mg-O-P-Si,,168,55
+cand_enamel_06_s1,candidate,enamel,6,Ca6Mg2Si6P6O35,Ca6Mg2Si6P6O35,Ca-Mg-O-P-Si,,191,55
+cand_enamel_06_s2,candidate,enamel,6,Ca6Mg2Si6P6O35,Ca6Mg2Si6P6O35,Ca-Mg-O-P-Si,,183,55
+cand_enamel_06_s3,candidate,enamel,6,Ca6Mg2Si6P6O35,Ca6Mg2Si6P6O35,Ca-Mg-O-P-Si,,187,55
+cand_enamel_06_s4,candidate,enamel,6,Ca6Mg2Si6P6O35,Ca6Mg2Si6P6O35,Ca-Mg-O-P-Si,,111,55
+cand_enamel_06_s5,candidate,enamel,6,Ca6Mg2Si6P6O35,Ca6Mg2Si6P6O35,Ca-Mg-O-P-Si,,200,55
+cand_enamel_06_s6,candidate,enamel,6,Ca6Mg2Si6P6O35,Ca6Mg2Si6P6O35,Ca-Mg-O-P-Si,,156,55
+cand_enamel_06_s7,candidate,enamel,6,Ca6Mg2Si6P6O35,Ca6Mg2Si6P6O35,Ca-Mg-O-P-Si,,10,55
+cand_enamel_07_s0,candidate,enamel,7,Ca2MgSi2(PO6)2,Ca2MgSi2(PO6)2,Ca-Mg-O-P-Si,,189,19
+cand_enamel_07_s1,candidate,enamel,7,Ca2MgSi2(PO6)2,Ca2MgSi2(PO6)2,Ca-Mg-O-P-Si,,150,19
+cand_enamel_07_s2,candidate,enamel,7,Ca2MgSi2(PO6)2,Ca2MgSi2(PO6)2,Ca-Mg-O-P-Si,,187,19
+cand_enamel_07_s3,candidate,enamel,7,Ca2MgSi2(PO6)2,Ca2MgSi2(PO6)2,Ca-Mg-O-P-Si,,2,19
+cand_enamel_07_s4,candidate,enamel,7,Ca2MgSi2(PO6)2,Ca2MgSi2(PO6)2,Ca-Mg-O-P-Si,,47,19
+cand_enamel_07_s5,candidate,enamel,7,Ca2MgSi2(PO6)2,Ca2MgSi2(PO6)2,Ca-Mg-O-P-Si,,3,19
+cand_enamel_07_s6,candidate,enamel,7,Ca2MgSi2(PO6)2,Ca2MgSi2(PO6)2,Ca-Mg-O-P-Si,,10,19
+cand_enamel_07_s7,candidate,enamel,7,Ca2MgSi2(PO6)2,Ca2MgSi2(PO6)2,Ca-Mg-O-P-Si,,164,19
+cand_enamel_08_s0,candidate,enamel,8,Ca6Mg2Si4P6O31,Ca6Mg2Si4P6O31,Ca-Mg-O-P-Si,,143,49
+cand_enamel_08_s1,candidate,enamel,8,Ca6Mg2Si4P6O31,Ca6Mg2Si4P6O31,Ca-Mg-O-P-Si,,16,49
+cand_enamel_08_s2,candidate,enamel,8,Ca6Mg2Si4P6O31,Ca6Mg2Si4P6O31,Ca-Mg-O-P-Si,,215,49
+cand_enamel_08_s3,candidate,enamel,8,Ca6Mg2Si4P6O31,Ca6Mg2Si4P6O31,Ca-Mg-O-P-Si,,147,49
+cand_enamel_08_s4,candidate,enamel,8,Ca6Mg2Si4P6O31,Ca6Mg2Si4P6O31,Ca-Mg-O-P-Si,,6,49
+cand_enamel_08_s5,candidate,enamel,8,Ca6Mg2Si4P6O31,Ca6Mg2Si4P6O31,Ca-Mg-O-P-Si,,89,49
+cand_enamel_08_s6,candidate,enamel,8,Ca6Mg2Si4P6O31,Ca6Mg2Si4P6O31,Ca-Mg-O-P-Si,,111,49
+cand_enamel_08_s7,candidate,enamel,8,Ca6Mg2Si4P6O31,Ca6Mg2Si4P6O31,Ca-Mg-O-P-Si,,156,49
+cand_enamel_09_s0,candidate,enamel,9,SrMg2Si(PO5)2,SrMg2Si(PO5)2,Mg-O-P-Si-Sr,,99,16
+cand_enamel_09_s1,candidate,enamel,9,SrMg2Si(PO5)2,SrMg2Si(PO5)2,Mg-O-P-Si-Sr,,191,16
+cand_enamel_09_s2,candidate,enamel,9,SrMg2Si(PO5)2,SrMg2Si(PO5)2,Mg-O-P-Si-Sr,,123,16
+cand_enamel_09_s3,candidate,enamel,9,SrMg2Si(PO5)2,SrMg2Si(PO5)2,Mg-O-P-Si-Sr,,147,16
+cand_enamel_09_s4,candidate,enamel,9,SrMg2Si(PO5)2,SrMg2Si(PO5)2,Mg-O-P-Si-Sr,,164,16
+cand_enamel_09_s5,candidate,enamel,9,SrMg2Si(PO5)2,SrMg2Si(PO5)2,Mg-O-P-Si-Sr,,157,16
+cand_enamel_09_s6,candidate,enamel,9,SrMg2Si(PO5)2,SrMg2Si(PO5)2,Mg-O-P-Si-Sr,,183,16
+cand_enamel_09_s7,candidate,enamel,9,SrMg2Si(PO5)2,SrMg2Si(PO5)2,Mg-O-P-Si-Sr,,89,16
+cand_enamel_10_s0,candidate,enamel,10,Sr2Ca2Al2P4O17,Sr2Ca2Al2P4O17,Al-Ca-O-P-Sr,,175,27
+cand_enamel_10_s1,candidate,enamel,10,Sr2Ca2Al2P4O17,Sr2Ca2Al2P4O17,Al-Ca-O-P-Sr,,81,27
+cand_enamel_10_s2,candidate,enamel,10,Sr2Ca2Al2P4O17,Sr2Ca2Al2P4O17,Al-Ca-O-P-Sr,,47,27
+cand_enamel_10_s3,candidate,enamel,10,Sr2Ca2Al2P4O17,Sr2Ca2Al2P4O17,Al-Ca-O-P-Sr,,143,27
+cand_enamel_10_s4,candidate,enamel,10,Sr2Ca2Al2P4O17,Sr2Ca2Al2P4O17,Al-Ca-O-P-Sr,,6,27
+cand_enamel_10_s5,candidate,enamel,10,Sr2Ca2Al2P4O17,Sr2Ca2Al2P4O17,Al-Ca-O-P-Sr,,149,27
+cand_enamel_10_s6,candidate,enamel,10,Sr2Ca2Al2P4O17,Sr2Ca2Al2P4O17,Al-Ca-O-P-Sr,,3,27
+cand_enamel_10_s7,candidate,enamel,10,Sr2Ca2Al2P4O17,Sr2Ca2Al2P4O17,Al-Ca-O-P-Sr,,168,27
+cand_enamel_11_s0,candidate,enamel,11,Ca4Mg2Si4P6O29,Ca4Mg2Si4P6O29,Ca-Mg-O-P-Si,,174,45
+cand_enamel_11_s1,candidate,enamel,11,Ca4Mg2Si4P6O29,Ca4Mg2Si4P6O29,Ca-Mg-O-P-Si,,3,45
+cand_enamel_11_s2,candidate,enamel,11,Ca4Mg2Si4P6O29,Ca4Mg2Si4P6O29,Ca-Mg-O-P-Si,,157,45
+cand_enamel_11_s3,candidate,enamel,11,Ca4Mg2Si4P6O29,Ca4Mg2Si4P6O29,Ca-Mg-O-P-Si,,150,45
+cand_enamel_11_s4,candidate,enamel,11,Ca4Mg2Si4P6O29,Ca4Mg2Si4P6O29,Ca-Mg-O-P-Si,,111,45
+cand_enamel_11_s5,candidate,enamel,11,Ca4Mg2Si4P6O29,Ca4Mg2Si4P6O29,Ca-Mg-O-P-Si,,187,45
+cand_enamel_11_s6,candidate,enamel,11,Ca4Mg2Si4P6O29,Ca4Mg2Si4P6O29,Ca-Mg-O-P-Si,,156,45
+cand_enamel_11_s7,candidate,enamel,11,Ca4Mg2Si4P6O29,Ca4Mg2Si4P6O29,Ca-Mg-O-P-Si,,6,45
+cand_enamel_12_s0,candidate,enamel,12,SrMgSiP2O9,SrMgSiP2O9,Mg-O-P-Si-Sr,,156,14
+cand_enamel_12_s1,candidate,enamel,12,SrMgSiP2O9,SrMgSiP2O9,Mg-O-P-Si-Sr,,81,14
+cand_enamel_12_s2,candidate,enamel,12,SrMgSiP2O9,SrMgSiP2O9,Mg-O-P-Si-Sr,,99,14
+cand_enamel_12_s3,candidate,enamel,12,SrMgSiP2O9,SrMgSiP2O9,Mg-O-P-Si-Sr,,6,14
+cand_enamel_12_s4,candidate,enamel,12,SrMgSiP2O9,SrMgSiP2O9,Mg-O-P-Si-Sr,,111,14
+cand_enamel_12_s5,candidate,enamel,12,SrMgSiP2O9,SrMgSiP2O9,Mg-O-P-Si-Sr,,3,14
+cand_enamel_12_s6,candidate,enamel,12,SrMgSiP2O9,SrMgSiP2O9,Mg-O-P-Si-Sr,,149,14
+cand_enamel_12_s7,candidate,enamel,12,SrMgSiP2O9,SrMgSiP2O9,Mg-O-P-Si-Sr,,174,14
+cand_enamel_13_s0,candidate,enamel,13,SrCa2Si2(PO6)2,SrCa2Si2(PO6)2,Ca-O-P-Si-Sr,,115,19
+cand_enamel_13_s1,candidate,enamel,13,SrCa2Si2(PO6)2,SrCa2Si2(PO6)2,Ca-O-P-Si-Sr,,168,19
+cand_enamel_13_s2,candidate,enamel,13,SrCa2Si2(PO6)2,SrCa2Si2(PO6)2,Ca-O-P-Si-Sr,,177,19
+cand_enamel_13_s3,candidate,enamel,13,SrCa2Si2(PO6)2,SrCa2Si2(PO6)2,Ca-O-P-Si-Sr,,187,19
+cand_enamel_13_s4,candidate,enamel,13,SrCa2Si2(PO6)2,SrCa2Si2(PO6)2,Ca-O-P-Si-Sr,,123,19
+cand_enamel_13_s5,candidate,enamel,13,SrCa2Si2(PO6)2,SrCa2Si2(PO6)2,Ca-O-P-Si-Sr,,147,19
+cand_enamel_13_s6,candidate,enamel,13,SrCa2Si2(PO6)2,SrCa2Si2(PO6)2,Ca-O-P-Si-Sr,,174,19
+cand_enamel_13_s7,candidate,enamel,13,SrCa2Si2(PO6)2,SrCa2Si2(PO6)2,Ca-O-P-Si-Sr,,111,19
+cand_enamel_14_s0,candidate,enamel,14,SrCa2AlPO7,SrCa2AlPO7,Al-Ca-O-P-Sr,,143,12
+cand_enamel_14_s1,candidate,enamel,14,SrCa2AlPO7,SrCa2AlPO7,Al-Ca-O-P-Sr,,111,12
+cand_enamel_14_s2,candidate,enamel,14,SrCa2AlPO7,SrCa2AlPO7,Al-Ca-O-P-Sr,,187,12
+cand_enamel_14_s3,candidate,enamel,14,SrCa2AlPO7,SrCa2AlPO7,Al-Ca-O-P-Sr,,123,12
+cand_enamel_14_s4,candidate,enamel,14,SrCa2AlPO7,SrCa2AlPO7,Al-Ca-O-P-Sr,,174,12
+cand_enamel_14_s5,candidate,enamel,14,SrCa2AlPO7,SrCa2AlPO7,Al-Ca-O-P-Sr,,149,12
+cand_enamel_14_s6,candidate,enamel,14,SrCa2AlPO7,SrCa2AlPO7,Al-Ca-O-P-Sr,,25,12
+cand_enamel_14_s7,candidate,enamel,14,SrCa2AlPO7,SrCa2AlPO7,Al-Ca-O-P-Sr,,3,12
+cand_enamel_15_s0,candidate,enamel,15,Sr2Mg2Si4P2O17,Sr2Mg2Si4P2O17,Mg-O-P-Si-Sr,,149,27
+cand_enamel_15_s1,candidate,enamel,15,Sr2Mg2Si4P2O17,Sr2Mg2Si4P2O17,Mg-O-P-Si-Sr,,189,27
+cand_enamel_15_s2,candidate,enamel,15,Sr2Mg2Si4P2O17,Sr2Mg2Si4P2O17,Mg-O-P-Si-Sr,,147,27
+cand_enamel_15_s3,candidate,enamel,15,Sr2Mg2Si4P2O17,Sr2Mg2Si4P2O17,Mg-O-P-Si-Sr,,156,27
+cand_enamel_15_s4,candidate,enamel,15,Sr2Mg2Si4P2O17,Sr2Mg2Si4P2O17,Mg-O-P-Si-Sr,,162,27
+cand_enamel_15_s5,candidate,enamel,15,Sr2Mg2Si4P2O17,Sr2Mg2Si4P2O17,Mg-O-P-Si-Sr,,16,27
+cand_enamel_15_s6,candidate,enamel,15,Sr2Mg2Si4P2O17,Sr2Mg2Si4P2O17,Mg-O-P-Si-Sr,,2,27
+cand_enamel_15_s7,candidate,enamel,15,Sr2Mg2Si4P2O17,Sr2Mg2Si4P2O17,Mg-O-P-Si-Sr,,25,27
+cand_dentin_01_s0,candidate,dentin,1,K5Na2Ca(PO4)3,K5Na2Ca(PO4)3,Ca-K-Na-O-P,,164,23
+cand_dentin_01_s1,candidate,dentin,1,K5Na2Ca(PO4)3,K5Na2Ca(PO4)3,Ca-K-Na-O-P,,156,23
+cand_dentin_01_s2,candidate,dentin,1,K5Na2Ca(PO4)3,K5Na2Ca(PO4)3,Ca-K-Na-O-P,,6,23
+cand_dentin_01_s3,candidate,dentin,1,K5Na2Ca(PO4)3,K5Na2Ca(PO4)3,Ca-K-Na-O-P,,81,23
+cand_dentin_01_s4,candidate,dentin,1,K5Na2Ca(PO4)3,K5Na2Ca(PO4)3,Ca-K-Na-O-P,,111,23
+cand_dentin_01_s5,candidate,dentin,1,K5Na2Ca(PO4)3,K5Na2Ca(PO4)3,Ca-K-Na-O-P,,150,23
+cand_dentin_01_s6,candidate,dentin,1,K5Na2Ca(PO4)3,K5Na2Ca(PO4)3,Ca-K-Na-O-P,,47,23
+cand_dentin_01_s7,candidate,dentin,1,K5Na2Ca(PO4)3,K5Na2Ca(PO4)3,Ca-K-Na-O-P,,25,23
+cand_dentin_02_s0,candidate,dentin,2,K8Na2Ca2P4O17,K8Na2Ca2P4O17,Ca-K-Na-O-P,,187,33
+cand_dentin_02_s1,candidate,dentin,2,K8Na2Ca2P4O17,K8Na2Ca2P4O17,Ca-K-Na-O-P,,81,33
+cand_dentin_02_s2,candidate,dentin,2,K8Na2Ca2P4O17,K8Na2Ca2P4O17,Ca-K-Na-O-P,,162,33
+cand_dentin_02_s3,candidate,dentin,2,K8Na2Ca2P4O17,K8Na2Ca2P4O17,Ca-K-Na-O-P,,175,33
+cand_dentin_02_s4,candidate,dentin,2,K8Na2Ca2P4O17,K8Na2Ca2P4O17,Ca-K-Na-O-P,,83,33
+cand_dentin_02_s5,candidate,dentin,2,K8Na2Ca2P4O17,K8Na2Ca2P4O17,Ca-K-Na-O-P,,25,33
+cand_dentin_02_s6,candidate,dentin,2,K8Na2Ca2P4O17,K8Na2Ca2P4O17,Ca-K-Na-O-P,,174,33
+cand_dentin_02_s7,candidate,dentin,2,K8Na2Ca2P4O17,K8Na2Ca2P4O17,Ca-K-Na-O-P,,89,33
+cand_dentin_03_s0,candidate,dentin,3,K4Na2CaP2O9,K4Na2CaP2O9,Ca-K-Na-O-P,,189,18
+cand_dentin_03_s1,candidate,dentin,3,K4Na2CaP2O9,K4Na2CaP2O9,Ca-K-Na-O-P,,47,18
+cand_dentin_03_s2,candidate,dentin,3,K4Na2CaP2O9,K4Na2CaP2O9,Ca-K-Na-O-P,,89,18
+cand_dentin_03_s3,candidate,dentin,3,K4Na2CaP2O9,K4Na2CaP2O9,Ca-K-Na-O-P,,162,18
+cand_dentin_03_s4,candidate,dentin,3,K4Na2CaP2O9,K4Na2CaP2O9,Ca-K-Na-O-P,,187,18
+cand_dentin_03_s5,candidate,dentin,3,K4Na2CaP2O9,K4Na2CaP2O9,Ca-K-Na-O-P,,183,18
+cand_dentin_03_s6,candidate,dentin,3,K4Na2CaP2O9,K4Na2CaP2O9,Ca-K-Na-O-P,,149,18
+cand_dentin_03_s7,candidate,dentin,3,K4Na2CaP2O9,K4Na2CaP2O9,Ca-K-Na-O-P,,83,18
+cand_dentin_04_s0,candidate,dentin,4,K6Na4Ca2P4O17,K6Na4Ca2P4O17,Ca-K-Na-O-P,,195,33
+cand_dentin_04_s1,candidate,dentin,4,K6Na4Ca2P4O17,K6Na4Ca2P4O17,Ca-K-Na-O-P,,6,33
+cand_dentin_04_s2,candidate,dentin,4,K6Na4Ca2P4O17,K6Na4Ca2P4O17,Ca-K-Na-O-P,,16,33
+cand_dentin_04_s3,candidate,dentin,4,K6Na4Ca2P4O17,K6Na4Ca2P4O17,Ca-K-Na-O-P,,149,33
+cand_dentin_04_s4,candidate,dentin,4,K6Na4Ca2P4O17,K6Na4Ca2P4O17,Ca-K-Na-O-P,,177,33
+cand_dentin_04_s5,candidate,dentin,4,K6Na4Ca2P4O17,K6Na4Ca2P4O17,Ca-K-Na-O-P,,147,33
+cand_dentin_04_s6,candidate,dentin,4,K6Na4Ca2P4O17,K6Na4Ca2P4O17,Ca-K-Na-O-P,,10,33
+cand_dentin_04_s7,candidate,dentin,4,K6Na4Ca2P4O17,K6Na4Ca2P4O17,Ca-K-Na-O-P,,3,33
+cand_dentin_05_s0,candidate,dentin,5,K4Ca(PO4)2,K4Ca(PO4)2,Ca-K-O-P,,75,15
+cand_dentin_05_s1,candidate,dentin,5,K4Ca(PO4)2,K4Ca(PO4)2,Ca-K-O-P,,164,15
+cand_dentin_05_s2,candidate,dentin,5,K4Ca(PO4)2,K4Ca(PO4)2,Ca-K-O-P,,16,15
+cand_dentin_05_s3,candidate,dentin,5,K4Ca(PO4)2,K4Ca(PO4)2,Ca-K-O-P,,162,15
+cand_dentin_05_s4,candidate,dentin,5,K4Ca(PO4)2,K4Ca(PO4)2,Ca-K-O-P,,115,15
+cand_dentin_05_s5,candidate,dentin,5,K4Ca(PO4)2,K4Ca(PO4)2,Ca-K-O-P,,147,15
+cand_dentin_05_s6,candidate,dentin,5,K4Ca(PO4)2,K4Ca(PO4)2,Ca-K-O-P,,6,15
+cand_dentin_05_s7,candidate,dentin,5,K4Ca(PO4)2,K4Ca(PO4)2,Ca-K-O-P,,189,15
+cand_dentin_06_s0,candidate,dentin,6,K10Na2Ca2P6O23,K10Na2Ca2P6O23,Ca-K-Na-O-P,,175,43
+cand_dentin_06_s1,candidate,dentin,6,K10Na2Ca2P6O23,K10Na2Ca2P6O23,Ca-K-Na-O-P,,10,43
+cand_dentin_06_s2,candidate,dentin,6,K10Na2Ca2P6O23,K10Na2Ca2P6O23,Ca-K-Na-O-P,,99,43
+cand_dentin_06_s3,candidate,dentin,6,K10Na2Ca2P6O23,K10Na2Ca2P6O23,Ca-K-Na-O-P,,3,43
+cand_dentin_06_s4,candidate,dentin,6,K10Na2Ca2P6O23,K10Na2Ca2P6O23,Ca-K-Na-O-P,,143,43
+cand_dentin_06_s5,candidate,dentin,6,K10Na2Ca2P6O23,K10Na2Ca2P6O23,Ca-K-Na-O-P,,149,43
+cand_dentin_06_s6,candidate,dentin,6,K10Na2Ca2P6O23,K10Na2Ca2P6O23,Ca-K-Na-O-P,,187,43
+cand_dentin_06_s7,candidate,dentin,6,K10Na2Ca2P6O23,K10Na2Ca2P6O23,Ca-K-Na-O-P,,168,43
+cand_dentin_07_s0,candidate,dentin,7,K3NaCa(PO4)2,K3NaCa(PO4)2,Ca-K-Na-O-P,,3,15
+cand_dentin_07_s1,candidate,dentin,7,K3NaCa(PO4)2,K3NaCa(PO4)2,Ca-K-Na-O-P,,147,15
+cand_dentin_07_s2,candidate,dentin,7,K3NaCa(PO4)2,K3NaCa(PO4)2,Ca-K-Na-O-P,,183,15
+cand_dentin_07_s3,candidate,dentin,7,K3NaCa(PO4)2,K3NaCa(PO4)2,Ca-K-Na-O-P,,149,15
+cand_dentin_07_s4,candidate,dentin,7,K3NaCa(PO4)2,K3NaCa(PO4)2,Ca-K-Na-O-P,,75,15
+cand_dentin_07_s5,candidate,dentin,7,K3NaCa(PO4)2,K3NaCa(PO4)2,Ca-K-Na-O-P,,189,15
+cand_dentin_07_s6,candidate,dentin,7,K3NaCa(PO4)2,K3NaCa(PO4)2,Ca-K-Na-O-P,,89,15
+cand_dentin_07_s7,candidate,dentin,7,K3NaCa(PO4)2,K3NaCa(PO4)2,Ca-K-Na-O-P,,2,15
+cand_dentin_08_s0,candidate,dentin,8,K10Ca2Al2P6O25,K10Ca2Al2P6O25,Al-Ca-K-O-P,,174,45
+cand_dentin_08_s1,candidate,dentin,8,K10Ca2Al2P6O25,K10Ca2Al2P6O25,Al-Ca-K-O-P,,99,45
+cand_dentin_08_s2,candidate,dentin,8,K10Ca2Al2P6O25,K10Ca2Al2P6O25,Al-Ca-K-O-P,,175,45
+cand_dentin_08_s3,candidate,dentin,8,K10Ca2Al2P6O25,K10Ca2Al2P6O25,Al-Ca-K-O-P,,25,45
+cand_dentin_08_s4,candidate,dentin,8,K10Ca2Al2P6O25,K10Ca2Al2P6O25,Al-Ca-K-O-P,,157,45
+cand_dentin_08_s5,candidate,dentin,8,K10Ca2Al2P6O25,K10Ca2Al2P6O25,Al-Ca-K-O-P,,6,45
+cand_dentin_08_s6,candidate,dentin,8,K10Ca2Al2P6O25,K10Ca2Al2P6O25,Al-Ca-K-O-P,,16,45
+cand_dentin_08_s7,candidate,dentin,8,K10Ca2Al2P6O25,K10Ca2Al2P6O25,Al-Ca-K-O-P,,47,45
+cand_dentin_09_s0,candidate,dentin,9,K6Ca2P4O15,K6Ca2P4O15,Ca-K-O-P,,147,27
+cand_dentin_09_s1,candidate,dentin,9,K6Ca2P4O15,K6Ca2P4O15,Ca-K-O-P,,191,27
+cand_dentin_09_s2,candidate,dentin,9,K6Ca2P4O15,K6Ca2P4O15,Ca-K-O-P,,183,27
+cand_dentin_09_s3,candidate,dentin,9,K6Ca2P4O15,K6Ca2P4O15,Ca-K-O-P,,143,27
+cand_dentin_09_s4,candidate,dentin,9,K6Ca2P4O15,K6Ca2P4O15,Ca-K-O-P,,156,27
+cand_dentin_09_s5,candidate,dentin,9,K6Ca2P4O15,K6Ca2P4O15,Ca-K-O-P,,150,27
+cand_dentin_09_s6,candidate,dentin,9,K6Ca2P4O15,K6Ca2P4O15,Ca-K-O-P,,16,27
+cand_dentin_09_s7,candidate,dentin,9,K6Ca2P4O15,K6Ca2P4O15,Ca-K-O-P,,187,27
+cand_dentin_10_s0,candidate,dentin,10,K5NaCaP2O9,K5NaCaP2O9,Ca-K-Na-O-P,,147,18
+cand_dentin_10_s1,candidate,dentin,10,K5NaCaP2O9,K5NaCaP2O9,Ca-K-Na-O-P,,83,18
+cand_dentin_10_s2,candidate,dentin,10,K5NaCaP2O9,K5NaCaP2O9,Ca-K-Na-O-P,,123,18
+cand_dentin_10_s3,candidate,dentin,10,K5NaCaP2O9,K5NaCaP2O9,Ca-K-Na-O-P,,2,18
+cand_dentin_10_s4,candidate,dentin,10,K5NaCaP2O9,K5NaCaP2O9,Ca-K-Na-O-P,,75,18
+cand_dentin_10_s5,candidate,dentin,10,K5NaCaP2O9,K5NaCaP2O9,Ca-K-Na-O-P,,157,18
+cand_dentin_10_s6,candidate,dentin,10,K5NaCaP2O9,K5NaCaP2O9,Ca-K-Na-O-P,,47,18
+cand_dentin_10_s7,candidate,dentin,10,K5NaCaP2O9,K5NaCaP2O9,Ca-K-Na-O-P,,187,18
+cand_dentin_11_s0,candidate,dentin,11,K6Ca2SiP4O17,K6Ca2SiP4O17,Ca-K-O-P-Si,,191,30
+cand_dentin_11_s1,candidate,dentin,11,K6Ca2SiP4O17,K6Ca2SiP4O17,Ca-K-O-P-Si,,89,30
+cand_dentin_11_s2,candidate,dentin,11,K6Ca2SiP4O17,K6Ca2SiP4O17,Ca-K-O-P-Si,,150,30
+cand_dentin_11_s3,candidate,dentin,11,K6Ca2SiP4O17,K6Ca2SiP4O17,Ca-K-O-P-Si,,156,30
+cand_dentin_11_s4,candidate,dentin,11,K6Ca2SiP4O17,K6Ca2SiP4O17,Ca-K-O-P-Si,,157,30
+cand_dentin_11_s5,candidate,dentin,11,K6Ca2SiP4O17,K6Ca2SiP4O17,Ca-K-O-P-Si,,183,30
+cand_dentin_11_s6,candidate,dentin,11,K6Ca2SiP4O17,K6Ca2SiP4O17,Ca-K-O-P-Si,,162,30
+cand_dentin_11_s7,candidate,dentin,11,K6Ca2SiP4O17,K6Ca2SiP4O17,Ca-K-O-P-Si,,187,30
+cand_dentin_12_s0,candidate,dentin,12,K5Na3Ca(PO5)2,K5Na3Ca(PO5)2,Ca-K-Na-O-P,,123,21
+cand_dentin_12_s1,candidate,dentin,12,K5Na3Ca(PO5)2,K5Na3Ca(PO5)2,Ca-K-Na-O-P,,168,21
+cand_dentin_12_s2,candidate,dentin,12,K5Na3Ca(PO5)2,K5Na3Ca(PO5)2,Ca-K-Na-O-P,,47,21
+cand_dentin_12_s3,candidate,dentin,12,K5Na3Ca(PO5)2,K5Na3Ca(PO5)2,Ca-K-Na-O-P,,187,21
+cand_dentin_12_s4,candidate,dentin,12,K5Na3Ca(PO5)2,K5Na3Ca(PO5)2,Ca-K-Na-O-P,,149,21
+cand_dentin_12_s5,candidate,dentin,12,K5Na3Ca(PO5)2,K5Na3Ca(PO5)2,Ca-K-Na-O-P,,191,21
+cand_dentin_12_s6,candidate,dentin,12,K5Na3Ca(PO5)2,K5Na3Ca(PO5)2,Ca-K-Na-O-P,,10,21
+cand_dentin_12_s7,candidate,dentin,12,K5Na3Ca(PO5)2,K5Na3Ca(PO5)2,Ca-K-Na-O-P,,175,21
+cand_dentin_13_s0,candidate,dentin,13,K8Na4Ca2P6O23,K8Na4Ca2P6O23,Ca-K-Na-O-P,,150,43
+cand_dentin_13_s1,candidate,dentin,13,K8Na4Ca2P6O23,K8Na4Ca2P6O23,Ca-K-Na-O-P,,156,43
+cand_dentin_13_s2,candidate,dentin,13,K8Na4Ca2P6O23,K8Na4Ca2P6O23,Ca-K-Na-O-P,,168,43
+cand_dentin_13_s3,candidate,dentin,13,K8Na4Ca2P6O23,K8Na4Ca2P6O23,Ca-K-Na-O-P,,115,43
+cand_dentin_13_s4,candidate,dentin,13,K8Na4Ca2P6O23,K8Na4Ca2P6O23,Ca-K-Na-O-P,,47,43
+cand_dentin_13_s5,candidate,dentin,13,K8Na4Ca2P6O23,K8Na4Ca2P6O23,Ca-K-Na-O-P,,164,43
+cand_dentin_13_s6,candidate,dentin,13,K8Na4Ca2P6O23,K8Na4Ca2P6O23,Ca-K-Na-O-P,,2,43
+cand_dentin_13_s7,candidate,dentin,13,K8Na4Ca2P6O23,K8Na4Ca2P6O23,Ca-K-Na-O-P,,147,43
+cand_dentin_14_s0,candidate,dentin,14,K12Ca4Si2P6O29,K12Ca4Si2P6O29,Ca-K-O-P-Si,,191,53
+cand_dentin_14_s1,candidate,dentin,14,K12Ca4Si2P6O29,K12Ca4Si2P6O29,Ca-K-O-P-Si,,143,53
+cand_dentin_14_s2,candidate,dentin,14,K12Ca4Si2P6O29,K12Ca4Si2P6O29,Ca-K-O-P-Si,,168,53
+cand_dentin_14_s3,candidate,dentin,14,K12Ca4Si2P6O29,K12Ca4Si2P6O29,Ca-K-O-P-Si,,156,53
+cand_dentin_14_s4,candidate,dentin,14,K12Ca4Si2P6O29,K12Ca4Si2P6O29,Ca-K-O-P-Si,,89,53
+cand_dentin_14_s5,candidate,dentin,14,K12Ca4Si2P6O29,K12Ca4Si2P6O29,Ca-K-O-P-Si,,150,53
+cand_dentin_14_s6,candidate,dentin,14,K12Ca4Si2P6O29,K12Ca4Si2P6O29,Ca-K-O-P-Si,,10,53
+cand_dentin_14_s7,candidate,dentin,14,K12Ca4Si2P6O29,K12Ca4Si2P6O29,Ca-K-O-P-Si,,111,53
+cand_dentin_15_s0,candidate,dentin,15,K10Ca2Si2P4O21,K10Ca2Si2P4O21,Ca-K-O-P-Si,,10,39
+cand_dentin_15_s1,candidate,dentin,15,K10Ca2Si2P4O21,K10Ca2Si2P4O21,Ca-K-O-P-Si,,143,39
+cand_dentin_15_s2,candidate,dentin,15,K10Ca2Si2P4O21,K10Ca2Si2P4O21,Ca-K-O-P-Si,,157,39
+cand_dentin_15_s3,candidate,dentin,15,K10Ca2Si2P4O21,K10Ca2Si2P4O21,Ca-K-O-P-Si,,16,39
+cand_dentin_15_s4,candidate,dentin,15,K10Ca2Si2P4O21,K10Ca2Si2P4O21,Ca-K-O-P-Si,,115,39
+cand_dentin_15_s5,candidate,dentin,15,K10Ca2Si2P4O21,K10Ca2Si2P4O21,Ca-K-O-P-Si,,187,39
+cand_dentin_15_s6,candidate,dentin,15,K10Ca2Si2P4O21,K10Ca2Si2P4O21,Ca-K-O-P-Si,,123,39
+cand_dentin_15_s7,candidate,dentin,15,K10Ca2Si2P4O21,K10Ca2Si2P4O21,Ca-K-O-P-Si,,6,39
+cand_implant_01_s0,candidate,implant,1,SrCaLaPO6,SrCaLaPO6,Ca-La-O-P-Sr,,183,10
+cand_implant_01_s1,candidate,implant,1,SrCaLaPO6,SrCaLaPO6,Ca-La-O-P-Sr,,143,10
+cand_implant_01_s2,candidate,implant,1,SrCaLaPO6,SrCaLaPO6,Ca-La-O-P-Sr,,99,10
+cand_implant_01_s3,candidate,implant,1,SrCaLaPO6,SrCaLaPO6,Ca-La-O-P-Sr,,6,10
+cand_implant_01_s4,candidate,implant,1,SrCaLaPO6,SrCaLaPO6,Ca-La-O-P-Sr,,157,10
+cand_implant_01_s5,candidate,implant,1,SrCaLaPO6,SrCaLaPO6,Ca-La-O-P-Sr,,16,10
+cand_implant_01_s6,candidate,implant,1,SrCaLaPO6,SrCaLaPO6,Ca-La-O-P-Sr,,111,10
+cand_implant_01_s7,candidate,implant,1,SrCaLaPO6,SrCaLaPO6,Ca-La-O-P-Sr,,168,10
+cand_implant_02_s0,candidate,implant,2,Sr2La4Al2P4O21,Sr2La4Al2P4O21,Al-La-O-P-Sr,,156,33
+cand_implant_02_s1,candidate,implant,2,Sr2La4Al2P4O21,Sr2La4Al2P4O21,Al-La-O-P-Sr,,157,33
+cand_implant_02_s2,candidate,implant,2,Sr2La4Al2P4O21,Sr2La4Al2P4O21,Al-La-O-P-Sr,,189,33
+cand_implant_02_s3,candidate,implant,2,Sr2La4Al2P4O21,Sr2La4Al2P4O21,Al-La-O-P-Sr,,187,33
+cand_implant_02_s4,candidate,implant,2,Sr2La4Al2P4O21,Sr2La4Al2P4O21,Al-La-O-P-Sr,,47,33
+cand_implant_02_s5,candidate,implant,2,Sr2La4Al2P4O21,Sr2La4Al2P4O21,Al-La-O-P-Sr,,6,33
+cand_implant_02_s6,candidate,implant,2,Sr2La4Al2P4O21,Sr2La4Al2P4O21,Al-La-O-P-Sr,,183,33
+cand_implant_02_s7,candidate,implant,2,Sr2La4Al2P4O21,Sr2La4Al2P4O21,Al-La-O-P-Sr,,10,33
+cand_implant_03_s0,candidate,implant,3,Sr4Ce2Mg2P2O15,Sr4Ce2Mg2P2O15,Ce-Mg-O-P-Sr,,164,25
+cand_implant_03_s1,candidate,implant,3,Sr4Ce2Mg2P2O15,Sr4Ce2Mg2P2O15,Ce-Mg-O-P-Sr,,150,25
+cand_implant_03_s2,candidate,implant,3,Sr4Ce2Mg2P2O15,Sr4Ce2Mg2P2O15,Ce-Mg-O-P-Sr,,175,25
+cand_implant_03_s3,candidate,implant,3,Sr4Ce2Mg2P2O15,Sr4Ce2Mg2P2O15,Ce-Mg-O-P-Sr,,147,25
+cand_implant_03_s4,candidate,implant,3,Sr4Ce2Mg2P2O15,Sr4Ce2Mg2P2O15,Ce-Mg-O-P-Sr,,168,25
+cand_implant_03_s5,candidate,implant,3,Sr4Ce2Mg2P2O15,Sr4Ce2Mg2P2O15,Ce-Mg-O-P-Sr,,3,25
+cand_implant_03_s6,candidate,implant,3,Sr4Ce2Mg2P2O15,Sr4Ce2Mg2P2O15,Ce-Mg-O-P-Sr,,2,25
+cand_implant_03_s7,candidate,implant,3,Sr4Ce2Mg2P2O15,Sr4Ce2Mg2P2O15,Ce-Mg-O-P-Sr,,81,25
+cand_implant_04_s0,candidate,implant,4,Sr2LaSiPO8,Sr2LaSiPO8,La-O-P-Si-Sr,,2,13
+cand_implant_04_s1,candidate,implant,4,Sr2LaSiPO8,Sr2LaSiPO8,La-O-P-Si-Sr,,183,13
+cand_implant_04_s2,candidate,implant,4,Sr2LaSiPO8,Sr2LaSiPO8,La-O-P-Si-Sr,,25,13
+cand_implant_04_s3,candidate,implant,4,Sr2LaSiPO8,Sr2LaSiPO8,La-O-P-Si-Sr,,81,13
+cand_implant_04_s4,candidate,implant,4,Sr2LaSiPO8,Sr2LaSiPO8,La-O-P-Si-Sr,,99,13
+cand_implant_04_s5,candidate,implant,4,Sr2LaSiPO8,Sr2LaSiPO8,La-O-P-Si-Sr,,3,13
+cand_implant_04_s6,candidate,implant,4,Sr2LaSiPO8,Sr2LaSiPO8,La-O-P-Si-Sr,,47,13
+cand_implant_04_s7,candidate,implant,4,Sr2LaSiPO8,Sr2LaSiPO8,La-O-P-Si-Sr,,174,13
+cand_implant_05_s0,candidate,implant,5,Sr2CaLa2P2O11,Sr2CaLa2P2O11,Ca-La-O-P-Sr,,189,18
+cand_implant_05_s1,candidate,implant,5,Sr2CaLa2P2O11,Sr2CaLa2P2O11,Ca-La-O-P-Sr,,187,18
+cand_implant_05_s2,candidate,implant,5,Sr2CaLa2P2O11,Sr2CaLa2P2O11,Ca-La-O-P-Sr,,111,18
+cand_implant_05_s3,candidate,implant,5,Sr2CaLa2P2O11,Sr2CaLa2P2O11,Ca-La-O-P-Sr,,168,18
+cand_implant_05_s4,candidate,implant,5,Sr2CaLa2P2O11,Sr2CaLa2P2O11,Ca-La-O-P-Sr,,175,18
+cand_implant_05_s5,candidate,implant,5,Sr2CaLa2P2O11,Sr2CaLa2P2O11,Ca-La-O-P-Sr,,83,18
+cand_implant_05_s6,candidate,implant,5,Sr2CaLa2P2O11,Sr2CaLa2P2O11,Ca-La-O-P-Sr,,3,18
+cand_implant_05_s7,candidate,implant,5,Sr2CaLa2P2O11,Sr2CaLa2P2O11,Ca-La-O-P-Sr,,115,18
+cand_implant_06_s0,candidate,implant,6,Sr2CeMg(PO5)2,Sr2CeMg(PO5)2,Ce-Mg-O-P-Sr,,147,16
+cand_implant_06_s1,candidate,implant,6,Sr2CeMg(PO5)2,Sr2CeMg(PO5)2,Ce-Mg-O-P-Sr,,47,16
+cand_implant_06_s2,candidate,implant,6,Sr2CeMg(PO5)2,Sr2CeMg(PO5)2,Ce-Mg-O-P-Sr,,99,16
+cand_implant_06_s3,candidate,implant,6,Sr2CeMg(PO5)2,Sr2CeMg(PO5)2,Ce-Mg-O-P-Sr,,156,16
+cand_implant_06_s4,candidate,implant,6,Sr2CeMg(PO5)2,Sr2CeMg(PO5)2,Ce-Mg-O-P-Sr,,75,16
+cand_implant_06_s5,candidate,implant,6,Sr2CeMg(PO5)2,Sr2CeMg(PO5)2,Ce-Mg-O-P-Sr,,189,16
+cand_implant_06_s6,candidate,implant,6,Sr2CeMg(PO5)2,Sr2CeMg(PO5)2,Ce-Mg-O-P-Sr,,162,16
+cand_implant_06_s7,candidate,implant,6,Sr2CeMg(PO5)2,Sr2CeMg(PO5)2,Ce-Mg-O-P-Sr,,6,16
+cand_implant_07_s0,candidate,implant,7,Sr2Ce2Ti4P2O19,Sr2Ce2Ti4P2O19,Ce-O-P-Sr-Ti,,3,29
+cand_implant_07_s1,candidate,implant,7,Sr2Ce2Ti4P2O19,Sr2Ce2Ti4P2O19,Ce-O-P-Sr-Ti,,2,29
+cand_implant_07_s2,candidate,implant,7,Sr2Ce2Ti4P2O19,Sr2Ce2Ti4P2O19,Ce-O-P-Sr-Ti,,111,29
+cand_implant_07_s3,candidate,implant,7,Sr2Ce2Ti4P2O19,Sr2Ce2Ti4P2O19,Ce-O-P-Sr-Ti,,81,29
+cand_implant_07_s4,candidate,implant,7,Sr2Ce2Ti4P2O19,Sr2Ce2Ti4P2O19,Ce-O-P-Sr-Ti,,177,29
+cand_implant_07_s5,candidate,implant,7,Sr2Ce2Ti4P2O19,Sr2Ce2Ti4P2O19,Ce-O-P-Sr-Ti,,6,29
+cand_implant_07_s6,candidate,implant,7,Sr2Ce2Ti4P2O19,Sr2Ce2Ti4P2O19,Ce-O-P-Sr-Ti,,175,29
+cand_implant_07_s7,candidate,implant,7,Sr2Ce2Ti4P2O19,Sr2Ce2Ti4P2O19,Ce-O-P-Sr-Ti,,99,29
+cand_implant_08_s0,candidate,implant,8,Ce2Mg2Ti2P2O15,Ce2Mg2Ti2P2O15,Ce-Mg-O-P-Ti,,2,23
+cand_implant_08_s1,candidate,implant,8,Ce2Mg2Ti2P2O15,Ce2Mg2Ti2P2O15,Ce-Mg-O-P-Ti,,123,23
+cand_implant_08_s2,candidate,implant,8,Ce2Mg2Ti2P2O15,Ce2Mg2Ti2P2O15,Ce-Mg-O-P-Ti,,16,23
+cand_implant_08_s3,candidate,implant,8,Ce2Mg2Ti2P2O15,Ce2Mg2Ti2P2O15,Ce-Mg-O-P-Ti,,177,23
+cand_implant_08_s4,candidate,implant,8,Ce2Mg2Ti2P2O15,Ce2Mg2Ti2P2O15,Ce-Mg-O-P-Ti,,175,23
+cand_implant_08_s5,candidate,implant,8,Ce2Mg2Ti2P2O15,Ce2Mg2Ti2P2O15,Ce-Mg-O-P-Ti,,168,23
+cand_implant_08_s6,candidate,implant,8,Ce2Mg2Ti2P2O15,Ce2Mg2Ti2P2O15,Ce-Mg-O-P-Ti,,157,23
+cand_implant_08_s7,candidate,implant,8,Ce2Mg2Ti2P2O15,Ce2Mg2Ti2P2O15,Ce-Mg-O-P-Ti,,164,23
+cand_implant_09_s0,candidate,implant,9,LaMgTiPO7,LaMgTiPO7,La-Mg-O-P-Ti,,25,11
+cand_implant_09_s1,candidate,implant,9,LaMgTiPO7,LaMgTiPO7,La-Mg-O-P-Ti,,16,11
+cand_implant_09_s2,candidate,implant,9,LaMgTiPO7,LaMgTiPO7,La-Mg-O-P-Ti,,47,11
+cand_implant_09_s3,candidate,implant,9,LaMgTiPO7,LaMgTiPO7,La-Mg-O-P-Ti,,149,11
+cand_implant_09_s4,candidate,implant,9,LaMgTiPO7,LaMgTiPO7,La-Mg-O-P-Ti,,168,11
+cand_implant_09_s5,candidate,implant,9,LaMgTiPO7,LaMgTiPO7,La-Mg-O-P-Ti,,10,11
+cand_implant_09_s6,candidate,implant,9,LaMgTiPO7,LaMgTiPO7,La-Mg-O-P-Ti,,157,11
+cand_implant_09_s7,candidate,implant,9,LaMgTiPO7,LaMgTiPO7,La-Mg-O-P-Ti,,187,11
+cand_implant_10_s0,candidate,implant,10,SrLaSiPO7,SrLaSiPO7,La-O-P-Si-Sr,,75,11
+cand_implant_10_s1,candidate,implant,10,SrLaSiPO7,SrLaSiPO7,La-O-P-Si-Sr,,25,11
+cand_implant_10_s2,candidate,implant,10,SrLaSiPO7,SrLaSiPO7,La-O-P-Si-Sr,,187,11
+cand_implant_10_s3,candidate,implant,10,SrLaSiPO7,SrLaSiPO7,La-O-P-Si-Sr,,3,11
+cand_implant_10_s4,candidate,implant,10,SrLaSiPO7,SrLaSiPO7,La-O-P-Si-Sr,,2,11
+cand_implant_10_s5,candidate,implant,10,SrLaSiPO7,SrLaSiPO7,La-O-P-Si-Sr,,156,11
+cand_implant_10_s6,candidate,implant,10,SrLaSiPO7,SrLaSiPO7,La-O-P-Si-Sr,,174,11
+cand_implant_10_s7,candidate,implant,10,SrLaSiPO7,SrLaSiPO7,La-O-P-Si-Sr,,47,11
+cand_implant_11_s0,candidate,implant,11,Sr4Ce2Si2P2O17,Sr4Ce2Si2P2O17,Ce-O-P-Si-Sr,,187,27
+cand_implant_11_s1,candidate,implant,11,Sr4Ce2Si2P2O17,Sr4Ce2Si2P2O17,Ce-O-P-Si-Sr,,177,27
+cand_implant_11_s2,candidate,implant,11,Sr4Ce2Si2P2O17,Sr4Ce2Si2P2O17,Ce-O-P-Si-Sr,,156,27
+cand_implant_11_s3,candidate,implant,11,Sr4Ce2Si2P2O17,Sr4Ce2Si2P2O17,Ce-O-P-Si-Sr,,83,27
+cand_implant_11_s4,candidate,implant,11,Sr4Ce2Si2P2O17,Sr4Ce2Si2P2O17,Ce-O-P-Si-Sr,,175,27
+cand_implant_11_s5,candidate,implant,11,Sr4Ce2Si2P2O17,Sr4Ce2Si2P2O17,Ce-O-P-Si-Sr,,111,27
+cand_implant_11_s6,candidate,implant,11,Sr4Ce2Si2P2O17,Sr4Ce2Si2P2O17,Ce-O-P-Si-Sr,,147,27
+cand_implant_11_s7,candidate,implant,11,Sr4Ce2Si2P2O17,Sr4Ce2Si2P2O17,Ce-O-P-Si-Sr,,164,27
+cand_implant_12_s0,candidate,implant,12,Sr4Ce4Mg2P2O19,Sr4Ce4Mg2P2O19,Ce-Mg-O-P-Sr,,16,31
+cand_implant_12_s1,candidate,implant,12,Sr4Ce4Mg2P2O19,Sr4Ce4Mg2P2O19,Ce-Mg-O-P-Sr,,177,31
+cand_implant_12_s2,candidate,implant,12,Sr4Ce4Mg2P2O19,Sr4Ce4Mg2P2O19,Ce-Mg-O-P-Sr,,6,31
+cand_implant_12_s3,candidate,implant,12,Sr4Ce4Mg2P2O19,Sr4Ce4Mg2P2O19,Ce-Mg-O-P-Sr,,149,31
+cand_implant_12_s4,candidate,implant,12,Sr4Ce4Mg2P2O19,Sr4Ce4Mg2P2O19,Ce-Mg-O-P-Sr,,147,31
+cand_implant_12_s5,candidate,implant,12,Sr4Ce4Mg2P2O19,Sr4Ce4Mg2P2O19,Ce-Mg-O-P-Sr,,10,31
+cand_implant_12_s6,candidate,implant,12,Sr4Ce4Mg2P2O19,Sr4Ce4Mg2P2O19,Ce-Mg-O-P-Sr,,175,31
+cand_implant_12_s7,candidate,implant,12,Sr4Ce4Mg2P2O19,Sr4Ce4Mg2P2O19,Ce-Mg-O-P-Sr,,2,31
+cand_implant_13_s0,candidate,implant,13,Sr2Ca2Ce2P2O13,Sr2Ca2Ce2P2O13,Ca-Ce-O-P-Sr,,168,21
+cand_implant_13_s1,candidate,implant,13,Sr2Ca2Ce2P2O13,Sr2Ca2Ce2P2O13,Ca-Ce-O-P-Sr,,89,21
+cand_implant_13_s2,candidate,implant,13,Sr2Ca2Ce2P2O13,Sr2Ca2Ce2P2O13,Ca-Ce-O-P-Sr,,174,21
+cand_implant_13_s3,candidate,implant,13,Sr2Ca2Ce2P2O13,Sr2Ca2Ce2P2O13,Ca-Ce-O-P-Sr,,2,21
+cand_implant_13_s4,candidate,implant,13,Sr2Ca2Ce2P2O13,Sr2Ca2Ce2P2O13,Ca-Ce-O-P-Sr,,164,21
+cand_implant_13_s5,candidate,implant,13,Sr2Ca2Ce2P2O13,Sr2Ca2Ce2P2O13,Ca-Ce-O-P-Sr,,111,21
+cand_implant_13_s6,candidate,implant,13,Sr2Ca2Ce2P2O13,Sr2Ca2Ce2P2O13,Ca-Ce-O-P-Sr,,177,21
+cand_implant_13_s7,candidate,implant,13,Sr2Ca2Ce2P2O13,Sr2Ca2Ce2P2O13,Ca-Ce-O-P-Sr,,123,21
+cand_implant_14_s0,candidate,implant,14,Sr2Ce2Y2P4O19,Sr2Ce2Y2P4O19,Ce-O-P-Sr-Y,,81,29
+cand_implant_14_s1,candidate,implant,14,Sr2Ce2Y2P4O19,Sr2Ce2Y2P4O19,Ce-O-P-Sr-Y,,10,29
+cand_implant_14_s2,candidate,implant,14,Sr2Ce2Y2P4O19,Sr2Ce2Y2P4O19,Ce-O-P-Sr-Y,,47,29
+cand_implant_14_s3,candidate,implant,14,Sr2Ce2Y2P4O19,Sr2Ce2Y2P4O19,Ce-O-P-Sr-Y,,83,29
+cand_implant_14_s4,candidate,implant,14,Sr2Ce2Y2P4O19,Sr2Ce2Y2P4O19,Ce-O-P-Sr-Y,,175,29
+cand_implant_14_s5,candidate,implant,14,Sr2Ce2Y2P4O19,Sr2Ce2Y2P4O19,Ce-O-P-Sr-Y,,177,29
+cand_implant_14_s6,candidate,implant,14,Sr2Ce2Y2P4O19,Sr2Ce2Y2P4O19,Ce-O-P-Sr-Y,,191,29
+cand_implant_14_s7,candidate,implant,14,Sr2Ce2Y2P4O19,Sr2Ce2Y2P4O19,Ce-O-P-Sr-Y,,164,29
+cand_implant_15_s0,candidate,implant,15,SrCaCeP2O9,SrCaCeP2O9,Ca-Ce-O-P-Sr,,3,14
+cand_implant_15_s1,candidate,implant,15,SrCaCeP2O9,SrCaCeP2O9,Ca-Ce-O-P-Sr,,10,14
+cand_implant_15_s2,candidate,implant,15,SrCaCeP2O9,SrCaCeP2O9,Ca-Ce-O-P-Sr,,16,14
+cand_implant_15_s3,candidate,implant,15,SrCaCeP2O9,SrCaCeP2O9,Ca-Ce-O-P-Sr,,187,14
+cand_implant_15_s4,candidate,implant,15,SrCaCeP2O9,SrCaCeP2O9,Ca-Ce-O-P-Sr,,83,14
+cand_implant_15_s5,candidate,implant,15,SrCaCeP2O9,SrCaCeP2O9,Ca-Ce-O-P-Sr,,25,14
+cand_implant_15_s6,candidate,implant,15,SrCaCeP2O9,SrCaCeP2O9,Ca-Ce-O-P-Sr,,149,14
+cand_implant_15_s7,candidate,implant,15,SrCaCeP2O9,SrCaCeP2O9,Ca-Ce-O-P-Sr,,157,14
+comp_mpaaaaactu,competitor,,,K1 O2,KO2,K-O,mp-aaaaactu,,3
+comp_mpaaacqydb,competitor,,,K2 P30,KP15,K-P,mp-aaacqydb,,32
+comp_mpaaaaarfd,competitor,,,K2 Ca2 P6 O18,KCa(PO3)3,Ca-K-O-P,mp-aaaaarfd,,28
+comp_mpaaabfvsr,competitor,,,Ca8 P12 O38,Ca4P6O19,Ca-O-P,mp-aaabfvsr,,58
+comp_mpaaaaalpw,competitor,,,Al1 P1 O4,AlPO4,Al-O-P,mp-aaaaalpw,,6
+comp_mpaaaaazfb,competitor,,,K4 Al4 P8 O28,KAlP2O7,Al-K-O-P,mp-aaaaazfb,,44
+comp_mpaaaabtvr,competitor,,,Ca4 P16 O44,CaP4O11,Ca-O-P,mp-aaaabtvr,,64
+comp_mpaaaabxhm,competitor,,,Ca11 Al14 O32,Ca11Al14O32,Al-Ca-O,mp-aaaabxhm,,57
+comp_mpaaaaacii,competitor,,,K12 P44,K3P11,K-P,mp-aaaaacii,,56
+comp_mpaaaaablj,competitor,,,K2 O1,K2O,K-O,mp-aaaaablj,,3
+comp_mpaaaaadwf,competitor,,,Ca1 O1,CaO,Ca-O,mp-aaaaadwf,,2
+comp_mpaaabpblo,competitor,,,Ca12 Al14 O32,Ca6Al7O16,Al-Ca-O,mp-aaabpblo,,58
+comp_mpaaaaadyu,competitor,,,K4 O4,K2O2,K-O,mp-aaaaadyu,,8
+comp_mpaaabrduv,competitor,,,Ca4 P12 O34,Ca2P6O17,Ca-O-P,mp-aaabrduv,,50
+comp_mpaaaaadom,competitor,,,Ca2 Al4,CaAl2,Al-Ca,mp-aaaaadom,,6
+comp_mpaaaaahul,competitor,,,Ca16 P8 O36,Ca4P2O9,Ca-O-P,mp-aaaaahul,,60
+comp_mpaaabfqji,competitor,,,K8 Ca4 P8 O28,K2CaP2O7,Ca-K-O-P,mp-aaabfqji,,48
+comp_mpaaaaanof,competitor,,,K6 Al2 O6,K3AlO3,Al-K-O,mp-aaaaanof,,14
+comp_mpaaaaabzt,competitor,,,Ca6 P6,CaP,Ca-P,mp-aaaaabzt,,12
+comp_mpaaacgaoy,competitor,,,K8 P4 O14,K4P2O7,K-O-P,mp-aaacgaoy,,26
+comp_mpaaaaatej,competitor,,,O8,O2,O,mp-aaaaatej,,8
+comp_mpaaaaahff,competitor,,,Ca2 Al8 O14,CaAl4O7,Al-Ca-O,mp-aaaaahff,,24
+comp_mpaaaaakcb,competitor,,,K2 Ca20 P14 O56,KCa10(PO4)7,Ca-K-O-P,mp-aaaaakcb,,92
+comp_mpaaaaaikm,competitor,,,Ca8 P16 O48,Ca(PO3)2,Ca-O-P,mp-aaaaaikm,,72
+comp_mpaaaabqbg,competitor,,,K8 P6,K4P3,K-P,mp-aaaabqbg,,14
+comp_mpaaaaaien,competitor,,,K16 Al16 O32,KAlO2,Al-K-O,mp-aaaaaien,,64
+comp_mpaaaabani,competitor,,,Ca8 P8 O28,Ca2P2O7,Ca-O-P,mp-aaaabani,,44
+comp_mpaaaaalaf,competitor,,,K8 P8,KP,K-P,mp-aaaaalaf,,16
+comp_mpaaacqpbd,competitor,,,Ca6 Al4 P8,Ca3(AlP2)2,Al-Ca-P,mp-aaacqpbd,,18
+comp_mpaaabkddr,competitor,,,Ca1 O2,CaO2,Ca-O,mp-aaabkddr,,3
+comp_mpaaabevia,competitor,,,K24 Al8 P16,K3AlP2,Al-K-P,mp-aaabevia,,48
+comp_mpaaaabqst,competitor,,,Ca5 P8,Ca5P8,Ca-P,mp-aaaabqst,,13
+comp_mpaaaaahlv,competitor,,,K8 P8 O24,KPO3,K-O-P,mp-aaaaahlv,,40
+comp_mpaaactgem,competitor,,,K2 Al22 O34,KAl11O17,Al-K-O,mp-aaactgem,,58
+comp_mpaaaaanmw,competitor,,,Ca2 P6,CaP3,Ca-P,mp-aaaaanmw,,8
+comp_mpaaabgkzp,competitor,,,K8 P12,K2P3,K-P,mp-aaabgkzp,,20
+comp_mpaaacpkvh,competitor,,,K20,K,K,mp-aaacpkvh,,20
+comp_mpaaaaahyy,competitor,,,Ca4 P2 O1,Ca4P2O,Ca-O-P,mp-aaaaahyy,,7
+comp_mpaaabfxir,competitor,,,K12 Al8 P12 O48,K3Al2(PO4)3,Al-K-O-P,mp-aaabfxir,,80
+comp_mpaaacfzyv,competitor,,,Al4 P12 O36,Al(PO3)3,Al-O-P,mp-aaacfzyv,,52
+comp_mpaaacptlo,competitor,,,Ca16 Al6,Ca8Al3,Al-Ca,mp-aaacptlo,,22
+comp_mpaaabftcb,competitor,,,K12 P4 O16,K3PO4,K-O-P,mp-aaabftcb,,32
+comp_mpaaaaabrz,competitor,,,Al4 O6,Al2O3,Al-O,mp-aaaaabrz,,10
+comp_mpaaacqdgz,competitor,,,Ca72 P48 O192,Ca3(PO4)2,Ca-O-P,mp-aaacqdgz,,312
+comp_mpaaaaaafe,competitor,,,Al1,Al,Al,mp-aaaaaafe,,1
+comp_mpaaaaaabt,competitor,,,Ca1,Ca,Ca,mp-aaaaaabt,,1
+comp_mpaaaaachq,competitor,,,Al1 P1,AlP,Al-P,mp-aaaaachq,,2
+comp_mpaaacqdpv,competitor,,,K36 Al12 P24 O96,K3Al(PO4)2,Al-K-O-P,mp-aaacqdpv,,168
+comp_mpaaacqfgu,competitor,,,P42,P,P,mp-aaacqfgu,,42
+comp_mpaaackvmm,competitor,,,K3 Ca1 P2 O8,K3Ca(PO4)2,Ca-K-O-P,mp-aaackvmm,,14
+comp_mpaaaaadqi,competitor,,,P4 O10,P2O5,O-P,mp-aaaaadqi,,14
+comp_mpaaacrxno,competitor,,,Ca19 Mg2 P14 O56,Ca19Mg2(PO4)14,Ca-Mg-O-P,mp-aaacrxno,,91
+comp_mpaaacplvt,competitor,,,Mg149 P1,Mg149P,Mg-P,mp-aaacplvt,,150
+comp_mpaaaaadet,competitor,,,Mg17 Al12,Mg17Al12,Al-Mg,mp-aaaaadet,,29
+comp_mpaaacidek,competitor,,,Mg1,Mg,Mg,mp-aaacidek,,1
+comp_mpaaacpkdt,competitor,,,Ca1 Mg149,CaMg149,Ca-Mg,mp-aaacpkdt,,150
+comp_mpaaaaajts,competitor,,,Mg4 Al4 P4 O20,MgAlPO5,Al-Mg-O-P,mp-aaaaajts,,32
+comp_mpaaaaabwr,competitor,,,Mg1 O1,MgO,Mg-O,mp-aaaaabwr,,2
+comp_mpaaaaafga,competitor,,,Mg2 Al4 O8,MgAl2O4,Al-Mg-O,mp-aaaaafga,,14
+comp_mpaaaabboe,competitor,,,Mg4 P8 O24,Mg(PO3)2,Mg-O-P,mp-aaaabboe,,36
+comp_mpaaaaaaou,competitor,,,Mg2 P8,MgP4,Mg-P,mp-aaaaaaou,,10
+comp_mpaaaaawvt,competitor,,,Mg4 P16 O44,MgP4O11,Mg-O-P,mp-aaaaawvt,,64
+comp_mpaaaaadss,competitor,,,Mg24 P16,Mg3P2,Mg-P,mp-aaaaadss,,40
+comp_mpaaaaavhs,competitor,,,Mg6 P4 O16,Mg3(PO4)2,Mg-O-P,mp-aaaaavhs,,26
+comp_mpaaacplvw,competitor,,,Mg149 Al1,Mg149Al,Al-Mg,mp-aaacplvw,,150
+comp_mpaaaaadpo,competitor,,,Ca4 Mg8,CaMg2,Ca-Mg,mp-aaaaadpo,,12
+comp_mpaaackgnk,competitor,,,Mg4 Al8,MgAl2,Al-Mg,mp-aaackgnk,,12
+comp_mpaaabklgm,competitor,,,Ca16 Mg4 Al12,Ca4MgAl3,Al-Ca-Mg,mp-aaabklgm,,32
+comp_mpaaacqazi,competitor,,,Mg8 P8 O28,Mg2P2O7,Mg-O-P,mp-aaacqazi,,44
+comp_mpaaaaaoop,competitor,,,Sr6 Al4 P8,Sr3(AlP2)2,Al-P-Sr,mp-aaaaaoop,,18
+comp_mpaaaaafov,competitor,,,Sr8 P16 O48,Sr(PO3)2,O-P-Sr,mp-aaaaafov,,72
+comp_mpaaaaamhe,competitor,,,Sr4 P2 O1,Sr4P2O,O-P-Sr,mp-aaaaamhe,,7
+comp_mpaaaaabqr,competitor,,,Sr5 Al9,Sr5Al9,Al-Sr,mp-aaaaabqr,,14
+comp_mpaaaaadrc,competitor,,,Sr1 O1,SrO,O-Sr,mp-aaaaadrc,,2
+comp_mpaaaaacth,competitor,,,Sr6 P28,Sr3P14,P-Sr,mp-aaaaacth,,34
+comp_mpaaaaavdo,competitor,,,Sr6 P8,Sr3P4,P-Sr,mp-aaaaavdo,,14
+comp_mpaaaaaltb,competitor,,,Sr6 P6,SrP,P-Sr,mp-aaaaaltb,,12
+comp_mpaaaaboux,competitor,,,Sr4 P12 O34,Sr2P6O17,O-P-Sr,mp-aaaaboux,,50
+comp_mpaaaaafan,competitor,,,Sr72 Al48 O144,Sr3Al2O6,Al-O-Sr,mp-aaaaafan,,264
+comp_mpaaaaaiia,competitor,,,Sr8 P8 O28,Sr2P2O7,O-P-Sr,mp-aaaaaiia,,44
+comp_mpaaaaagwe,competitor,,,Sr3 P2 O8,Sr3(PO4)2,O-P-Sr,mp-aaaaagwe,,13
+comp_mpaaaabwhf,competitor,,,Sr24 P16,Sr3P2,P-Sr,mp-aaaabwhf,,40
+comp_mpaaaaaect,competitor,,,Sr1 Al4,SrAl4,Al-Sr,mp-aaaaaect,,5
+comp_mpaaaaafps,competitor,,,Sr2 Al8 O14,SrAl4O7,Al-O-Sr,mp-aaaaafps,,24
+comp_mpaaacqtxa,competitor,,,Sr10 P6 O26,Sr5P3O13,O-P-Sr,mp-aaacqtxa,,42
+comp_mpaaacrjco,competitor,,,Sr10 P6 O25,Sr10P6O25,O-P-Sr,mp-aaacrjco,,41
+comp_mpaaacpoar,competitor,,,Sr3,Sr,Sr,mp-aaacpoar,,3
+comp_mpaaaaaepa,competitor,,,Sr4 Al8 O16,SrAl2O4,Al-O-Sr,mp-aaaaaepa,,28
+comp_mpaaackxbq,competitor,,,Sr6 P12,SrP2,P-Sr,mp-aaackxbq,,18
+comp_mpaaaaadzt,competitor,,,Sr1 O2,SrO2,O-Sr,mp-aaaaadzt,,3
+comp_mpaaabgkzz,competitor,,,Sr4 P12,SrP3,P-Sr,mp-aaabgkzz,,16
+comp_mpaaaaadke,competitor,,,La16 O24,La2O3,La-O,mp-aaaaadke,,40
+comp_mpaaacqrmy,competitor,,,La3 Al1 O1,La3AlO,Al-La-O,mp-aaacqrmy,,5
+comp_mpaaaaastw,competitor,,,La4 Al4,LaAl,Al-La,mp-aaaaastw,,8
+comp_mpaaaaadns,competitor,,,La1 P1,LaP,La-P,mp-aaaaadns,,2
+comp_mpaaabsmjr,competitor,,,La16 Al8 O36,La4Al2O9,Al-La-O,mp-aaabsmjr,,60
+comp_mpaaabsjgg,competitor,,,La18 P6 O42,La3PO7,La-O-P,mp-aaabsjgg,,66
+comp_mpaaaaaahs,competitor,,,La4 P28,LaP7,La-P,mp-aaaaaahs,,32
+comp_mpaaaaamav,competitor,,,La3 P3 O12,LaPO4,La-O-P,mp-aaaaamav,,18
+comp_mpaaaaaykv,competitor,,,La3 Al11,La3Al11,Al-La,mp-aaaaaykv,,14
+comp_mpaaaaaaba,competitor,,,La4,La,La,mp-aaaaaaba,,4
+comp_mpaaaaaedw,competitor,,,La8 P16,LaP2,La-P,mp-aaaaaedw,,24
+comp_mpaaaaaoha,competitor,,,La2 P6 O18,La(PO3)3,La-O-P,mp-aaaaaoha,,26
+comp_mpaaacricq,competitor,,,Sr2 La2 Al6 O14,SrLaAl3O7,Al-La-O-Sr,mp-aaacricq,,24
+comp_mpaaaaacts,competitor,,,La4 P20,LaP5,La-P,mp-aaaaacts,,24
+comp_mpaaaaaeii,competitor,,,La2 Al2 O6,LaAlO3,Al-La-O,mp-aaaaaeii,,10
+comp_mpaaaaadzq,competitor,,,La2 Al4,LaAl2,Al-La,mp-aaaaadzq,,6
+comp_mpaaacqnzs,competitor,,,La4 P20 O56,LaP5O14,La-O-P,mp-aaacqnzs,,80
+comp_mpaaaaabkx,competitor,,,La2 Al6,LaAl3,Al-La,mp-aaaaabkx,,8
+comp_mpaaaabbij,competitor,,,Sr4 Mg4 P8 O28,SrMgP2O7,Mg-O-P-Sr,mp-aaaabbij,,44
+comp_mpaaacpofm,competitor,,,Sr2 Mg4,SrMg2,Mg-Sr,mp-aaacpofm,,6
+comp_mpaaaabtny,competitor,,,Sr6 Mg23,Sr6Mg23,Mg-Sr,mp-aaaabtny,,29
+comp_mpaaabcsxd,competitor,,,Ce2 P10 O28,CeP5O14,Ce-O-P,mp-aaabcsxd,,40
+comp_mpaaaaaiqt,competitor,,,Ce2 P6 O18,Ce(PO3)3,Ce-O-P,mp-aaaaaiqt,,26
+comp_mpaaaaamkk,competitor,,,Ce3 P3 O12,CePO4,Ce-O-P,mp-aaaaamkk,,18
+comp_mpaaabgijg,competitor,,,Ce4 P8,CeP2,Ce-P,mp-aaabgijg,,12
+comp_mpaaabghgm,competitor,,,Ce2,Ce,Ce,mp-aaabghgm,,2
+comp_mpaaaabdws,competitor,,,Ce1 O2,CeO2,Ce-O,mp-aaaabdws,,3
+comp_mpaaabewgf,competitor,,,Ce16 O24,Ce2O3,Ce-O,mp-aaabewgf,,40
+comp_mpaaabrgtf,competitor,,,Ce5 O9,Ce5O9,Ce-O,mp-aaabrgtf,,14
+comp_mpaaaabhii,competitor,,,Ce4 P8 O28,CeP2O7,Ce-O-P,mp-aaaabhii,,40
+comp_mpaaacgahd,competitor,,,Ce8 P32 O96,Ce(PO3)4,Ce-O-P,mp-aaacgahd,,136
+comp_mpaaaaadxd,competitor,,,Ce7 O12,Ce7O12,Ce-O,mp-aaaaadxd,,19
+comp_mpaaaaadew,competitor,,,Ce1 P1,CeP,Ce-P,mp-aaaaadew,,2
+comp_mpaaaaaxhn,competitor,,,Sr4 Ce2 O8,Sr2CeO4,Ce-O-Sr,mp-aaaaaxhn,,14
+comp_mpaaaaapvc,competitor,,,Ce1 O1,CeO,Ce-O,mp-aaaaapvc,,2
+comp_mpaaaaadmm,competitor,,,Na2 O1,Na2O,Na-O,mp-aaaaadmm,,3
+comp_mpaaabewey,competitor,,,Na8 Ca2 P12 O36,Na4Ca(PO3)6,Ca-Na-O-P,mp-aaabewey,,58
+comp_mpaaaaaasf,competitor,,,Na12 P44,Na3P11,Na-P,mp-aaaaaasf,,56
+comp_mpaaaaafvc,competitor,,,Na10 P6 O20,Na5P3O10,Na-O-P,mp-aaaaafvc,,36
+comp_mpaaaaavhx,competitor,,,Na12 Ca12 P12 O48,NaCaPO4,Ca-Na-O-P,mp-aaaaavhx,,84
+comp_mpaaaabout,competitor,,,Na16 P8 O28,Na4P2O7,Na-O-P,mp-aaaabout,,52
+comp_mpaaaaadma,competitor,,,Na6 O6,Na2O2,Na-O,mp-aaaaadma,,12
+comp_mpaaacgbxb,competitor,,,Na2 Ca2 P6 O18,NaCa(PO3)3,Ca-Na-O-P,mp-aaacgbxb,,28
+comp_mpaaaaacvd,competitor,,,Na2 O4,NaO2,Na-O,mp-aaaaacvd,,6
+comp_mpaaaaacjm,competitor,,,Na6 P2,Na3P,Na-P,mp-aaaaacjm,,8
+comp_mpaaaaalae,competitor,,,Na8 P8,NaP,Na-P,mp-aaaaalae,,16
+comp_mpaaacpmon,competitor,,,Na29,Na,Na,mp-aaacpmon,,29
+comp_mpaaabfygy,competitor,,,Na4 Ca2 P4 O14,Na2CaP2O7,Ca-Na-O-P,mp-aaabfygy,,24
+comp_mpaaacrmma,competitor,,,Na2 Ca20 P14 O56,NaCa10(PO4)7,Ca-Na-O-P,mp-aaacrmma,,92
+comp_mpaaacgaoj,competitor,,,K4 Na6 P6 O20,K2Na3P3O10,K-Na-O-P,mp-aaacgaoj,,36
+comp_mpaaabfpes,competitor,,,Na12 P12 O36,NaPO3,Na-O-P,mp-aaabfpes,,60
+comp_mpaaacqaxt,competitor,,,Na8 P56,NaP7,Na-P,mp-aaacqaxt,,64
+comp_mpaaabmjnx,competitor,,,Na6 P2 O8,Na3PO4,Na-O-P,mp-aaabmjnx,,16
+comp_mpaaaaabuv,competitor,,,K32 Si32,KSi,K-Si,mp-aaaaabuv,,64
+comp_mpaaaaaimn,competitor,,,Ca12 Si12 O36,CaSiO3,Ca-O-Si,mp-aaaaaimn,,60
+comp_mpaaacrcbk,competitor,,,Ca32 Si8 P32,Ca4SiP4,Ca-P-Si,mp-aaacrcbk,,72
+comp_mpaaaabbrg,competitor,,,K16 Si4 O16,K4SiO4,K-O-Si,mp-aaaabbrg,,36
+comp_mpaaaabtvy,competitor,,,K12 Si4 O14,K6Si2O7,K-O-Si,mp-aaaabtvy,,30
+comp_mpaaaaahbl,competitor,,,Si4 P8 O28,SiP2O7,O-P-Si,mp-aaaaahbl,,40
+comp_mpaaaaagqj,competitor,,,Ca8 Si4 O16,Ca2SiO4,Ca-O-Si,mp-aaaaagqj,,28
+comp_mpaaacganb,competitor,,,K4 Ca6 Si6 O20,K2Ca3Si3O10,Ca-K-O-Si,mp-aaacganb,,36
+comp_mpaaaaaaft,competitor,,,Si2,Si,Si,mp-aaaaaaft,,2
+comp_mpaaabfcwo,competitor,,,Si2 O4,SiO2,O-Si,mp-aaabfcwo,,6
+comp_mpaaaaacid,competitor,,,Ca2 Si2,CaSi,Ca-Si,mp-aaaaacid,,4
+comp_mpaaacqpaw,competitor,,,Ca6 Si2 O2,Ca3SiO,Ca-O-Si,mp-aaacqpaw,,10
+comp_mpaaacrvrs,competitor,,,Ca20 Si4 P8 O48,Ca5Si(PO6)2,Ca-O-P-Si,mp-aaacrvrs,,80
+comp_mpaaaaamet,competitor,,,K4 Si2 P4,K2SiP2,K-P-Si,mp-aaaaamet,,10
+comp_mpaaaaaevx,competitor,,,Si5 P6 O25,Si5P6O25,O-P-Si,mp-aaaaaevx,,36
+comp_mpaaaaadsv,competitor,,,Ca8 Si4,Ca2Si,Ca-Si,mp-aaaaadsv,,12
+comp_mpaaacgana,competitor,,,K2 Ca4 Si8 O21,K2Ca4Si8O21,Ca-K-O-Si,mp-aaacgana,,35
+comp_mpaaaaaedq,competitor,,,Si12 P12,SiP,P-Si,mp-aaaaaedq,,24
+comp_mpaaaaaoum,competitor,,,Si8 P16,SiP2,P-Si,mp-aaaaaoum,,24
+comp_mpaaacpzok,competitor,,,Ca12 Si8 P16,Ca3(SiP2)2,Ca-P-Si,mp-aaacpzok,,36
+comp_mpaaaaawtn,competitor,,,K24 Si12 O36,K2SiO3,K-O-Si,mp-aaaaawtn,,72
+comp_mpaaaabsdd,competitor,,,K12 Si12 O30,K2Si2O5,K-O-Si,mp-aaaabsdd,,54
+comp_mpaaacqaau,competitor,,,Ca6 Si16 P28,Ca3(Si4P7)2,Ca-P-Si,mp-aaacqaau,,50
+comp_mpaaaaaben,competitor,,,Ca10 Si6,Ca5Si3,Ca-Si,mp-aaaaaben,,16
+comp_mpaaabfuit,competitor,,,K4 Si8 O18,K2Si4O9,K-O-Si,mp-aaabfuit,,30
+comp_mpaaaaaicn,competitor,,,Ca4 Mg4 Si4,CaMgSi,Ca-Mg-Si,mp-aaaaaicn,,12
+comp_mpaaaaaehj,competitor,,,Mg8 Si4 O16,Mg2SiO4,Mg-O-Si,mp-aaaaaehj,,28
+comp_mpaaaaacap,competitor,,,Mg2 Si1,Mg2Si,Mg-Si,mp-aaaaacap,,3
+comp_mpaaaaakag,competitor,,,Ca2 Mg2 Si4 O12,CaMg(SiO3)2,Ca-Mg-O-Si,mp-aaaaakag,,20
+comp_mpaaaaajpt,competitor,,,Ca4 Mg4 Si4 O16,CaMgSiO4,Ca-Mg-O-Si,mp-aaaaajpt,,28
+comp_mpaaaaaejx,competitor,,,Mg2 Si2 P4,MgSiP2,Mg-P-Si,mp-aaaaaejx,,8
+comp_mpaaacplxi,competitor,,,Mg149 Si1,Mg149Si,Mg-Si,mp-aaacplxi,,150
+comp_mpaaaabtuj,competitor,,,Sr12 Si4 O4,Sr3SiO,O-Si-Sr,mp-aaaabtuj,,20
+comp_mpaaaaakmm,competitor,,,Sr4 Ca4 Si4,SrCaSi,Ca-Si-Sr,mp-aaaaakmm,,12
+comp_mpaaaaabcs,competitor,,,Sr10 Si6,Sr5Si3,Si-Sr,mp-aaaaabcs,,16
+comp_mpaaacquee,competitor,,,Sr32 Si8 P32,Sr4SiP4,P-Si-Sr,mp-aaacquee,,72
+comp_mpaaaaacol,competitor,,,Sr2 Si4,SrSi2,Si-Sr,mp-aaaaacol,,6
+comp_mpaaaaadyj,competitor,,,Sr2 Si2,SrSi,Si-Sr,mp-aaaaadyj,,4
+comp_mpaaaaabqo,competitor,,,Sr8 Si4,Sr2Si,Si-Sr,mp-aaaaabqo,,12
+comp_mpaaaaafxa,competitor,,,Sr6 Si6 O18,SrSiO3,O-Si-Sr,mp-aaaaafxa,,30
+comp_mpaaaabbjy,competitor,,,Sr8 Si4 O16,Sr2SiO4,O-Si-Sr,mp-aaaabbjy,,28
+comp_mpaaaaacre,competitor,,,Ce1 Mg3,CeMg3,Ce-Mg,mp-aaaaacre,,4
+comp_mpaaacpwtf,competitor,,,Ce6 Mg23 P1,Ce6Mg23P,Ce-Mg-P,mp-aaacpwtf,,30
+comp_mpaaaaadvr,competitor,,,Ti12 O4,Ti3O,O-Ti,mp-aaaaadvr,,16
+comp_mpaaaaabut,competitor,,,Ti2 O1,Ti2O,O-Ti,mp-aaaaabut,,3
+comp_mpaaaaaacu,competitor,,,Ti3,Ti,Ti,mp-aaaaaacu,,3
+comp_mpaaaabssg,competitor,,,Ti6 P3,Ti2P,P-Ti,mp-aaaabssg,,9
+comp_mpaaacrnus,competitor,,,Mg1 Ti4 P6 O24,MgTi4(PO4)6,Mg-O-P-Ti,mp-aaacrnus,,35
+comp_mpaaabrjwx,competitor,,,Mg3 Ti9 O20,Mg3Ti9O20,Mg-O-Ti,mp-aaabrjwx,,32
+comp_mpaaabfvsk,competitor,,,Ti20 P16 O80,Ti5(PO5)4,O-P-Ti,mp-aaabfvsk,,116
+comp_mpaaacrgjs,competitor,,,Ti6 P2 O1,Ti6P2O,O-P-Ti,mp-aaacrgjs,,9
+comp_mpaaaaabsd,competitor,,,Ti6 O10,Ti3O5,O-Ti,mp-aaaaabsd,,16
+comp_mpaaacptyt,competitor,,,Ti14 P8,Ti7P4,P-Ti,mp-aaacptyt,,22
+comp_mpaaabrfyy,competitor,,,Mg5 Ti13 O30,Mg5Ti13O30,Mg-O-Ti,mp-aaabrfyy,,48
+comp_mpaaaabueo,competitor,,,Ti24 P8,Ti3P,P-Ti,mp-aaaabueo,,32
+comp_mpaaacplxn,competitor,,,Mg149 Ti1,Mg149Ti,Mg-Ti,mp-aaacplxn,,150
+comp_mpaaaabptw,competitor,,,Mg2 Ti4 O10,MgTi2O5,Mg-O-Ti,mp-aaaabptw,,16
+comp_mpaaabrbwp,competitor,,,Mg8 Ti4 O16,Mg2TiO4,Mg-O-Ti,mp-aaabrbwp,,28
+comp_mpaaabrsoj,competitor,,,Ce8 Ti4 O20,Ce2TiO5,Ce-O-Ti,mp-aaabrsoj,,32
+comp_mpaaaciyop,competitor,,,Ti3 O3,TiO,O-Ti,mp-aaaciyop,,6
+comp_mpaaabfnrm,competitor,,,Ti12 O2,Ti6O,O-Ti,mp-aaabfnrm,,14
+comp_mpaaaaaarq,competitor,,,Ti4 O6,Ti2O3,O-Ti,mp-aaaaaarq,,10
+comp_mpaaabrdbd,competitor,,,Mg11 Ti25 O60,Mg11Ti25O60,Mg-O-Ti,mp-aaabrdbd,,96
+comp_mpaaabrfva,competitor,,,Mg4 Ti14 O30,Mg2Ti7O15,Mg-O-Ti,mp-aaabrfva,,48
+comp_mpaaaaafpb,competitor,,,Mg2 Ti2 O6,MgTiO3,Mg-O-Ti,mp-aaaaafpb,,10
+comp_mpaaaabebv,competitor,,,Ti4 P8,TiP2,P-Ti,mp-aaaabebv,,12
+comp_mpaaabfnyk,competitor,,,Ti4 O8,TiO2,O-Ti,mp-aaabfnyk,,12
+comp_mpaaaaabcl,competitor,,,Ti4 P4,TiP,P-Ti,mp-aaaaabcl,,8
+comp_mpaaabrhtq,competitor,,,Ti4 P8 O28,TiP2O7,O-P-Ti,mp-aaabrhtq,,40
+comp_mpaaabfxzl,competitor,,,Mg2 Ti4 P4 O20,MgTi2(PO5)2,Mg-O-P-Ti,mp-aaabfxzl,,30
+comp_mpaaabgllv,competitor,,,Ce10 Si6,Ce5Si3,Ce-Si,mp-aaabgllv,,16
+comp_mpaaaabfgd,competitor,,,Ce4 Si4,CeSi,Ce-Si,mp-aaaabfgd,,8
+comp_mpaaablsbv,competitor,,,Ce8 Si8 O28,Ce2Si2O7,Ce-O-Si,mp-aaablsbv,,44
+comp_mpaaabfpxx,competitor,,,Ce10 Si8 O3,Ce10Si8O3,Ce-O-Si,mp-aaabfpxx,,21
+comp_mpaaaaacva,competitor,,,Ce2 Si4,CeSi2,Ce-Si,mp-aaaaacva,,6
+comp_mpaaaabqnk,competitor,,,Sr2 Ti22 O40,SrTi11O20,O-Sr-Ti,mp-aaaabqnk,,64
+comp_mpaaaaazpi,competitor,,,Sr1 Ti4 P6 O24,SrTi4(PO4)6,O-P-Sr-Ti,mp-aaaaazpi,,35
+comp_mpaaaaawye,competitor,,,Sr32 Ti8 P32,Sr4TiP4,P-Sr-Ti,mp-aaaaawye,,72
+comp_mpaaaaaieu,competitor,,,Sr2 Ti1 O4,Sr2TiO4,O-Sr-Ti,mp-aaaaaieu,,7
+comp_mpaaacptzz,competitor,,,Sr2 Ti2 P4 O16,SrTi(PO4)2,O-P-Sr-Ti,mp-aaacptzz,,24
+comp_mpaaaaagwx,competitor,,,Sr2 Ti2 O6,SrTiO3,O-Sr-Ti,mp-aaaaagwx,,10
+comp_mpaaaaaeyv,competitor,,,Sr3 Ti2 O7,Sr3Ti2O7,O-Sr-Ti,mp-aaaaaeyv,,12
+comp_mpaaabettw,competitor,,,Sr2 Ti6 O13,Sr2Ti6O13,O-Sr-Ti,mp-aaabettw,,21
+comp_mpaaabfqzn,competitor,,,Y4 P20 O56,YP5O14,O-P-Y,mp-aaabfqzn,,80
+comp_mpaaaaadya,competitor,,,Y16 O24,Y2O3,O-Y,mp-aaaaadya,,40
+comp_mpaaabfodz,competitor,,,Y8 P24 O72,Y(PO3)3,O-P-Y,mp-aaabfodz,,104
+comp_mpaaacppah,competitor,,,Y3,Y,Y,mp-aaacppah,,3
+comp_mpaaaaabmg,competitor,,,Y1 P1,YP,P-Y,mp-aaaaabmg,,2
+comp_mpaaaaahpk,competitor,,,Y2 P2 O8,YPO4,O-P-Y,mp-aaaaahpk,,12
+comp_mpaaaaabqm,competitor,,,La1 Mg1,LaMg,La-Mg,mp-aaaaabqm,,2
+comp_mpaaabftzv,competitor,,,La20 Ti20 O68,La5Ti5O17,La-O-Ti,mp-aaabftzv,,108
+comp_mpaaaabash,competitor,,,La8 Ti4 O20,La2TiO5,La-O-Ti,mp-aaaabash,,32
+comp_mpaaacpwfw,competitor,,,La6 Mg23 P1,La6Mg23P,La-Mg-P,mp-aaacpwfw,,30
+comp_mpaaacqyhq,competitor,,,La5 Mg41,La5Mg41,La-Mg,mp-aaacqyhq,,46
+comp_mpaaacrqqh,competitor,,,La2 Ti12 P18 O72,LaTi6(PO4)9,La-O-P-Ti,mp-aaacrqqh,,104
+comp_mpaaaaasay,competitor,,,La16 Ti16 O56,La2Ti2O7,La-O-Ti,mp-aaaaasay,,88
+comp_mpaaaaadks,competitor,,,La1 Mg3,LaMg3,La-Mg,mp-aaaaadks,,4
+comp_mpaaaaadbi,competitor,,,La2 Si4,LaSi2,La-Si,mp-aaaaadbi,,6
+comp_mpaaaabreo,competitor,,,La8 Si16 P48,La(SiP3)2,La-P-Si,mp-aaaabreo,,72
+comp_mpaaacridt,competitor,,,Sr2 La8 Si6 O26,SrLa4Si3O13,La-O-Si-Sr,mp-aaacridt,,42
+comp_mpaaaaakml,competitor,,,La4 Si4,LaSi,La-Si,mp-aaaaakml,,8
+comp_mpaaaaaimm,competitor,,,La8 Si8 O28,La2Si2O7,La-O-Si,mp-aaaaaimm,,44
+comp_mpaaaaaqfp,competitor,,,La10 Si6,La5Si3,La-Si,mp-aaaaaqfp,,16
+comp_mpaaacsdba,competitor,,,La8 Si8 P24,LaSiP3,La-P-Si,mp-aaacsdba,,40
+comp_mpaaaaahqe,competitor,,,La8 Si4 O20,La2SiO5,La-O-Si,mp-aaaaahqe,,32
+comp_mpaaaabqxm,competitor,,,Sr8 Mg8 Si16,SrMgSi2,Mg-Si-Sr,mp-aaaabqxm,,32
+comp_mpaaaaaxdq,competitor,,,Sr4 Mg4 Si4,SrMgSi,Mg-Si-Sr,mp-aaaaaxdq,,12
+comp_mpaaaaajsm,competitor,,,Sr4 Mg2 Si4 O14,Sr2MgSi2O7,Mg-O-Si-Sr,mp-aaaaajsm,,24
+comp_mpaaaabrsk,competitor,,,Sr52 Mg8 Si80,Sr13(MgSi10)2,Mg-Si-Sr,mp-aaaabrsk,,140

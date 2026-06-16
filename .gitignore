@@ -30,3 +30,7 @@ mainNotes.bib
 01_data/_compile_status.txt
 **/*.slurm
 01_data/cc.log
+
+# MLFF raw working dir (curated copies live in 01_data/ and 02_scripts/mlff_stability/)
+06_mlff_stability/
+smoke_mlff.sh

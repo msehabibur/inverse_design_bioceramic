@@ -33,16 +33,16 @@ import matplotlib.pyplot as plt
 
 plt.rcParams.update({
     "font.family":       ["Arial Narrow", "Arial", "Helvetica Neue", "DejaVu Sans"],
-    "font.size":         22,
+    "font.size":         32,
     "font.weight":       "normal",
-    "axes.titlesize":    22,
+    "axes.titlesize":    32,
     "axes.titleweight":  "normal",
-    "axes.labelsize":    22,
+    "axes.labelsize":    32,
     "axes.labelweight":  "normal",
-    "xtick.labelsize":   22,
-    "ytick.labelsize":   16,
-    "legend.fontsize":   22,
-    "figure.titlesize":  22,
+    "xtick.labelsize":   30,
+    "ytick.labelsize":   30,
+    "legend.fontsize":   30,
+    "figure.titlesize":  32,
     "figure.titleweight":"normal",
 })
 
@@ -68,7 +68,7 @@ SHOWCASE_LABEL = {
 df = pd.read_csv(os.path.join(DATA, "stability_check.csv"))
 print(f"Loaded {len(df)} stability records")
 
-fig, axes = plt.subplots(2, 3, figsize=(16.5, 10.5))
+fig, axes = plt.subplots(2, 3, figsize=(20, 13.5))
 
 
 # (a) (b) (c) per-showcase hull-energy bars ---------------------------------
@@ -83,7 +83,7 @@ for col, sc in enumerate(["enamel", "dentin", "implant"]):
     ax.set_ylabel("Hull energy at composition\n(eV/atom)")
     panel = "abc"[col]
     ax.set_title(f"({panel})  {SHOWCASE_LABEL[sc]}", loc="left")
-    ax.tick_params(axis="x", rotation=0, labelsize=15)
+    ax.tick_params(axis="x", rotation=0, labelsize=28)
 
 
 # (d) chemsys coverage --------------------------------------------------------
@@ -95,10 +95,10 @@ chemsys_df = df.groupby("chemsys").agg(
 bar_colors = [SHOWCASE_COLOR[s.split(",")[0].strip()] for s in chemsys_df["showcase"]]
 ax.barh(chemsys_df["chemsys"], chemsys_df["n_mp_entries"], color=bar_colors,
         alpha=0.85, height=0.78)
-ax.set_xlabel("MP entries in chemsys")
+ax.set_xlabel("Materials Project entries")
 ax.set_ylabel("")
 ax.set_title("(d)  Chemistry coverage", loc="left")
-ax.tick_params(axis="x", labelsize=15)
+ax.tick_params(axis="x", labelsize=28)
 ax.margins(y=0.01)
 ax.set_xlim(0, chemsys_df["n_mp_entries"].max() * 1.22)
 # show only a few y-tick labels (every Nth) at a larger, readable font
@@ -106,7 +106,7 @@ _n = len(chemsys_df)
 _step = max(1, _n // 6)
 _pos = list(range(0, _n, _step))
 ax.set_yticks(_pos)
-ax.set_yticklabels([chemsys_df["chemsys"].iloc[i] for i in _pos], fontsize=15)
+ax.set_yticklabels([chemsys_df["chemsys"].iloc[i] for i in _pos], fontsize=28)
 
 
 # (e) hull energy vs predicted modulus -- all candidates --------------------
@@ -120,7 +120,7 @@ for sc in ["enamel", "dentin", "implant"]:
 ax.set_xlabel("Predicted modulus (GPa)")
 ax.set_ylabel("Hull energy (eV/atom)")
 ax.set_title("(e)  Hull energy vs predicted modulus", loc="left")
-ax.legend(loc="upper right", frameon=False, fontsize=18)
+ax.legend(loc="upper right", frameon=False, fontsize=28)
 ax.grid(alpha=0.25)
 
 
@@ -151,7 +151,7 @@ for x, m in zip(xpos, means):
     ax.text(x, m + 0.05, f"{m:.1f}", ha="center", va="bottom")
 ax.set_xticks(xpos)
 ax.set_xticklabels(labels)
-ax.set_ylabel("Distinct phases in decomp.\n(mean across 15 candidates)")
+ax.set_ylabel("Distinct phases in decomposition\n(mean across 15 candidates)")
 ax.set_title("(f)  Decomposition diversity", loc="left")
 
 fig.tight_layout(pad=1.4, h_pad=2.4, w_pad=1.6)

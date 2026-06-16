@@ -9,16 +9,16 @@ from paths import DATA, MANUSCRIPT
 
 plt.rcParams.update({
     "font.family": ["Arial Narrow", "Arial", "Helvetica Neue", "DejaVu Sans"],
-    "font.size": 20, "font.weight": "normal",
-    "axes.titlesize": 22, "axes.titleweight": "normal",
-    "axes.labelsize": 20, "axes.labelweight": "normal",
-    "xtick.labelsize": 17, "ytick.labelsize": 17, "legend.fontsize": 17,
+    "font.size": 28, "font.weight": "normal",
+    "axes.titlesize": 28, "axes.titleweight": "normal",
+    "axes.labelsize": 28, "axes.labelweight": "normal",
+    "xtick.labelsize": 26, "ytick.labelsize": 26, "legend.fontsize": 26,
 })
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}
 TARGET = {"enamel": 85.0, "dentin": 20.0, "implant": 110.0}
 
 df = pd.read_csv(os.path.join(DATA, "uncertainty_intervals.csv"))
-fig, ax = plt.subplots(1, 3, figsize=(16.5, 5.2))
+fig, ax = plt.subplots(1, 3, figsize=(19, 6.8))
 for j, sc in enumerate(["enamel", "dentin", "implant"]):
     s = df[df.showcase == sc].reset_index(drop=True)
     x = np.arange(len(s)); yv = s["pred_E_GPa"].values
@@ -26,7 +26,7 @@ for j, sc in enumerate(["enamel", "dentin", "implant"]):
                    fmt="o", color=COL[sc], capsize=4, lw=1.4, ms=6)
     ax[j].axhline(TARGET[sc], ls=":", color="#D97F33", lw=2,
                   label=f"Target {TARGET[sc]:.0f} GPa")
-    ax[j].set_title(f"{sc.capitalize()} — 90% Conformal Prediction Interval", loc="left")
+    ax[j].set_title(f"{sc.capitalize()}", loc="left")
     ax[j].set_xlabel("Candidate (Ranked)")
     ax[j].set_ylabel("Predicted Young's Modulus (GPa)")
     ax[j].legend(frameon=False, loc="best")

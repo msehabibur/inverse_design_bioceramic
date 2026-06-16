@@ -118,10 +118,10 @@ for sc, *_ in JOBS:
 
 plt.rcParams.update({
     "font.family": ["Arial Narrow", "Arial", "DejaVu Sans"],
-    "font.size": 14, "axes.titlesize": 16, "axes.labelsize": 15,
-    "xtick.labelsize": 13, "ytick.labelsize": 13, "legend.fontsize": 13,
+    "font.size": 28, "axes.titlesize": 28, "axes.labelsize": 28,
+    "xtick.labelsize": 26, "ytick.labelsize": 26, "legend.fontsize": 26,
 })
-fig, ax = plt.subplots(1, 3, figsize=(16, 5))
+fig, ax = plt.subplots(1, 3, figsize=(19, 6.8))
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}
 for j, (sc, _, target, _) in enumerate(JOBS):
     s = out[out.showcase == sc].reset_index(drop=True)
