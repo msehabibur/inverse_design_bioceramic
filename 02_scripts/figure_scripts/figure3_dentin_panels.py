@@ -24,16 +24,16 @@ import matplotlib.pyplot as plt
 # Global typography: Arial Narrow, size 22, no bold
 plt.rcParams.update({
     "font.family":       ["Arial Narrow", "Arial", "Helvetica Neue", "DejaVu Sans"],
-    "font.size":         34,
+    "font.size":         32,
     "font.weight":       "normal",
-    "axes.titlesize":    34,
+    "axes.titlesize":    32,
     "axes.titleweight":  "normal",
-    "axes.labelsize":    34,
+    "axes.labelsize":    32,
     "axes.labelweight":  "normal",
-    "xtick.labelsize":   32,
-    "ytick.labelsize":   32,
-    "legend.fontsize":   32,
-    "figure.titlesize":  34,
+    "xtick.labelsize":   30,
+    "ytick.labelsize":   30,
+    "legend.fontsize":   30,
+    "figure.titlesize":  32,
     "figure.titleweight":"normal",
 })
 
@@ -87,18 +87,18 @@ vol  = joblib.load(os.path.join(DATA, "model_volperatom_dentin.joblib"))
 print("CV predictions for modulus / hardness / V-per-atom ...")
 X_E = df[mod["features"]]
 y_E_log = np.log10(df["youngs_modulus_GPa"].values)
-pred_E_log = cross_val_predict(clone(mod["model"]), X_E, y_E_log, cv=5, n_jobs=1)
+pred_E_log = cross_val_predict(clone(mod["model"]), X_E, y_E_log, cv=5, n_jobs=4)
 actual_E, pred_E = 10 ** y_E_log, 10 ** pred_E_log
 r2_E = r2_score(y_E_log, pred_E_log)
 
 hv = df[df["hardness_GPa"] > 0].reset_index(drop=True)
 X_H = hv[hard["features"]]; y_H = hv["hardness_GPa"].values
-pred_H_cv = cross_val_predict(clone(hard["model"]), X_H, y_H, cv=5, n_jobs=1)
+pred_H_cv = cross_val_predict(clone(hard["model"]), X_H, y_H, cv=5, n_jobs=4)
 r2_H = r2_score(y_H, pred_H_cv)
 mae_H = mean_absolute_error(y_H, pred_H_cv)
 
 X_V = df[vol["features"]]; y_V = df["vol_per_atom"].values
-pred_V_cv = cross_val_predict(clone(vol["model"]), X_V, y_V, cv=5, n_jobs=1)
+pred_V_cv = cross_val_predict(clone(vol["model"]), X_V, y_V, cv=5, n_jobs=4)
 mean_mass = np.array([Composition(f).weight / Composition(f).num_atoms
                       for f in df["formula"]])
 pred_rho = AMU_PER_A3_TO_GCC * mean_mass / pred_V_cv
@@ -222,8 +222,8 @@ ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
 ax.set_aspect("equal", "box")
 ax.set_yticks(ax.get_xticks())
 ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
-ax.set_xlabel("Materials Project density (g/cm³)")
-ax.set_ylabel("Derived density from V/atom model (g/cm³)")
+ax.set_xlabel("Materials Project density (g/cm$^3$)")
+ax.set_ylabel("Derived density (g/cm$^3$)")
 ax.set_title("(c)  Density", loc="left")
 ax.legend(loc="lower right", frameon=False)
 
@@ -232,8 +232,8 @@ ax.legend(loc="lower right", frameon=False)
 ax = axes[1, 0]
 ax.plot(range(len(gen_best_fit)), gen_best_fit, "-o", color=BLUE, lw=1.8, ms=6)
 ax.set_xlabel("Generation")
-ax.set_ylabel("Best fitness  (lower = closer to dentin)")
-ax.set_title("(d)  Genetic algorithm convergence", loc="left")
+ax.set_ylabel("Best fitness")
+ax.set_title("(d)  Convergence", loc="left")
 ax.grid(alpha=0.3)
 
 
@@ -245,10 +245,10 @@ ax.axvline(TARGET_E,   ls="--", color=ORANGE, lw=1.3)
 ax.axhline(TARGET_RHO, ls="--", color=ORANGE, lw=1.3)
 ax.scatter([TARGET_E], [TARGET_RHO], marker="*", s=260, color=ORANGE,
            edgecolor="k", lw=0.8, zorder=5, label="dentin target")
-cb = plt.colorbar(sc, ax=ax, shrink=0.85); cb.set_label("Generation")
+cb = plt.colorbar(sc, ax=ax, fraction=0.046, pad=0.04); cb.set_label("Generation")
 ax.set_xlabel("Predicted modulus (GPa)")
 ax.set_ylabel("Predicted density (g/cm³)")
-ax.set_title("(e)  Genetic algorithm population evolution", loc="left")
+ax.set_title("(e)  Population evolution", loc="left")
 ax.legend(loc="upper right", frameon=False)
 
 
@@ -263,11 +263,11 @@ ax.text(0.98, TARGET_E, f"target = {TARGET_E:.0f} GPa",
         transform=ax.get_yaxis_transform())
 ax.set_xlabel("Candidate (ranked)")
 ax.set_ylabel("Predicted modulus (GPa)")
-ax.set_title("(f)  Top-15 candidates: modulus", loc="left")
-ax.tick_params(axis="x", rotation=0, labelsize=30)
+ax.set_title("(f)  Top-15 candidates", loc="left")
+ax.tick_params(axis="x", rotation=0, labelsize=28)
 
 
-fig.tight_layout()
+fig.tight_layout(pad=0.6, h_pad=1.0, w_pad=0.8)
 out = os.path.join(MANUSCRIPT, "Figure5_dentin_panels.png")
 fig.savefig(out, dpi=220)
 print(f"\nsaved -> {out}")

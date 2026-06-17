@@ -12,7 +12,7 @@ for o, n in {"pymatgen.core.entries": "pymatgen.entries.computed_entries",
     except Exception: pass
 
 BASE = "/anvil/scratch/x-mrahman2/Purdue_Projects/Inverse_Design_of_Bioceramics_by_Machine_Learning/06_mlff_stability/"
-MODELS = ["chgnet", "m3gnet", "mace", "mattersim", "grace", "omni"]
+MODELS = ["chgnet", "m3gnet", "mace", "mattersim", "omni"]
 
 man = pd.read_csv(BASE + "manifest.csv")
 chemsys_map = json.load(open(BASE + "chemsys_map.json"))

@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 
 plt.rcParams.update({
     "font.family": ["Arial Narrow", "Arial", "DejaVu Sans"],
-    "font.size": 32, "font.weight": "normal",
-    "axes.titlesize": 32, "axes.labelsize": 32,
-    "xtick.labelsize": 28, "ytick.labelsize": 28, "legend.fontsize": 26,
+    "font.size": 30, "font.weight": "normal",
+    "axes.titlesize": 30, "axes.labelsize": 30,
+    "xtick.labelsize": 26, "ytick.labelsize": 26, "legend.fontsize": 24,
 })
 BASE = "/anvil/scratch/x-mrahman2/Purdue_Projects/Inverse_Design_of_Bioceramics_by_Machine_Learning/"
 S = BASE + "06_mlff_stability/"
@@ -18,7 +18,7 @@ DATA = BASE + "01_data/"
 MAN = BASE + "04_manuscript/"
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}
 LAB = {"enamel": "Enamel", "dentin": "Dentin", "implant": "Implant"}
-MODELS = ["chgnet", "m3gnet", "mace", "mattersim", "grace", "omni"]
+MODELS = ["chgnet", "m3gnet", "mace", "mattersim", "omni"]
 MLAB = {"chgnet": "CHGNet", "m3gnet": "M3GNet", "mace": "MACE",
         "mattersim": "MatterSim", "grace": "GRACE", "omni": "SevenNet"}
 
@@ -53,11 +53,11 @@ hi = (rhi - d["ehull_median"].values).clip(min=0)
 ax[0, 0].bar(x, d["ehull_median"], color=colors, alpha=0.85)
 ax[0, 0].errorbar(x, d["ehull_median"], yerr=[lo, hi], fmt="none", ecolor="#333333", lw=1.3, capsize=3)
 ax[0, 0].axhline(0.05, ls=":", color="#C0392B", lw=2.5)
-ax[0, 0].text(1, 0.10, "Near-stable threshold (0.05)", color="#C0392B", fontsize=24, va="bottom")
+ax[0, 0].text(1, 0.10, "Near-stable threshold (0.05)", color="#C0392B", fontsize=22, va="bottom")
 ax[0, 0].set_ylim(0, max(rhi.max(), d["ehull_median"].max()) * 1.08)
 ax[0, 0].set_xlabel("Candidate (sorted)")
 ax[0, 0].set_ylabel("Energy above hull (eV/atom)")
-ax[0, 0].set_title("(a)  Six-model consensus stability", loc="left")
+ax[0, 0].set_title("(a)  Five-model consensus stability", loc="left")
 hands = [plt.Rectangle((0, 0), 1, 1, color=COL[s]) for s in COL]
 ax[0, 0].legend(hands, [LAB[s] for s in COL], frameon=False, loc="upper left")
 
