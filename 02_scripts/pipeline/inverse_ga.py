@@ -29,7 +29,7 @@ import joblib
 from pymatgen.core import Composition
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA
+from paths import DATA, MODELS
 from pymoo.core.problem import Problem
 from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.optimize import minimize
@@ -47,9 +47,9 @@ CATIONS = list(CHARGE)
 MAX_COUNT = 6      # largest count of any single cation in a formula unit
 SEEDS = [42, 1, 7, 13, 21]   # repeat the search; keep best per distinct formula
 
-mod = joblib.load(os.path.join(DATA, "model_modulus.joblib"))
-hard = joblib.load(os.path.join(DATA, "model_hardness.joblib"))
-vol = joblib.load(os.path.join(DATA, "model_volperatom.joblib"))
+mod = joblib.load(os.path.join(MODELS, "model_modulus.joblib"))
+hard = joblib.load(os.path.join(MODELS, "model_hardness.joblib"))
+vol = joblib.load(os.path.join(MODELS, "model_volperatom.joblib"))
 featurizer = make_featurizer()
 AMU_PER_A3_TO_GCC = 1.66054      # (amu / A^3) -> g/cm^3
 

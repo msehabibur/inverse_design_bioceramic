@@ -21,7 +21,7 @@ from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.metrics import r2_score, mean_absolute_error
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA
+from paths import DATA, MODELS
 
 df = pd.read_csv(os.path.join(DATA, "dentin_data.csv"))
 print(f"Loaded {len(df)} dentin-relevant materials")
@@ -62,7 +62,7 @@ def train_one(X, y, name, fname, unit, log=False):
     best_model.fit(X, yy)
     joblib.dump({"model": best_model, "features": list(X.columns),
                  "log10_target": log, "name": best_name},
-                os.path.join(DATA, fname))
+                os.path.join(MODELS, fname))
     print(f"  saved -> {fname}")
 
 

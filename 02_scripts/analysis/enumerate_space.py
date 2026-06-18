@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 from pymatgen.core import Composition
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA, MANUSCRIPT
+from paths import DATA, MANUSCRIPT, MODELS
 
 AMU = 1.66054
 MAXC = 4          # max count per cation
@@ -92,8 +92,8 @@ cache = {}     # enamel & implant share the same pool + models -> enumerate once
 for sc, (charge, modf, volf, target) in POOLS.items():
     key = (modf, volf, tuple(sorted(charge.items())))
     if key not in cache:
-        mod = joblib.load(os.path.join(DATA, modf))
-        vol = joblib.load(os.path.join(DATA, volf))
+        mod = joblib.load(os.path.join(MODELS, modf))
+        vol = joblib.load(os.path.join(MODELS, volf))
         comps = enumerate_oxides(charge)
         cache[key] = (comps, predict_E(comps, mod, vol))
     comps, E = cache[key]

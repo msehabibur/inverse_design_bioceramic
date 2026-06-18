@@ -23,7 +23,7 @@ from pymoo.algorithms.moo.nsga2 import NSGA2
 from pymoo.optimize import minimize
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA, MANUSCRIPT
+from paths import DATA, MANUSCRIPT, MODELS
 
 AMU = 1.66054
 MAX_COUNT = 6
@@ -74,8 +74,8 @@ fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}
 
 for j, (sc, (charge, modf, volf, tE, tR)) in enumerate(SHOWCASES.items()):
-    mod = joblib.load(os.path.join(DATA, modf))
-    vol = joblib.load(os.path.join(DATA, volf))
+    mod = joblib.load(os.path.join(MODELS, modf))
+    vol = joblib.load(os.path.join(MODELS, volf))
     cats = list(charge)
 
     class P(Problem):

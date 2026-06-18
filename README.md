@@ -35,7 +35,7 @@ slice, the genetic-algorithm cation pool, and the property target change.**
 
 ```
 .
-├── 01_data/                 input data + trained models + GA outputs
+├── 01_data/                 input data + GA outputs
 │   ├── mp_data.csv              MP oxide training table (N=1,721)
 │   ├── dentin_data.csv          biocompatible-oxide subset (N=531)
 │   ├── shortlist.csv            Zr-O virtual-screening shortlist
@@ -46,16 +46,17 @@ slice, the genetic-algorithm cation pool, and the property target change.**
 │   ├── synthesizable_candidates.csv       charge-balance / formula audit
 │   ├── uncertainty_intervals.csv          conformal prediction intervals
 │   ├── pareto_*.csv             NSGA-II Pareto fronts
-│   ├── enumeration_modulus.csv  exhaustive charge-balanced enumeration
-│   └── model_*.joblib           6 trained surrogates (enamel + dentin × 3)
+│   └── enumeration_modulus.csv  exhaustive charge-balanced enumeration
 ├── 02_scripts/
 │   ├── paths.py                 shared path constants
 │   ├── features.py              composition featurizer (Magpie + structural)
 │   ├── pipeline/                pull data → train → screen → GA inverse design
 │   ├── figure_scripts/          figure-generation code
 │   └── analysis/                stability check, synthesizability, uncertainty, enumeration
-└── 05_config_envs/
-    └── requirements.txt         pinned Python environment
+├── 05_config_envs/
+│   └── requirements.txt         pinned Python environment
+└── 06_models/
+    └── model_*.joblib           6 trained surrogates (enamel + dentin × 3)
 ```
 
 > A Materials Project API key is **required only** for the data-retrieval and
@@ -86,7 +87,7 @@ Run from the repository root.
 ```bash
 # Showcase 1 — Enamel
 python 02_scripts/pipeline/pull_data.py            # MP oxides     → 01_data/mp_data.csv
-python 02_scripts/pipeline/train.py                # 3 surrogates  → 01_data/model_*.joblib
+python 02_scripts/pipeline/train.py                # 3 surrogates  → 06_models/model_*.joblib
 python 02_scripts/pipeline/screen.py               # Zr-O screen   → 01_data/shortlist.csv
 python 02_scripts/pipeline/inverse_ga.py           # GA design     → 01_data/designed_compositions.csv
 
