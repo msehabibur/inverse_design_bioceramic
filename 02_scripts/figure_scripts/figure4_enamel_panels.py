@@ -89,23 +89,41 @@ vol  = joblib.load(os.path.join(MODELS, "model_volperatom.joblib"))
 # CV predictions for the three parity panels
 # --------------------------------------------------------------------------
 print("CV predictions for modulus / hardness / V-per-atom ...")
+from sklearn.model_selection import KFold as _KFold
+from joblib import Parallel as _Parallel, delayed as _delayed
+def _cv_pred_std(model, X, yv, log10=False, k=5):
+    """5-fold CV: held-out prediction per point + per-point std across the k fold-models."""
+    Xv = X.values if hasattr(X, "values") else np.asarray(X)
+    yv = np.asarray(yv)
+    splits = list(_KFold(n_splits=k).split(Xv))
+    def _fit(tr):
+        m = clone(model); m.fit(Xv[tr], yv[tr]); return m
+    models = _Parallel(n_jobs=k)(_delayed(_fit)(tr) for tr, _ in splits)
+    allp = np.vstack([m.predict(Xv) for m in models])
+    if log10:
+        allp = 10.0 ** allp
+    cvp = np.empty(allp.shape[1])
+    for j, (_, te) in enumerate(splits):
+        cvp[te] = allp[j][te]
+    return cvp, allp.std(axis=0)
 X_E = df[mod["features"]]
 y_E_log = np.log10(df["youngs_modulus_GPa"].values)
-pred_E_log = cross_val_predict(clone(mod["model"]), X_E, y_E_log, cv=5, n_jobs=4)
-actual_E, pred_E = 10 ** y_E_log, 10 ** pred_E_log
-r2_E = r2_score(y_E_log, pred_E_log)
+pred_E, err_E = _cv_pred_std(clone(mod["model"]), X_E, y_E_log, log10=True)
+actual_E = 10 ** y_E_log
+r2_E = r2_score(y_E_log, np.log10(pred_E))
 
 hv = df[df["hardness_GPa"] > 0].reset_index(drop=True)
 X_H = hv[hard["features"]]; y_H = hv["hardness_GPa"].values
-pred_H_cv = cross_val_predict(clone(hard["model"]), X_H, y_H, cv=5, n_jobs=4)
+pred_H_cv, err_H = _cv_pred_std(clone(hard["model"]), X_H, y_H, log10=False)
 r2_H = r2_score(y_H, pred_H_cv)
 mae_H = mean_absolute_error(y_H, pred_H_cv)
 
 X_V = df[vol["features"]]; y_V = df["vol_per_atom"].values
-pred_V_cv = cross_val_predict(clone(vol["model"]), X_V, y_V, cv=5, n_jobs=4)
+pred_V_cv, err_V = _cv_pred_std(clone(vol["model"]), X_V, y_V, log10=False)
 mean_mass = np.array([Composition(f).weight / Composition(f).num_atoms
                       for f in df["formula"]])
 pred_rho = AMU_PER_A3_TO_GCC * mean_mass / pred_V_cv
+err_rho = pred_rho * (err_V / pred_V_cv)
 actual_rho = df["density"].values
 r2_rho = r2_score(actual_rho, pred_rho)
 mae_rho = mean_absolute_error(actual_rho, pred_rho)
@@ -184,7 +202,7 @@ ax = axes[0, 0]
 hi = max(actual_E.max(), pred_E.max()) * 1.05
 lo = -0.04 * hi
 ax.plot([lo, hi], [lo, hi], "--", color="#555555", lw=1.2)
-ax.scatter(actual_E, pred_E, s=20, alpha=0.6, color=BLUE, edgecolor="none")
+ax.errorbar(actual_E, pred_E, yerr=err_E, fmt="o", ms=6, mfc="tab:blue", mec="white", mew=0.2, ecolor=(0.5, 0.5, 0.5, 0.45), elinewidth=0.6, capsize=0, zorder=2)
 ax.axvline(TARGET_E, ls=":", color=ORANGE, lw=1.4, label=f"target = {TARGET_E:.0f} GPa")
 ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
 ax.set_aspect("equal", "box")
@@ -201,7 +219,7 @@ ax = axes[0, 1]
 H_HI = 25
 H_LO = -0.04 * H_HI  # slight negative buffer; no points cropped
 ax.plot([H_LO, H_HI], [H_LO, H_HI], "--", color="#555555", lw=1.2)
-ax.scatter(y_H, pred_H_cv, s=20, alpha=0.6, color=BLUE, edgecolor="none")
+ax.errorbar(y_H, pred_H_cv, yerr=err_H, fmt="o", ms=6, mfc="tab:orange", mec="white", mew=0.2, ecolor=(0.5, 0.5, 0.5, 0.45), elinewidth=0.6, capsize=0, zorder=2)
 ax.axvline(TARGET_H, ls=":", color=ORANGE, lw=1.4, label=f"target = {TARGET_H:.1f} GPa")
 ax.set_xlim(H_LO, H_HI); ax.set_ylim(H_LO, H_HI)
 ax.set_aspect("equal", "box")
@@ -218,7 +236,7 @@ ax = axes[0, 2]
 hi = max(actual_rho.max(), pred_rho.max()) * 1.05
 lo = -0.04 * hi
 ax.plot([lo, hi], [lo, hi], "--", color="#555555", lw=1.2)
-ax.scatter(actual_rho, pred_rho, s=20, alpha=0.6, color=BLUE, edgecolor="none")
+ax.errorbar(actual_rho, pred_rho, yerr=err_rho, fmt="o", ms=6, mfc="tab:purple", mec="white", mew=0.2, ecolor=(0.5, 0.5, 0.5, 0.45), elinewidth=0.6, capsize=0, zorder=2)
 ax.axvline(TARGET_RHO, ls=":", color=ORANGE, lw=1.4, label=f"target = {TARGET_RHO:.1f} g/cm³")
 ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
 ax.set_aspect("equal", "box")
@@ -241,7 +259,7 @@ ax.grid(alpha=0.3)
 
 # (e) GA population evolution -----------------------------------------------
 ax = axes[1, 1]
-sc = ax.scatter(all_E, all_rho, c=all_gen, s=14, alpha=0.6,
+sc = ax.scatter(all_E, all_rho, c=all_gen, s=46, alpha=0.85,
                 cmap="viridis", edgecolor="none")
 ax.axvline(TARGET_E,   ls="--", color=ORANGE, lw=1.3)
 ax.axhline(TARGET_RHO, ls="--", color=ORANGE, lw=1.3)
@@ -256,7 +274,7 @@ ax.legend(loc="upper right", frameon=False)
 
 # (f) top-15 candidates: predicted modulus vs target ------------------------
 ax = axes[1, 2]
-ax.bar(ds["short"], ds["pred_modulus_GPa"], color=BLUE, alpha=0.85)
+ax.bar(ds["short"], ds["pred_modulus_GPa"], color=BLUE, alpha=0.85, yerr=mean_absolute_error(actual_E, pred_E), capsize=3, error_kw=dict(lw=1.2, ecolor="#999999"))
 ax.axhline(TARGET_E, ls="--", color=ORANGE, lw=2.0)
 ax.text(0.98, TARGET_E, f"target = {TARGET_E:.0f} GPa",
         ha="right", va="center", color="white",
@@ -265,7 +283,8 @@ ax.text(0.98, TARGET_E, f"target = {TARGET_E:.0f} GPa",
 ax.set_xlabel("Candidate (ranked)")
 ax.set_ylabel("Predicted modulus (GPa)")
 ax.set_title("(f)  Top-15 candidates", loc="left")
-ax.tick_params(axis="x", rotation=0, labelsize=28)
+ax.tick_params(axis="x", labelsize=15, pad=2)
+plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
 
 
 fig.tight_layout(pad=0.6, h_pad=1.0, w_pad=0.8)
