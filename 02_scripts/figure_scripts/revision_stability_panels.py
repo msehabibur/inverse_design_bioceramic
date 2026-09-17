@@ -70,7 +70,7 @@ ax.set_xlabel(ps.tc("candidate, sorted"))
 ax.set_ylabel(ps.tc("energy above hull (eV/atom)"))
 hands = [Patch(color=ps.CASE_COLOR[s], label=ps.tc(ps.CASE_LABEL[s])) for s in ORDER]
 hands.append(Line2D([], [], color="0.20", linewidth=2.6, linestyle=":",
-                    label="Near-Stable Threshold, 0.05 eV/atom"))
+                    label="Reference Line, 0.05 eV/atom"))
 ax.legend(handles=hands, loc="upper left", ncol=2, fontsize=ps.BASE - 6,
           columnspacing=1.2, labelspacing=0.35)
 ps.panel_tag(ax, "a")

@@ -115,19 +115,22 @@ def graphical_abstract():
     head = Flow(fig, 0.985)
     head.text(0.5, "Inverse design of bioceramics by machine learning", 31, weight="bold")
     head.text(0.5, "Gradient-boosting models and a genetic algorithm propose oxide "
-                   "compositions\nat the stiffness and density of enamel, dentin and "
-                   "a Ti-6Al-4V reference", 19, gap=0.012)
+                   "compositions using stiffness and density targets\nfor enamel, dentin "
+                   "and a Ti-6Al-4V reference", 19, gap=0.012)
     top = head.y - 0.045
     col = [("enamel", "Enamel", "outer shell", "85", "Sr–Ca–Mg–Si–P\nphospho-silicate",
-            "SrCaSiP$_{2}$O$_{9}$ · 95 to 105 GPa", "bioactive-glass chemistry",
-            "Predicted within\nthe model error"),
+            "SrCaSiP$_{2}$O$_{9}$ · GA shortlist 96 to 105 GPa",
+            "phosphosilicate compositions",
+            "Target mismatch is smaller\nthan the design-time MAE"),
            ("dentin", "Dentin", "compliant core", "20", "K–Na–Ca–P\nalkali phosphate",
-            "K$_{5}$Na$_{2}$Ca(PO$_{4}$)$_{3}$ · 44 to 51 GPa", "bone-mineral chemistry only",
+            "K$_{5}$Na$_{2}$Ca(PO$_{4}$)$_{3}$ · 44 to 51 GPa",
+            "alkali-rich phosphate compositions",
             "Lowest prediction in the\nreachable set is %.1f GPa,\na model-dependent screen"
             % _floor),
            ("implant", "Implant interface", "Ti-6Al-4V set-point", "110",
             "Sr–Ca–La/Ce\nphospho-oxide", "SrCaLaPO$_{6}$ · 102 to 118 GPa",
-            "retargeting demonstration", "Needs a bone-matched\nmodulus to be useful")]
+            "rare-earth-containing phospho-oxide compositions",
+            "Alloy-reference target;\nbone matching was not evaluated")]
     x0, w, gap = 0.045, 0.293, 0.026
     xs, bottoms, rules = [], [], []
     for i, (key, name, sub, tgt, fam, ex, chem, verdict) in enumerate(col):
@@ -163,19 +166,19 @@ def design_targets():
               weight="bold")
     top = head.y - 0.040
 
-    col = [("enamel", "Showcase 1", "Enamel", "Target fingerprint",
+    col = [("enamel", "Case study 1", "Enamel", "Target fingerprint",
             ("85", "4", "3.0"), "Sr–Ca–Mg–Si–P phospho-silicate",
             "e.g. SrCaSiP$_{2}$O$_{9}$ · bioactive-glass chemistry",
-            "Best prediction %.1f GPa,\nwithin the model error" % _best["enamel"]),
-           ("dentin", "Showcase 2", "Dentin", "Target fingerprint",
+            "Leading GA candidate: %.1f GPa" % _best["enamel"]),
+           ("dentin", "Case study 2", "Dentin", "Target fingerprint",
             ("20", "0.7", "2.1"), "K–Na–(Ca,Mg)–P alkali phosphate",
             "e.g. K$_{5}$Na$_{2}$Ca(PO$_{4}$)$_{3}$ · bone-mineral chemistry",
             "Lowest prediction in the reachable\nset is %.1f GPa: a model-dependent\n"
             "screen, not a physical limit" % _floor),
-           ("implant", "Showcase 3", "Implant interface", "Target fingerprint (Ti-6Al-4V)",
+           ("implant", "Case study 3", "Implant interface", "Target fingerprint (Ti-6Al-4V)",
             ("110", "3.5", "4.4"), "Sr–Ca–La/Ce phospho-oxide",
             "e.g. SrCaLaPO$_{6}$ · phospho-oxide chemistry",
-            "Best prediction %.1f GPa,\na retargeting demonstration" % _best["implant"])]
+            "Leading GA candidate: %.1f GPa" % _best["implant"])]
 
     x0, w, gap = 0.035, 0.303, 0.023
     xs, bottoms, rules, boxes = [], [], [], []
@@ -225,8 +228,8 @@ def workflow():
     head = Flow(fig, 0.985)
     head.text(0.5, "Conventional and data-driven materials design", 27, weight="bold")
     head.text(0.5,
-              "The two development cycles as described in the literature the introduction "
-              "cites; no comparison between them was measured in this work", 17,
+              "Conceptual comparison of experimental development and the computational "
+              "workflow; no development-time comparison was measured", 17,
               colour="#555555", gap=0.010)
     top = head.y - 0.040
 
@@ -260,9 +263,9 @@ def workflow():
     for x, y in rules:
         line(fig, x + 0.025, y, w - 0.05)
     Flow(fig, low - 0.030).text(
-        0.5, "The right-hand column is the pipeline this work implements. The saving it is "
-             "intended to produce is in experiment count and\ncalendar time, and it is not "
-             "measured here: no specimen was synthesised and no candidate was tested.", 17,
+        0.5, "The computational workflow prioritizes compositions for subsequent testing.\n"
+             "No specimen was synthesized, and no experimental reduction in development "
+             "time or experiment count was measured.", 17,
         colour="#333333")
     _save(fig, "FigureS1_workflow_rev")
 

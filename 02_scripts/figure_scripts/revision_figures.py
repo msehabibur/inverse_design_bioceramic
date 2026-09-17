@@ -88,8 +88,8 @@ def figure_r1():
                color=ps.COLORS[0] if mode == "true" else ps.COLORS[1],
                edgecolor="white", linewidth=1.2,
                hatch=None if mode == "true" else "//",
-               label=ps.tc("structure taken from the database") if mode == "true"
-               else ps.tc("structure predicted, as at design time"))
+               label=ps.tc("database density and volume") if mode == "true"
+               else ps.tc("predicted density and volume"))
         for p, val in zip(pos, vals):
             ax.text(p, val + 0.015, f"{val:.2f}", ha="center", va="bottom",
                     rotation=90, fontsize=ps.BASE - 6)
@@ -161,7 +161,7 @@ def figure_r1():
     ax.errorbar(x - 0.16, o.pred_E_GPa, fmt=ps.MARKERS[0], color=ps.COLORS[0],
                 yerr=[o.pred_E_GPa - o.E_lo_GPa, o.E_hi_GPa - o.pred_E_GPa],
                 linestyle="none", markersize=15, linewidth=3.0, capsize=7,
-                capthick=3.0, label=ps.tc("published interval"))
+                capthick=3.0, label=ps.tc("database-input interval"))
     ax.errorbar(x + 0.16, n.pred_E_GPa, fmt=ps.MARKERS[1], color=ps.COLORS[1],
                 yerr=[n.pred_E_GPa - n.E_lo_GPa, n.E_hi_GPa - n.pred_E_GPa],
                 linestyle="none", markersize=15, linewidth=3.0, capsize=7,
@@ -202,7 +202,7 @@ def figure_r2():
     lim = [-8, 175]
     ax.set_xlim(*lim)
     ax.set_ylim(*lim)
-    ax.set_xlabel(ps.tc("single-phase prediction (GPa)"))
+    ax.set_xlabel(ps.tc("composition-model prediction (GPa)"))
     ax.set_ylabel(ps.tc("decomposition mixture (GPa)"))
     ax.legend(loc="lower right")
     ps.panel_tag(ax, "a")
@@ -221,7 +221,7 @@ def figure_r2():
                     capthick=2.4, label=ps.tc(ps.CASE_LABEL[sc]))
         ln = ax.axhline(TARGET[sc], color=ps.CASE_COLOR[sc], linewidth=2.6)
         ln.set_dashes(list(ps.CASE_DASH[sc]) if ps.CASE_DASH[sc][0] else [8, 0])
-    ax.set_xlabel(ps.tc("candidate, ranked by fitness"))
+    ax.set_xlabel(ps.tc("candidate, ranked by objective value"))
     ax.set_ylabel(ps.tc("mixture Young's modulus (GPa)"))
     ax.set_xticks(np.arange(1, 16, 2))
     ps.legend_above(ax, ncol=3, handlelength=1.4)
@@ -237,7 +237,7 @@ def figure_r2():
                label=f"Median, {s.soluble_vol_frac.median():.2f}")
     ps.legend_above(ax)
     ax.set_xlabel(ps.tc("dentin candidate"))
-    ax.set_ylabel(ps.tc("soluble alkali phase, volume fraction"))
+    ax.set_ylabel(ps.tc("potentially soluble phase volume fraction"))
     ax.set_xticks(np.arange(1, 16, 2))
     ax.set_ylim(0, 1.06)
     ps.panel_tag(ax, "c")
@@ -315,7 +315,7 @@ def figure_r3():
         ax.hist(s.pred_modulus_GPa, bins=60, histtype="step", linewidth=3.0,
                 color=ps.CASE_COLOR[pool],
                 label=f"{ps.tc(name)} Pool, {len(s):,} Formulas, "
-                      f"Floor {s.pred_modulus_GPa.min():.0f} GPa")
+                      f"Minimum Prediction {s.pred_modulus_GPa.min():.1f} GPa")
     ax.axvline(20.0, color=ps.COLORS[2], linewidth=3.0, linestyle="--")
     ax.text(22, ax.get_ylim()[1] * 0.72, "Dentin Target", color=ps.COLORS[2],
             fontsize=ps.BASE - 4, rotation=90, va="center")

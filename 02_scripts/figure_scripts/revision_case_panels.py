@@ -6,7 +6,8 @@ Panels, in the layout the manuscript already describes:
               and the five individual seed traces
   (e)         the pooled final population in the plane of predicted modulus and predicted
               density, with the target marked
-  (f)         the fifteen best-scoring candidates with 90 percent conformal intervals
+  (f)         the fifteen candidates selected from the GA searches, ranked by
+              objective value, with their nominal 90 percent prediction intervals
 
 Writes Figure4_enamel_panels_rev, Figure5_dentin_panels_rev and
 Figure6_implant_panels_rev into 04_manuscript/revision_figures/.
@@ -172,7 +173,7 @@ for case, cfg in CASES.items():
     # band, target and floor all stop at the tallest bar, leaving the top of the
     # panel to the legend, which now carries the floor in place of an arrow note
     ax.fill_between([float(u15.pred_E_GPa.min()), float(u15.pred_E_GPa.max())], 0, hmax,
-                    color=col, alpha=0.30, linewidth=0, label=ps.tc("fifteen best candidates"))
+                    color=col, alpha=0.30, linewidth=0, label=ps.tc("fifteen candidates selected from the GA searches"))
     ax.vlines(tE, 0, hmax, color=ps.COLORS[3], linewidth=3.0, linestyle="--",
               label=ps.tc("target, %g GPa" % tE))
     ax.vlines(float(v.min()), 0, 0.45 * hmax, color="0.15", linewidth=3.4,
