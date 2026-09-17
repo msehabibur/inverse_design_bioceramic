@@ -43,7 +43,7 @@ from sklearn.metrics import r2_score, mean_absolute_error
 from pymatgen.core import Composition
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA, MANUSCRIPT, MODELS
+from paths import DATA, MANUSCRIPT
 from pymoo.core.problem import Problem
 from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.optimize import minimize
@@ -76,9 +76,9 @@ df = df.dropna(subset=full_cols).reset_index(drop=True)
 k = df["G_GPa"] / df["K_GPa"]
 df["hardness_GPa"] = 2 * (k ** 2 * df["G_GPa"]) ** 0.585 - 3
 
-mod  = joblib.load(os.path.join(MODELS, "model_modulus_dentin.joblib"))
-hard = joblib.load(os.path.join(MODELS, "model_hardness_dentin.joblib"))
-vol  = joblib.load(os.path.join(MODELS, "model_volperatom_dentin.joblib"))
+mod  = joblib.load(os.path.join(DATA, "model_modulus_dentin.joblib"))
+hard = joblib.load(os.path.join(DATA, "model_hardness_dentin.joblib"))
+vol  = joblib.load(os.path.join(DATA, "model_volperatom_dentin.joblib"))
 
 
 # --------------------------------------------------------------------------

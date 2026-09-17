@@ -23,7 +23,7 @@ from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.metrics import r2_score, mean_absolute_error
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA, MODELS
+from paths import DATA
 
 df = pd.read_csv(os.path.join(DATA, "mp_data.csv"))
 print(f"Loaded {len(df)} materials")
@@ -64,7 +64,7 @@ def train_one(X, y, name, fname, unit, log=False):
     best_model.fit(X, yy)                              # refit on all data
     joblib.dump({"model": best_model, "features": list(X.columns),
                  "log10_target": log, "name": best_name},
-                os.path.join(MODELS, fname))
+                os.path.join(DATA, fname))
     print(f"  saved -> {fname}")
 
 

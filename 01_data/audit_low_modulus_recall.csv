@@ -1,0 +1,5 @@
+pool,cut_GPa,n,true_median,pred_median,bias,frac_pred_above_39_6,frac_interval_covers_truth
+enamel_implant,20.0,43,13.3,23.8,24.6,0.233,0.535
+enamel_implant,40.0,207,27.2,33.9,19.0,0.406,0.71
+dentin,20.0,3,15.2,82.3,89.1,1.0,0.0
+dentin,40.0,17,25.4,50.6,37.1,0.824,0.529

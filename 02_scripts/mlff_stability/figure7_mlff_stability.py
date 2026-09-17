@@ -12,7 +12,8 @@ plt.rcParams.update({
     "axes.titlesize": 30, "axes.labelsize": 30,
     "xtick.labelsize": 26, "ytick.labelsize": 26, "legend.fontsize": 24,
 })
-BASE = "/anvil/scratch/x-mrahman2/Purdue_Projects/Inverse_Design_of_Bioceramics_by_Machine_Learning/"
+# the scratch home was purged; the project tree is the only copy
+BASE = "/anvil/projects/x-mat260059/Inverse_Design_of_Bioceramics_by_Machine_Learning/"
 S = BASE + "06_mlff_stability/"
 DATA = BASE + "01_data/"
 MAN = BASE + "04_manuscript/"

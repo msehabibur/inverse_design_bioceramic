@@ -15,7 +15,7 @@ from mp_api.client import MPRester
 from pymatgen.core import Composition
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA, MODELS
+from paths import DATA
 
 KEY = os.environ.get("MP_API_KEY")
 if not KEY:
@@ -58,7 +58,7 @@ featurizer = make_featurizer()
 print("Featurizing and predicting Young's modulus...")
 df = featurizer.featurize_dataframe(df, col_id="composition_obj", ignore_errors=True)
 
-mod = joblib.load(os.path.join(MODELS, "model_modulus.joblib"))
+mod = joblib.load(os.path.join(DATA, "model_modulus.joblib"))
 feat = mod["features"]
 df = df.dropna(subset=feat)
 df["pred_modulus_GPa"] = 10 ** mod["model"].predict(df[feat])

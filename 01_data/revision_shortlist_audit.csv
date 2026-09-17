@@ -1,0 +1,16 @@
+material_id,formula,pred_modulus_GPa,mixed_anion,foreign_anions,id_in_training,reduced_formula_in_training
+mp-559571,ZrB2O5,248.8,False,,False,False
+mp-754964,HfZrO4,247.3,False,,False,True
+mp-675993,Zr2N2O,235.9,True,N,False,True
+mp-1228755,Ba8ZrNb19O36,231.8,False,,False,False
+mp-1228044,Ba4ZrNb9O18,229.1,False,,False,False
+mp-1219791,PrZrNO2,226.5,True,N,False,False
+mp-1225650,Er4Zr3O12,220.4,False,,False,False
+mp-1080575,SrZrO3,218.1,False,,False,True
+mp-760425,Tb2Zr2O7,217.1,False,,False,False
+mp-530294,Sm2Zr2O7,216.0,False,,False,True
+mp-770419,Sr2Zr7O16,216.0,False,,False,False
+mp-1106293,EuZrO3,215.4,False,,False,True
+mp-1207474,Zr4N3OF5,215.2,True,"F,N",False,False
+mp-1216821,Tm4Zr3O12,214.4,False,,False,False
+mp-776024,CaZrO3,214.4,False,,False,True

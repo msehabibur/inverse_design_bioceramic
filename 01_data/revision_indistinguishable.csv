@@ -1,0 +1,4 @@
+case,best_composition,best_E_GPa,design_mae_GPa,top15_spread_GPa,n_enumerated,n_within_one_mae,pct_within_one_mae,n_within_interval,pct_within_interval
+enamel,Sr2Ca4Si4P6O29,95.5,38.1,9.8,237061,57258,24.2,226428,95.5
+dentin,K5Na2Ca(PO4)3,44.1,50.4,6.8,17798,5444,30.6,4559,25.6
+implant,SrCaLaPO6,109.2,38.1,16.6,237061,110499,46.6,237000,100.0

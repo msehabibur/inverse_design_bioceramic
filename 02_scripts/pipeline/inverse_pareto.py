@@ -23,7 +23,7 @@ from pymoo.algorithms.moo.nsga2 import NSGA2
 from pymoo.optimize import minimize
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA, MANUSCRIPT, MODELS
+from paths import DATA, MANUSCRIPT
 
 AMU = 1.66054
 MAX_COUNT = 6
@@ -74,8 +74,8 @@ fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 COL = {"enamel": "#1A6090", "dentin": "#D97F33", "implant": "#2E7D5A"}
 
 for j, (sc, (charge, modf, volf, tE, tR)) in enumerate(SHOWCASES.items()):
-    mod = joblib.load(os.path.join(MODELS, modf))
-    vol = joblib.load(os.path.join(MODELS, volf))
+    mod = joblib.load(os.path.join(DATA, modf))
+    vol = joblib.load(os.path.join(DATA, volf))
     cats = list(charge)
 
     class P(Problem):
@@ -84,7 +84,18 @@ for j, (sc, (charge, modf, volf, tE, tR)) in enumerate(SHOWCASES.items()):
         def _evaluate(self, X, out, *a, **k):
             comps = [decode(r, charge, cats) for r in X]
             E, rho = forward(comps, mod, vol)
-            out["F"] = np.column_stack([np.abs(E - tE) / tE, np.abs(rho - tR) / tR])
+            f = np.column_stack([np.abs(E - tE) / tE, np.abs(rho - tR) / tR])
+            # The dentin case requires Ca together with P or Si at the compound
+            # level, exactly as its genetic algorithm does. Without this the
+            # front returned K5Na5CaMgO7, which has neither P nor Si and which
+            # the case study's own search would never emit.
+            if sc == "dentin":
+                bad = np.array([not ("Ca" in c.get_el_amt_dict()
+                                     and ("P" in c.get_el_amt_dict()
+                                          or "Si" in c.get_el_amt_dict()))
+                                for c in comps])
+                f[bad] = 1.0e3
+            out["F"] = f
 
     res = minimize(P(), NSGA2(pop_size=80), ("n_gen", 40), seed=42, verbose=False)
     comps = [decode(r, charge, cats) for r in res.X]
@@ -94,6 +105,11 @@ for j, (sc, (charge, modf, volf, tE, tR)) in enumerate(SHOWCASES.items()):
                        "pred_density_gcc": np.round(rho, 2),
                        "dist_E": np.round(res.F[:, 0], 4),
                        "dist_rho": np.round(res.F[:, 1], 4)}).drop_duplicates("formula")
+    if sc == "dentin":
+        ok = {c.reduced_formula for c in comps
+              if "Ca" in c.get_el_amt_dict()
+              and ("P" in c.get_el_amt_dict() or "Si" in c.get_el_amt_dict())}
+        df = df[df.formula.isin(ok)]
     df = df.sort_values("dist_E")
     df.to_csv(os.path.join(DATA, f"pareto_{sc}.csv"), index=False)
     print(f"[{sc}] Pareto front: {len(df)} non-dominated designs; "

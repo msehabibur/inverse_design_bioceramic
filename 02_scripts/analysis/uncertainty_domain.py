@@ -26,7 +26,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # noqa: make paths/features importable
 from features import make_featurizer
-from paths import DATA, MANUSCRIPT, MODELS
+from paths import DATA, MANUSCRIPT
 
 AMU = 1.66054
 COVERAGE = 0.90
@@ -46,8 +46,8 @@ def featurize(df):
 
 def calibrate(model_file, vol_file, train_csv):
     """Fit a split-conformal model + AD on a training slice. Returns a bundle."""
-    mod = joblib.load(os.path.join(MODELS, model_file))
-    vol = joblib.load(os.path.join(MODELS, vol_file))
+    mod = joblib.load(os.path.join(DATA, model_file))
+    vol = joblib.load(os.path.join(DATA, vol_file))
     comp_feats, full_feats = vol["features"], mod["features"]
     df = featurize(pd.read_csv(os.path.join(DATA, train_csv)))
     df = df.dropna(subset=full_feats + ["youngs_modulus_GPa"])

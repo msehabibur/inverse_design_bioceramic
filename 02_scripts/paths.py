@@ -12,4 +12,3 @@ ROOT       = os.path.dirname(HERE)                       # project root
 DATA       = os.path.join(ROOT, "01_data")
 FIGURES    = os.path.join(ROOT, "03_figures")
 MANUSCRIPT = os.path.join(ROOT, "04_manuscript")
-MODELS     = os.path.join(ROOT, "06_models")        # trained surrogates

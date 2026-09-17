@@ -1,0 +1,7 @@
+pool,protocol,features,r2_log_pooled,r2_log_mean_of_folds,r2_linear_pooled,mae_GPa
+enamel_implant,unshuffled,database,0.743,0.742,0.636,31.0
+enamel_implant,shuffled,database,0.812,0.812,0.769,25.5
+enamel_implant,chemsys,database,0.792,0.791,0.723,27.3
+dentin,unshuffled,database,0.756,0.741,0.756,28.3
+dentin,shuffled,database,0.755,0.754,0.746,28.2
+dentin,chemsys,database,0.689,0.68,0.627,32.7

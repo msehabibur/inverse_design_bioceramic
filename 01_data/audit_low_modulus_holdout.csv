@@ -1,0 +1,5 @@
+pool,threshold_GPa,n_held_out,n_train,true_min,true_median,pred_min,pred_median,mae,mean_signed_error,r2,frac_pred_above_39_6,frac_pred_above_20
+enamel_implant,40.0,207,1514,2.5,27.2,41.1,62.4,47.8,47.8,-43.746,1.0,1.0
+enamel_implant,59.1,344,1377,2.5,34.5,61.7,87.5,62.2,62.2,-23.571,1.0,1.0
+dentin,40.0,17,514,9.3,25.4,41.5,70.4,46.1,46.1,-59.515,1.0,1.0
+dentin,85.6,106,425,9.3,63.2,85.2,114.3,63.7,63.7,-13.802,1.0,1.0
