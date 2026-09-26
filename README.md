@@ -1,6 +1,6 @@
 # Inverse Design of Bioceramics by Machine Learning — Code & Data
 
-![AI-Driven Dental Bioceramic Design](AI-Driven_Dental_Bioceramic_Design.png)
+
 
 Reproducibility package (**code + output data**) for the machine-learning inverse
 design of dental/biomedical ceramics. A gradient-boosting surrogate trained on
@@ -12,14 +12,9 @@ robustness analyses close the loop.
 
 > **Authors:** Jwerai Hoque Nowrin · Saifuddin Zafar · Md Habibur Rahman
 > **Contact:** rahma103@purdue.edu
-> These are **computational hypotheses**, not validated dental materials. The
-> manuscript is published separately; this repository provides the code and data.
 
-> **Updated for the major revision, September 2026.** The revision re-ran the
-> validation, the enumeration and the stability screen. Three results stated in the
-> first version of this README changed and are marked **[revised]** below. The
-> numbers quoted here are the ones carried by the revised manuscript and by the CSVs
-> in `01_data/`.
+
+
 
 ---
 
