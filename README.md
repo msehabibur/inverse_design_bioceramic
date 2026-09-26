@@ -1,15 +1,5 @@
 # Inverse Design of Bioceramics by Machine Learning — Code & Data
 
-
-
-Reproducibility package (**code + output data**) for the machine-learning inverse
-design of dental/biomedical ceramics. A gradient-boosting surrogate trained on
-Materials Project oxygen-bearing compounds maps composition → mechanical properties (Young's modulus
-*E*, Vickers hardness *H*, density *ρ*); a genetic algorithm then *inverts* that
-surrogate to propose charge-balanced oxide compositions matching a prescribed
-property fingerprint. A five-model machine-learning force-field (MLFF) structural screen and several no-DFT
-robustness analyses close the loop.
-
 > **Authors:** Jwerai Hoque Nowrin · Saifuddin Zafar · Md Habibur Rahman
 > **Contact:** rahma103@purdue.edu
 
