@@ -1,0 +1,7 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_implant_03_s2,omni,candidate,Sr4Ce2Mg2P2O15,nan,nan,,,0
+cand_implant_09_s3,omni,candidate,LaMgTiPO7,-71.589882,-6.508171,11,250,0
+cand_implant_14_s4,omni,candidate,Sr2Ce2Y2P4O19,nan,nan,,,0
+comp_mpaaaabqst,omni,competitor,Ca5 P8,-65.067398,-5.005184,13,0,1
+comp_mpaaaaawvt,omni,competitor,Mg4 P16 O44,-453.085999,-7.079469,64,0,1
+comp_mpaaaaadke,omni,competitor,La16 O24,-336.242096,-8.406052,40,0,1

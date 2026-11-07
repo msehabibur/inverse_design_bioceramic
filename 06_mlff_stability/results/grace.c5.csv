@@ -1,0 +1,52 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_01_s5,grace,candidate,Sr2Ca4Si4P6O29,-227.798608,-5.062191,45,400,0
+cand_enamel_03_s1,grace,candidate,SrCaSiP2O9,-90.636010,-6.474001,14,285,1
+cand_enamel_04_s5,grace,candidate,Ca2Mg2Al2P4O17,-177.649686,-6.579618,27,400,0
+cand_enamel_06_s1,grace,candidate,Ca6Mg2Si6P6O35,-325.865185,-5.924822,55,400,0
+cand_enamel_07_s5,grace,candidate,Ca2MgSi2(PO6)2,-118.367272,-6.229856,19,400,0
+cand_enamel_09_s1,grace,candidate,SrMg2Si(PO5)2,-2243.575284,-140.223455,16,400,0
+cand_enamel_10_s5,grace,candidate,Sr2Ca2Al2P4O17,-152.121449,-5.634128,27,190,1
+cand_enamel_12_s1,grace,candidate,SrMgSiP2O9,-63.589381,-4.542099,14,400,0
+cand_enamel_13_s5,grace,candidate,SrCa2Si2(PO6)2,-131.363238,-6.913855,19,101,1
+cand_enamel_15_s1,grace,candidate,Sr2Mg2Si4P2O17,-179.894231,-6.662749,27,400,0
+cand_dentin_01_s5,grace,candidate,K5Na2Ca(PO4)3,-115.595557,-5.025894,23,400,0
+cand_dentin_03_s1,grace,candidate,K4Na2CaP2O9,-67.507556,-3.750420,18,147,1
+cand_dentin_04_s5,grace,candidate,K6Na4Ca2P4O17,-171.822149,-5.206732,33,400,0
+cand_dentin_06_s1,grace,candidate,K10Na2Ca2P6O23,-202.626158,-4.712236,43,400,0
+cand_dentin_07_s5,grace,candidate,K3NaCa(PO4)2,-68.313445,-4.554230,15,186,1
+cand_dentin_09_s1,grace,candidate,K6Ca2P4O15,-158.680888,-5.877070,27,400,0
+cand_dentin_10_s5,grace,candidate,K5NaCaP2O9,-92.695906,-5.149773,18,116,1
+cand_dentin_12_s1,grace,candidate,K5Na3Ca(PO5)2,-97.428496,-4.639452,21,400,0
+cand_dentin_13_s5,grace,candidate,K8Na4Ca2P6O23,-185.053632,-4.303573,43,400,0
+cand_dentin_15_s1,grace,candidate,K10Ca2Si2P4O21,-131.964280,-3.383699,39,400,0
+cand_implant_01_s5,grace,candidate,SrCaLaPO6,-54.154849,-5.415485,10,336,1
+cand_implant_03_s1,grace,candidate,Sr4Ce2Mg2P2O15,-166.764405,-6.670576,25,142,1
+cand_implant_04_s5,grace,candidate,Sr2LaSiPO8,-93.428943,-7.186842,13,400,0
+cand_implant_06_s1,grace,candidate,Sr2CeMg(PO5)2,-104.143004,-6.508938,16,400,0
+cand_implant_07_s5,grace,candidate,Sr2Ce2Ti4P2O19,-212.308432,-7.320980,29,344,1
+cand_implant_09_s1,grace,candidate,LaMgTiPO7,-69.556088,-6.323281,11,57,1
+cand_implant_10_s5,grace,candidate,SrLaSiPO7,-77.707125,-7.064284,11,342,1
+cand_implant_12_s1,grace,candidate,Sr4Ce4Mg2P2O19,-36390127839324792.000000,-1173875091591122.250000,31,400,0
+cand_implant_13_s5,grace,candidate,Sr2Ca2Ce2P2O13,-115.660830,-5.507659,21,141,1
+cand_implant_15_s1,grace,candidate,SrCaCeP2O9,-82.531629,-5.895116,14,400,0
+comp_mpaaaaazfb,grace,competitor,K4 Al4 P8 O28,-311.260654,-7.074106,44,0,1
+comp_mpaaaaanof,grace,competitor,K6 Al2 O6,-71.440732,-5.102909,14,0,1
+comp_mpaaabkddr,grace,competitor,Ca1 O2,-17.549522,-5.849841,3,0,1
+comp_mpaaabftcb,grace,competitor,K12 P4 O16,-184.400209,-5.762507,32,0,1
+comp_mpaaaaadet,grace,competitor,Mg17 Al12,-72.730216,-2.507938,29,0,1
+comp_mpaaaaadpo,grace,competitor,Ca4 Mg8,-22.189238,-1.849103,12,11,1
+comp_mpaaaaboux,grace,competitor,Sr4 P12 O34,-358.978654,-7.179573,50,1,1
+comp_mpaaaaadzt,grace,competitor,Sr1 O2,-17.224262,-5.741421,3,0,1
+comp_mpaaaaaedw,grace,competitor,La8 P16,-152.164978,-6.340207,24,12,1
+comp_mpaaaaaiqt,grace,competitor,Ce2 P6 O18,-198.050539,-7.617328,26,1,1
+comp_mpaaaaapvc,grace,competitor,Ce1 O1,-16.653336,-8.326668,2,0,1
+comp_mpaaacpmon,grace,competitor,Na29,-37.640810,-1.297959,29,0,1
+comp_mpaaaaahbl,grace,competitor,Si4 P8 O28,-295.451042,-7.386276,40,1,1
+comp_mpaaaaaedq,grace,competitor,Si12 P12,-133.652436,-5.568851,24,11,1
+comp_mpaaaaajpt,grace,competitor,Ca4 Mg4 Si4 O16,-198.377017,-7.084893,28,0,1
+comp_mpaaaaacre,grace,competitor,Ce1 Mg3,-10.811537,-2.702884,4,0,1
+comp_mpaaabrfyy,grace,competitor,Mg5 Ti13 O30,-403.208690,-8.400181,48,25,1
+comp_mpaaaabebv,grace,competitor,Ti4 P8,-84.648865,-7.054072,12,3,1
+comp_mpaaaaawye,grace,competitor,Sr32 Ti8 P32,-370.611498,-5.147382,72,0,1
+comp_mpaaaaabqm,grace,competitor,La1 Mg1,-6.754370,-3.377185,2,0,1
+comp_mpaaaaaimm,grace,competitor,La8 Si8 O28,-363.721691,-8.266402,44,0,1

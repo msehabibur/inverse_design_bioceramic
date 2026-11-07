@@ -1,0 +1,7 @@
+pool,protocol,descriptors,units,r2,r2_sd,mae_GPa
+enamel_implant,mean of unshuffled fold scores,database,log10,0.742,0.035,31.0
+enamel_implant,pooled shuffled out-of-fold,database,log10,0.812,0.015,25.48
+enamel_implant,pooled shuffled out-of-fold,database,linear GPa,0.769,,25.48
+dentin,mean of unshuffled fold scores,database,log10,0.741,0.073,28.29
+dentin,pooled shuffled out-of-fold,database,log10,0.755,0.067,28.17
+dentin,pooled shuffled out-of-fold,database,linear GPa,0.746,,28.17

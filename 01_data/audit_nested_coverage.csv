@@ -1,0 +1,3 @@
+pool,n,folds,n_covered,nested_coverage,nested_coverage_mean_of_folds,nested_coverage_min_fold,mean_interval_multiplier,nominal
+enamel_implant,1721,5,1557,0.905,0.905,0.89,2.128,0.9
+dentin,531,5,476,0.896,0.897,0.849,2.141,0.9

@@ -1,0 +1,3 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_01_s0,chgnet,candidate,Sr2Ca4Si4P6O29,-290.246979,-6.449933,45,400,0
+cand_enamel_02_s4,chgnet,candidate,Sr2Ca6Si6P6O35,-178.279282,-3.241441,55,400,0

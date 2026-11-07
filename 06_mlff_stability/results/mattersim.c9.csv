@@ -1,0 +1,52 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_02_s1,mattersim,candidate,Sr2Ca6Si6P6O35,-339.962402,-6.181135,55,400,0
+cand_enamel_03_s5,mattersim,candidate,SrCaSiP2O9,-90.401886,-6.457278,14,400,0
+cand_enamel_05_s1,mattersim,candidate,Sr2Mg2Al2P4O17,-160.791809,-5.955252,27,400,0
+cand_enamel_06_s5,mattersim,candidate,Ca6Mg2Si6P6O35,-304.398956,-5.534526,55,400,0
+cand_enamel_08_s1,mattersim,candidate,Ca6Mg2Si4P6O31,-338.284119,-6.903758,49,400,1
+cand_enamel_09_s5,mattersim,candidate,SrMg2Si(PO5)2,-104.611450,-6.538216,16,400,0
+cand_enamel_11_s1,mattersim,candidate,Ca4Mg2Si4P6O29,-291.370026,-6.474889,45,400,0
+cand_enamel_12_s5,mattersim,candidate,SrMgSiP2O9,-85.047997,-6.074857,14,250,1
+cand_enamel_14_s1,mattersim,candidate,SrCa2AlPO7,-78.530067,-6.544172,12,400,0
+cand_enamel_15_s5,mattersim,candidate,Sr2Mg2Si4P2O17,-178.982712,-6.628989,27,400,0
+cand_dentin_02_s1,mattersim,candidate,K8Na2Ca2P4O17,-155.207382,-4.703254,33,350,1
+cand_dentin_03_s5,mattersim,candidate,K4Na2CaP2O9,-79.003807,-4.389100,18,178,1
+cand_dentin_05_s1,mattersim,candidate,K4Ca(PO4)2,-77.461914,-5.164128,15,149,1
+cand_dentin_06_s5,mattersim,candidate,K10Na2Ca2P6O23,-236.777420,-5.506452,43,400,0
+cand_dentin_08_s1,mattersim,candidate,K10Ca2Al2P6O25,-225.092911,-5.002065,45,400,0
+cand_dentin_09_s5,mattersim,candidate,K6Ca2P4O15,-114.971497,-4.258204,27,134,1
+cand_dentin_11_s1,mattersim,candidate,K6Ca2SiP4O17,-168.282776,-5.609426,30,400,0
+cand_dentin_12_s5,mattersim,candidate,K5Na3Ca(PO5)2,-94.648232,-4.507059,21,311,1
+cand_dentin_14_s1,mattersim,candidate,K12Ca4Si2P6O29,-306.544891,-5.783866,53,400,0
+cand_dentin_15_s5,mattersim,candidate,K10Ca2Si2P4O21,-192.993835,-4.948560,39,400,0
+cand_implant_02_s1,mattersim,candidate,Sr2La4Al2P4O21,-238.195663,-7.218050,33,400,0
+cand_implant_03_s5,mattersim,candidate,Sr4Ce2Mg2P2O15,-160.239548,-6.409582,25,400,0
+cand_implant_05_s1,mattersim,candidate,Sr2CaLa2P2O11,-122.677139,-6.815397,18,400,0
+cand_implant_06_s5,mattersim,candidate,Sr2CeMg(PO5)2,-102.950432,-6.434402,16,400,0
+cand_implant_08_s1,mattersim,candidate,Ce2Mg2Ti2P2O15,-164.834732,-7.166727,23,337,1
+cand_implant_09_s5,mattersim,candidate,LaMgTiPO7,-79.867844,-7.260713,11,400,0
+cand_implant_11_s1,mattersim,candidate,Sr4Ce2Si2P2O17,-158.535675,-5.871692,27,351,1
+cand_implant_12_s5,mattersim,candidate,Sr4Ce4Mg2P2O19,-217.047607,-7.001536,31,400,0
+cand_implant_14_s1,mattersim,candidate,Sr2Ce2Y2P4O19,-215.035980,-7.415034,29,400,0
+cand_implant_15_s5,mattersim,candidate,SrCaCeP2O9,-95.592773,-6.828055,14,400,0
+comp_mpaaaaablj,mattersim,competitor,K2 O1,-10.244408,-3.414803,3,0,1
+comp_mpaaaaahff,mattersim,competitor,Ca2 Al8 O14,-176.594955,-7.358123,24,1,1
+comp_mpaaactgem,mattersim,competitor,K2 Al22 O34,-425.364929,-7.333878,58,0,1
+comp_mpaaaaaabt,mattersim,competitor,Ca1,-1.995740,-1.995740,1,0,1
+comp_mpaaaaabwr,mattersim,competitor,Mg1 O1,-11.870159,-5.935080,2,0,1
+comp_mpaaaaaoop,mattersim,competitor,Sr6 Al4 P8,-86.300507,-4.794473,18,10,1
+comp_mpaaaabwhf,mattersim,competitor,Sr24 P16,-169.073624,-4.226841,40,15,1
+comp_mpaaaaastw,mattersim,competitor,La4 Al4,-37.707607,-4.713451,8,7,1
+comp_mpaaaaaeii,mattersim,competitor,La2 Al2 O6,-80.128334,-8.012833,10,0,1
+comp_mpaaaabdws,mattersim,competitor,Ce1 O2,-26.211033,-8.737011,3,0,1
+comp_mpaaaaafvc,mattersim,competitor,Na10 P6 O20,-225.261627,-6.257267,36,0,1
+comp_mpaaabfpes,mattersim,competitor,Na12 P12 O36,-392.462616,-6.541044,60,3,1
+comp_mpaaabfcwo,mattersim,competitor,Si2 O4,-47.474972,-7.912495,6,3,1
+comp_mpaaaabsdd,mattersim,competitor,K12 Si12 O30,-363.054138,-6.723225,54,1,1
+comp_mpaaaaakmm,mattersim,competitor,Sr4 Ca4 Si4,-41.710865,-3.475905,12,14,1
+comp_mpaaaaaacu,mattersim,competitor,Ti3,-23.526873,-7.842291,3,4,1
+comp_mpaaabrbwp,mattersim,competitor,Mg8 Ti4 O16,-203.650208,-7.273222,28,5,1
+comp_mpaaabfxzl,mattersim,competitor,Mg2 Ti4 P4 O20,-235.814606,-7.860487,30,7,1
+comp_mpaaaaaeyv,mattersim,competitor,Sr3 Ti2 O7,-92.581802,-7.715150,12,0,1
+comp_mpaaacqyhq,mattersim,competitor,La5 Mg41,-89.862335,-1.953529,46,9,1
+comp_mpaaaabqxm,mattersim,competitor,Sr8 Mg8 Si16,-123.600502,-3.862516,32,9,1

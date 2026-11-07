@@ -1,0 +1,17 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_02_s0,m3gnet,candidate,Sr2Ca6Si6P6O35,-348.849915,-6.342726,55,400,0
+cand_enamel_03_s4,m3gnet,candidate,SrCaSiP2O9,-89.577560,-6.398397,14,400,0
+cand_enamel_05_s0,m3gnet,candidate,Sr2Mg2Al2P4O17,-169.723633,-6.286060,27,387,1
+cand_enamel_06_s4,m3gnet,candidate,Ca6Mg2Si6P6O35,-371.216858,-6.749397,55,400,0
+cand_enamel_08_s0,m3gnet,candidate,Ca6Mg2Si4P6O31,-344.494751,-7.030505,49,400,0
+cand_enamel_09_s4,m3gnet,candidate,SrMg2Si(PO5)2,-105.372635,-6.585790,16,400,0
+cand_enamel_11_s0,m3gnet,candidate,Ca4Mg2Si4P6O29,-261.828766,-5.818417,45,400,0
+cand_enamel_12_s4,m3gnet,candidate,SrMgSiP2O9,-99.131157,-7.080797,14,400,0
+cand_enamel_14_s0,m3gnet,candidate,SrCa2AlPO7,-82.463013,-6.871918,12,294,0
+cand_enamel_15_s4,m3gnet,candidate,Sr2Mg2Si4P2O17,-158.061432,-5.854127,27,400,0
+cand_dentin_02_s0,m3gnet,candidate,K8Na2Ca2P4O17,-166.654160,-5.050126,33,400,0
+cand_dentin_03_s4,m3gnet,candidate,K4Na2CaP2O9,-84.787430,-4.710413,18,310,0
+cand_dentin_05_s0,m3gnet,candidate,K4Ca(PO4)2,-90.190994,-6.012733,15,108,1
+cand_dentin_06_s4,m3gnet,candidate,K10Na2Ca2P6O23,-224.270508,-5.215593,43,400,0
+cand_dentin_08_s0,m3gnet,candidate,K10Ca2Al2P6O25,-237.736191,-5.283026,45,400,0
+cand_dentin_09_s4,m3gnet,candidate,K6Ca2P4O15,-137.099854,-5.077772,27,400,0

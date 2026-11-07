@@ -1,0 +1,6 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_03_s2,omni,candidate,SrCaSiP2O9,-76.703033,-5.478788,14,400,0
+cand_enamel_07_s0,omni,candidate,Ca2MgSi2(PO6)2,-116.000481,-6.105288,19,400,1
+cand_enamel_10_s6,omni,candidate,Sr2Ca2Al2P4O17,-183.200836,-6.785216,27,400,0
+cand_enamel_14_s4,omni,candidate,SrCa2AlPO7,-82.944801,-6.912067,12,400,0
+cand_dentin_03_s2,omni,candidate,K4Na2CaP2O9,-95.197472,-5.288748,18,80,1

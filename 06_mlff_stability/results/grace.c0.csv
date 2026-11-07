@@ -1,0 +1,53 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_01_s0,grace,candidate,Sr2Ca4Si4P6O29,-278.427846,-6.187285,45,400,0
+cand_enamel_02_s4,grace,candidate,Sr2Ca6Si6P6O35,-170943834601.747559,-3108069720.031774,55,400,0
+cand_enamel_04_s0,grace,candidate,Ca2Mg2Al2P4O17,-147.187483,-5.451388,27,93,1
+cand_enamel_05_s4,grace,candidate,Sr2Mg2Al2P4O17,-2295468.478788,-85017.351066,27,400,0
+cand_enamel_07_s0,grace,candidate,Ca2MgSi2(PO6)2,-11005898435330.087891,-579257812385.794067,19,400,0
+cand_enamel_08_s4,grace,candidate,Ca6Mg2Si4P6O31,-299.968414,-6.121804,49,400,0
+cand_enamel_10_s0,grace,candidate,Sr2Ca2Al2P4O17,-155.745616,-5.768356,27,400,0
+cand_enamel_11_s4,grace,candidate,Ca4Mg2Si4P6O29,-266.464807,-5.921440,45,400,0
+cand_enamel_13_s0,grace,candidate,SrCa2Si2(PO6)2,-106.964616,-5.629717,19,400,0
+cand_enamel_14_s4,grace,candidate,SrCa2AlPO7,-67.830662,-5.652555,12,49,1
+cand_dentin_01_s0,grace,candidate,K5Na2Ca(PO4)3,-101.872413,-4.429235,23,400,0
+cand_dentin_02_s4,grace,candidate,K8Na2Ca2P4O17,-158.701166,-4.809126,33,400,0
+cand_dentin_04_s0,grace,candidate,K6Na4Ca2P4O17,-145.731170,-4.416096,33,400,0
+cand_dentin_05_s4,grace,candidate,K4Ca(PO4)2,-61.294320,-4.086288,15,108,1
+cand_dentin_07_s0,grace,candidate,K3NaCa(PO4)2,-79.288475,-5.285898,15,400,1
+cand_dentin_08_s4,grace,candidate,K10Ca2Al2P6O25,-215.236558,-4.783035,45,400,0
+cand_dentin_10_s0,grace,candidate,K5NaCaP2O9,-100.912660,-5.606259,18,400,0
+cand_dentin_11_s4,grace,candidate,K6Ca2SiP4O17,-151.173366,-5.039112,30,391,1
+cand_dentin_13_s0,grace,candidate,K8Na4Ca2P6O23,-224.935873,-5.231067,43,400,0
+cand_dentin_14_s4,grace,candidate,K12Ca4Si2P6O29,-301.972540,-5.697595,53,400,0
+cand_implant_01_s0,grace,candidate,SrCaLaPO6,-48.304584,-4.830458,10,132,1
+cand_implant_02_s4,grace,candidate,Sr2La4Al2P4O21,-232.249200,-7.037855,33,400,0
+cand_implant_04_s0,grace,candidate,Sr2LaSiPO8,-95.622067,-7.355544,13,400,0
+cand_implant_05_s4,grace,candidate,Sr2CaLa2P2O11,-107.014022,-5.945223,18,66,1
+cand_implant_07_s0,grace,candidate,Sr2Ce2Ti4P2O19,-195.325772,-6.735371,29,400,0
+cand_implant_08_s4,grace,candidate,Ce2Mg2Ti2P2O15,-313992954.340102,-13651867.580004,23,400,0
+cand_implant_10_s0,grace,candidate,SrLaSiPO7,-84.421275,-7.674661,11,297,0
+cand_implant_11_s4,grace,candidate,Sr4Ce2Si2P2O17,-146.214822,-5.415364,27,107,1
+cand_implant_13_s0,grace,candidate,Sr2Ca2Ce2P2O13,-145.727830,-6.939420,21,400,0
+cand_implant_14_s4,grace,candidate,Sr2Ce2Y2P4O19,-53566.649070,-1847.125830,29,400,0
+comp_mpaaaaactu,grace,competitor,K1 O2,-13.614738,-4.538246,3,0,1
+comp_mpaaaaadyu,grace,competitor,K4 O4,-32.622960,-4.077870,8,7,1
+comp_mpaaaabqbg,grace,competitor,K8 P6,-46.563173,-3.325941,14,15,1
+comp_mpaaacpkvh,grace,competitor,K20,-21.579924,-1.078996,20,0,1
+comp_mpaaacqfgu,grace,competitor,P42,-226.948549,-5.403537,42,13,1
+comp_mpaaaaaaou,grace,competitor,Mg2 P8,-49.549829,-4.954983,10,8,1
+comp_mpaaaaabqr,grace,competitor,Sr5 Al9,-45.774327,-3.269595,14,2,1
+comp_mpaaacqtxa,grace,competitor,Sr10 P6 O26,-296.641068,-7.062883,42,10,1
+comp_mpaaabsjgg,grace,competitor,La18 P6 O42,-544.408738,-8.248617,66,18,1
+comp_mpaaaaabkx,grace,competitor,La2 Al6,-35.923024,-4.490378,8,9,1
+comp_mpaaaabhii,grace,competitor,Ce4 P8 O28,-310.410829,-7.760271,40,0,1
+comp_mpaaaaadma,grace,competitor,Na6 O6,-50.449449,-4.204121,12,0,1
+comp_mpaaaaabuv,grace,competitor,K32 Si32,-213.631198,-3.337987,64,2,1
+comp_mpaaacrvrs,grace,competitor,Ca20 Si4 P8 O48,-580.350947,-7.254387,80,18,1
+comp_mpaaabfuit,grace,competitor,K4 Si8 O18,-216.504500,-7.216817,30,4,1
+comp_mpaaaaacol,grace,competitor,Sr2 Si4,-27.218473,-4.536412,6,9,1
+comp_mpaaabrjwx,grace,competitor,Mg3 Ti9 O20,-270.786083,-8.462065,32,13,1
+comp_mpaaabfnrm,grace,competitor,Ti12 O2,-115.991669,-8.285119,14,0,1
+comp_mpaaablsbv,grace,competitor,Ce8 Si8 O28,-366.720336,-8.334553,44,31,1
+comp_mpaaaaadya,grace,competitor,Y16 O24,-364.505280,-9.112632,40,0,1
+comp_mpaaaaadks,grace,competitor,La1 Mg3,-10.243783,-2.560946,4,3,1
+comp_mpaaaabrsk,grace,competitor,Sr52 Mg8 Si80,-589.577422,-4.211267,140,13,1

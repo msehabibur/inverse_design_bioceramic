@@ -1,0 +1,6 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_04_s0,chgnet,candidate,Ca2Mg2Al2P4O17,nan,nan,,,0
+cand_enamel_05_s4,chgnet,candidate,Sr2Mg2Al2P4O17,nan,nan,,,0
+cand_enamel_07_s0,chgnet,candidate,Ca2MgSi2(PO6)2,nan,nan,,,0
+cand_enamel_08_s4,chgnet,candidate,Ca6Mg2Si4P6O31,nan,nan,,,0
+cand_enamel_10_s0,chgnet,candidate,Sr2Ca2Al2P4O17,nan,nan,,,0

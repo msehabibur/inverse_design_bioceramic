@@ -1,0 +1,23 @@
+sid,composition,model,checkpoint,recorded_eV_per_atom,rerun_eV_per_atom,difference_meV_per_atom
+comp_mpaaaaaabt,Ca1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-1.933938,-1.933938,-0.000
+comp_mpaaaaaafe,Al1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-3.732289,-3.732289,-0.000
+comp_mpaaaaabwr,Mg1 O1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-5.917984,-5.917984,0.000
+comp_mpaaaaadwf,Ca1 O1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-6.369935,-6.369935,-0.000
+comp_mpaaaaabmg,Y1 P1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-7.563741,-7.563741,0.000
+comp_mpaaaaapvc,Ce1 O1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-8.315623,-8.315623,-0.000
+comp_mpaaaaadns,La1 P1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-6.737483,-6.737483,-0.000
+comp_mpaaaaaaft,Si2,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-5.229504,-5.229504,0.000
+comp_mpaaaaachq,Al1 P1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-5.179179,-5.179179,0.000
+comp_mpaaaaactu,K1 O2,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-4.520029,-4.520029,-0.000
+comp_mpaaaaaacu,Ti3,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-7.734901,-7.734901,-0.000
+comp_mpaaaaablj,K2 O1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-3.364671,-3.364671,0.000
+comp_mpaaaaadmm,Na2 O1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-3.737509,-3.737509,-0.000
+comp_mpaaaabdws,Ce1 O2,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-8.716761,-8.716761,-0.000
+comp_mpaaaaacid,Ca2 Si2,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-4.191601,-4.191601,0.000
+comp_mpaaacqrmy,La3 Al1 O1,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-5.983601,-5.983601,0.000
+comp_mpaaabfcwo,Si2 O4,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-7.878252,-7.878252,-0.000
+comp_mpaaaaaeyv,Sr3 Ti2 O7,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-7.682050,-7.682050,-0.000
+comp_mpaaaaagwe,Sr3 P2 O8,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-7.146224,-7.146224,0.000
+comp_mpaaaaahpk,Y2 P2 O8,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-8.286861,-8.286861,-0.000
+comp_mpaaaaalpw,Al1 P1 O4,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-7.432378,-7.432379,-0.001
+comp_mpaaaaagwx,Sr2 Ti2 O6,m3gnet,materialyze/M3GNet-PES-MatPES-PBE-2025.2@8414b23,-7.997079,-7.997079,0.000

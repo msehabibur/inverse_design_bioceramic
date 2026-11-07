@@ -1,0 +1,23 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+comp_mpaaaaactu,chgnet,competitor,K1 O2,-13.908289,-4.636096,3,3,1
+comp_mpaaaaadyu,chgnet,competitor,K4 O4,-34.092033,-4.261504,8,5,1
+comp_mpaaaabqbg,chgnet,competitor,K8 P6,-46.532772,-3.323769,14,14,1
+comp_mpaaacpkvh,chgnet,competitor,K20,-21.619774,-1.080989,20,12,1
+comp_mpaaacqfgu,chgnet,competitor,P42,-226.730225,-5.398339,42,37,1
+comp_mpaaaaaaou,chgnet,competitor,Mg2 P8,-49.197952,-4.919795,10,14,1
+comp_mpaaaaabqr,chgnet,competitor,Sr5 Al9,-45.128845,-3.223489,14,5,1
+comp_mpaaacqtxa,chgnet,competitor,Sr10 P6 O26,-314.337494,-7.484226,42,5,1
+comp_mpaaabsjgg,chgnet,competitor,La18 P6 O42,-573.736206,-8.692973,66,40,1
+comp_mpaaaaabkx,chgnet,competitor,La2 Al6,-35.658676,-4.457335,8,15,1
+comp_mpaaaabhii,chgnet,competitor,Ce4 P8 O28,-329.053925,-8.226348,40,16,1
+comp_mpaaaaadma,chgnet,competitor,Na6 O6,-52.123871,-4.343656,12,13,1
+comp_mpaaaaabuv,chgnet,competitor,K32 Si32,-208.123581,-3.251931,64,4,1
+comp_mpaaacrvrs,chgnet,competitor,Ca20 Si4 P8 O48,-612.809570,-7.660120,80,16,1
+comp_mpaaabfuit,chgnet,competitor,K4 Si8 O18,-228.750702,-7.625023,30,5,1
+comp_mpaaaaacol,chgnet,competitor,Sr2 Si4,-26.901787,-4.483631,6,8,1
+comp_mpaaabrjwx,chgnet,competitor,Mg3 Ti9 O20,-283.396973,-8.856155,32,13,1
+comp_mpaaabfnrm,chgnet,competitor,Ti12 O2,-114.635948,-8.188282,14,14,1
+comp_mpaaablsbv,chgnet,competitor,Ce8 Si8 O28,-386.191376,-8.777077,44,53,1
+comp_mpaaaaadya,chgnet,competitor,Y16 O24,-379.933655,-9.498341,40,0,1
+comp_mpaaaaadks,chgnet,competitor,La1 Mg3,-9.923164,-2.480791,4,0,1
+comp_mpaaaabrsk,chgnet,competitor,Sr52 Mg8 Si80,-583.506531,-4.167904,140,28,1

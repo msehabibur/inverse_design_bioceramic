@@ -1,0 +1,27 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_implant_09_s4,grace,candidate,LaMgTiPO7,-80991680971438168655112699904.000000,-7362880088312560786828427264.000000,11,250,0
+cand_implant_11_s0,grace,candidate,Sr4Ce2Si2P2O17,-169.095198,-6.262785,27,250,0
+cand_implant_12_s4,grace,candidate,Sr4Ce4Mg2P2O19,-192.879834,-6.221930,31,250,0
+cand_implant_14_s0,grace,candidate,Sr2Ce2Y2P4O19,-174.396875,-6.013685,29,250,0
+cand_implant_15_s4,grace,candidate,SrCaCeP2O9,-72.582267,-5.184448,14,114,1
+comp_mpaaaaacii,grace,competitor,K12 P44,-268.984337,-4.803292,56,3,1
+comp_mpaaaaatej,grace,competitor,O8,-39.207427,-4.900928,8,6,1
+comp_mpaaaaahlv,grace,competitor,K8 P8 O24,-261.941745,-6.548544,40,0,1
+comp_mpaaaaaafe,grace,competitor,Al1,-3.742690,-3.742690,1,0,1
+comp_mpaaaaajts,grace,competitor,Mg4 Al4 P4 O20,-229.240835,-7.163776,32,0,1
+comp_mpaaacqazi,grace,competitor,Mg8 P8 O28,-306.828273,-6.973370,44,8,1
+comp_mpaaaaagwe,grace,competitor,Sr3 P2 O8,-93.154715,-7.165747,13,2,1
+comp_mpaaacqrmy,grace,competitor,La3 Al1 O1,-30.192138,-6.038428,5,0,1
+comp_mpaaaaacts,grace,competitor,La4 P20,-141.422641,-5.892610,24,12,1
+comp_mpaaabghgm,grace,competitor,Ce2,-11.851552,-5.925776,2,0,1
+comp_mpaaaaaasf,grace,competitor,Na12 P44,-267.242916,-4.772195,56,2,1
+comp_mpaaacgaoj,grace,competitor,K4 Na6 P6 O20,-225.213480,-6.255930,36,7,1
+comp_mpaaaaaaft,grace,competitor,Si2,-10.844683,-5.422342,2,0,1
+comp_mpaaaaawtn,grace,competitor,K24 Si12 O36,-437.497925,-6.076360,72,1,1
+comp_mpaaaabtuj,grace,competitor,Sr12 Si4 O4,-88.120266,-4.406013,20,0,1
+comp_mpaaaaabut,grace,competitor,Ti2 O1,-26.159549,-8.719850,3,2,1
+comp_mpaaaabptw,grace,competitor,Mg2 Ti4 O10,-132.120918,-8.257557,16,2,1
+comp_mpaaabrhtq,grace,competitor,Ti4 P8 O28,-312.566998,-7.814175,40,43,1
+comp_mpaaaaagwx,grace,competitor,Sr2 Ti2 O6,-80.227224,-8.022722,10,0,1
+comp_mpaaacpwfw,grace,competitor,La6 Mg23 P1,-77.969282,-2.598976,30,5,1
+comp_mpaaaaahqe,grace,competitor,La8 Si4 O20,-267.241570,-8.351299,32,3,1

@@ -1,0 +1,12 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_dentin_14_s4,omni,candidate,K12Ca4Si2P6O29,nan,nan,,,0
+cand_implant_08_s5,omni,candidate,Ce2Mg2Ti2P2O15,-157.058640,-6.828637,23,250,0
+cand_implant_13_s1,omni,candidate,Sr2Ca2Ce2P2O13,nan,nan,,,0
+comp_mpaaaaabzt,omni,competitor,Ca6 P6,-57.561977,-4.796831,12,0,1
+comp_mpaaacqfgu,omni,competitor,P42,-227.260895,-5.410974,42,15,1
+comp_mpaaaaafan,omni,competitor,Sr72 Al48 O144,-1797.019775,-6.806893,264,0,1
+comp_mpaaaaabkx,omni,competitor,La2 Al6,-35.882793,-4.485349,8,9,1
+comp_mpaaabfygy,omni,competitor,Na4 Ca2 P4 O14,-159.941467,-6.664228,24,7,1
+comp_mpaaabfuit,omni,competitor,K4 Si8 O18,-216.516632,-7.217221,30,0,1
+comp_mpaaaabueo,omni,competitor,Ti24 P8,-260.195099,-8.131097,32,2,1
+comp_mpaaaaadya,omni,competitor,Y16 O24,-364.407898,-9.110197,40,0,1

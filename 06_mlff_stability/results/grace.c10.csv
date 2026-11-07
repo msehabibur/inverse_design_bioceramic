@@ -1,0 +1,52 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_02_s2,grace,candidate,Sr2Ca6Si6P6O35,-152358.958551,-2770.162883,55,400,0
+cand_enamel_03_s6,grace,candidate,SrCaSiP2O9,-41309527.831617,-2950680.559401,14,400,0
+cand_enamel_05_s2,grace,candidate,Sr2Mg2Al2P4O17,-3072091334.520760,-113781160.537806,27,400,0
+cand_enamel_06_s6,grace,candidate,Ca6Mg2Si6P6O35,-344.389296,-6.261624,55,400,0
+cand_enamel_08_s2,grace,candidate,Ca6Mg2Si4P6O31,-276109404091337605120.000000,-5634885797782400000.000000,49,400,0
+cand_enamel_09_s6,grace,candidate,SrMg2Si(PO5)2,-2258720.835812,-141170.052238,16,400,0
+cand_enamel_11_s2,grace,candidate,Ca4Mg2Si4P6O29,-1193277009519.838867,-26517266878.218643,45,400,0
+cand_enamel_12_s6,grace,candidate,SrMgSiP2O9,-94.003326,-6.714523,14,400,0
+cand_enamel_14_s2,grace,candidate,SrCa2AlPO7,-61.655934,-5.137995,12,56,1
+cand_enamel_15_s6,grace,candidate,Sr2Mg2Si4P2O17,-164.292405,-6.084904,27,400,0
+cand_dentin_02_s2,grace,candidate,K8Na2Ca2P4O17,-168.590299,-5.108797,33,400,0
+cand_dentin_03_s6,grace,candidate,K4Na2CaP2O9,-64.525363,-3.584742,18,60,1
+cand_dentin_05_s2,grace,candidate,K4Ca(PO4)2,-73.171742,-4.878116,15,400,0
+cand_dentin_06_s6,grace,candidate,K10Na2Ca2P6O23,-193.895288,-4.509193,43,400,0
+cand_dentin_08_s2,grace,candidate,K10Ca2Al2P6O25,-246.596287,-5.479917,45,400,0
+cand_dentin_09_s6,grace,candidate,K6Ca2P4O15,-142.620690,-5.282248,27,400,0
+cand_dentin_11_s2,grace,candidate,K6Ca2SiP4O17,-126.265330,-4.208844,30,191,1
+cand_dentin_12_s6,grace,candidate,K5Na3Ca(PO5)2,-82.295473,-3.918832,21,400,0
+cand_dentin_14_s2,grace,candidate,K12Ca4Si2P6O29,-275.584593,-5.199709,53,400,0
+cand_dentin_15_s6,grace,candidate,K10Ca2Si2P4O21,-3110194.252390,-79748.570574,39,400,0
+cand_implant_02_s2,grace,candidate,Sr2La4Al2P4O21,-223.217929,-6.764180,33,400,0
+cand_implant_03_s6,grace,candidate,Sr4Ce2Mg2P2O15,-161.514082,-6.460563,25,400,0
+cand_implant_05_s2,grace,candidate,Sr2CaLa2P2O11,-130.117016,-7.228723,18,400,0
+cand_implant_06_s6,grace,candidate,Sr2CeMg(PO5)2,-76.772099,-4.798256,16,400,0
+cand_implant_08_s2,grace,candidate,Ce2Mg2Ti2P2O15,-172.391671,-7.495290,23,400,0
+cand_implant_09_s6,grace,candidate,LaMgTiPO7,-159047132.770624,-14458830.251875,11,400,0
+cand_implant_11_s2,grace,candidate,Sr4Ce2Si2P2O17,-156894488.687957,-5810906.988443,27,400,0
+cand_implant_12_s6,grace,candidate,Sr4Ce4Mg2P2O19,-197.114052,-6.358518,31,400,0
+cand_implant_14_s2,grace,candidate,Sr2Ce2Y2P4O19,-218.486715,-7.534025,29,400,0
+cand_implant_15_s6,grace,candidate,SrCaCeP2O9,-84.346832,-6.024774,14,70,1
+comp_mpaaaaadwf,grace,competitor,Ca1 O1,-12.874460,-6.437230,2,0,1
+comp_mpaaaaakcb,grace,competitor,K2 Ca20 P14 O56,-659.496812,-7.168444,92,0,1
+comp_mpaaaaanmw,grace,competitor,Ca2 P6,-41.489760,-5.186220,8,12,1
+comp_mpaaaaachq,grace,competitor,Al1 P1,-10.385264,-5.192632,2,0,1
+comp_mpaaaaafga,grace,competitor,Mg2 Al4 O8,-99.488584,-7.106327,14,0,1
+comp_mpaaaaafov,grace,competitor,Sr8 P16 O48,-520.099067,-7.223598,72,0,1
+comp_mpaaaaaect,grace,competitor,Sr1 Al4,-17.800017,-3.560003,5,8,1
+comp_mpaaaaadns,grace,competitor,La1 P1,-13.487739,-6.743870,2,0,1
+comp_mpaaaaadzq,grace,competitor,La2 Al4,-27.863872,-4.643979,6,0,1
+comp_mpaaabewgf,grace,competitor,Ce16 O24,-347.908020,-8.697700,40,0,1
+comp_mpaaaaavhx,grace,competitor,Na12 Ca12 P12 O48,-564.366018,-6.718643,84,0,1
+comp_mpaaacqaxt,grace,competitor,Na8 P56,-323.324097,-5.051939,64,9,1
+comp_mpaaaaacid,grace,competitor,Ca2 Si2,-17.022988,-4.255747,4,3,1
+comp_mpaaacqaau,grace,competitor,Ca6 Si16 P28,-270.090250,-5.401805,50,26,1
+comp_mpaaaaabcs,grace,competitor,Sr10 Si6,-55.718728,-3.482420,16,12,1
+comp_mpaaaabssg,grace,competitor,Ti6 P3,-73.269699,-8.141078,9,11,1
+comp_mpaaabrsoj,grace,competitor,Ce8 Ti4 O20,-284.374676,-8.886709,32,11,1
+comp_mpaaabgllv,grace,competitor,Ce10 Si6,-100.620112,-6.288757,16,6,1
+comp_mpaaabettw,grace,competitor,Sr2 Ti6 O13,-179.357296,-8.540824,21,9,1
+comp_mpaaacrqqh,grace,competitor,La2 Ti12 P18 O72,-830.564317,-7.986195,104,86,1
+comp_mpaaaaaxdq,grace,competitor,Sr4 Mg4 Si4,-39.573245,-3.297770,12,8,1

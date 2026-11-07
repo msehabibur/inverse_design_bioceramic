@@ -1,0 +1,53 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_01_s0,m3gnet,candidate,Sr2Ca4Si4P6O29,-269.877045,-5.997268,45,400,1
+cand_enamel_02_s4,m3gnet,candidate,Sr2Ca6Si6P6O35,-377.876495,-6.870482,55,400,0
+cand_enamel_04_s0,m3gnet,candidate,Ca2Mg2Al2P4O17,-183.236542,-6.786539,27,400,0
+cand_enamel_05_s4,m3gnet,candidate,Sr2Mg2Al2P4O17,-181.467514,-6.721019,27,400,1
+cand_enamel_07_s0,m3gnet,candidate,Ca2MgSi2(PO6)2,-121.171501,-6.377447,19,400,0
+cand_enamel_08_s4,m3gnet,candidate,Ca6Mg2Si4P6O31,-295.884186,-6.038453,49,400,0
+cand_enamel_10_s0,m3gnet,candidate,Sr2Ca2Al2P4O17,-181.064148,-6.706080,27,400,0
+cand_enamel_11_s4,m3gnet,candidate,Ca4Mg2Si4P6O29,-264.983978,-5.888533,45,400,0
+cand_enamel_13_s0,m3gnet,candidate,SrCa2Si2(PO6)2,-124.293030,-6.541738,19,400,0
+cand_enamel_14_s4,m3gnet,candidate,SrCa2AlPO7,-83.121506,-6.926792,12,174,1
+cand_dentin_01_s0,m3gnet,candidate,K5Na2Ca(PO4)3,-103.156540,-4.485067,23,400,0
+cand_dentin_02_s4,m3gnet,candidate,K8Na2Ca2P4O17,-168.099640,-5.093928,33,400,0
+cand_dentin_04_s0,m3gnet,candidate,K6Na4Ca2P4O17,-159.860153,-4.844247,33,400,0
+cand_dentin_05_s4,m3gnet,candidate,K4Ca(PO4)2,-91.838684,-6.122579,15,247,0
+cand_dentin_07_s0,m3gnet,candidate,K3NaCa(PO4)2,-79.236801,-5.282453,15,400,0
+cand_dentin_08_s4,m3gnet,candidate,K10Ca2Al2P6O25,-211.023987,-4.689422,45,400,0
+cand_dentin_10_s0,m3gnet,candidate,K5NaCaP2O9,-102.372383,-5.687355,18,400,0
+cand_dentin_11_s4,m3gnet,candidate,K6Ca2SiP4O17,-149.960175,-4.998672,30,384,0
+cand_dentin_13_s0,m3gnet,candidate,K8Na4Ca2P6O23,-222.880524,-5.183268,43,400,0
+cand_dentin_14_s4,m3gnet,candidate,K12Ca4Si2P6O29,-300.015411,-5.660668,53,400,0
+cand_implant_01_s0,m3gnet,candidate,SrCaLaPO6,-58.328144,-5.832814,10,400,0
+cand_implant_02_s4,m3gnet,candidate,Sr2La4Al2P4O21,-241.313812,-7.312540,33,400,0
+cand_implant_04_s0,m3gnet,candidate,Sr2LaSiPO8,-89.674683,-6.898053,13,400,0
+cand_implant_05_s4,m3gnet,candidate,Sr2CaLa2P2O11,-123.424866,-6.856937,18,305,1
+cand_implant_07_s0,m3gnet,candidate,Sr2Ce2Ti4P2O19,-218.819443,-7.545498,29,400,0
+cand_implant_08_s4,m3gnet,candidate,Ce2Mg2Ti2P2O15,-162.522659,-7.066203,23,400,0
+cand_implant_10_s0,m3gnet,candidate,SrLaSiPO7,-82.046471,-7.458770,11,400,0
+cand_implant_11_s4,m3gnet,candidate,Sr4Ce2Si2P2O17,-199.398911,-7.385145,27,400,0
+cand_implant_13_s0,m3gnet,candidate,Sr2Ca2Ce2P2O13,-139.139038,-6.625668,21,400,1
+cand_implant_14_s4,m3gnet,candidate,Sr2Ce2Y2P4O19,-212.841370,-7.339358,29,400,0
+comp_mpaaaaactu,m3gnet,competitor,K1 O2,-13.560087,-4.520029,3,10,1
+comp_mpaaaaadyu,m3gnet,competitor,K4 O4,-32.317982,-4.039748,8,10,1
+comp_mpaaaabqbg,m3gnet,competitor,K8 P6,-46.103336,-3.293095,14,12,1
+comp_mpaaacpkvh,m3gnet,competitor,K20,-18.955894,-0.947795,20,0,1
+comp_mpaaacqfgu,m3gnet,competitor,P42,-215.320572,-5.126680,42,174,0
+comp_mpaaaaaaou,m3gnet,competitor,Mg2 P8,-45.835503,-4.583550,10,16,1
+comp_mpaaaaabqr,m3gnet,competitor,Sr5 Al9,-44.964954,-3.211782,14,10,1
+comp_mpaaacqtxa,m3gnet,competitor,Sr10 P6 O26,-295.475983,-7.035142,42,17,1
+comp_mpaaabsjgg,m3gnet,competitor,La18 P6 O42,-542.081726,-8.213359,66,30,1
+comp_mpaaaaabkx,m3gnet,competitor,La2 Al6,-35.716400,-4.464550,8,20,1
+comp_mpaaaabhii,m3gnet,competitor,Ce4 P8 O28,-309.256714,-7.731418,40,2,1
+comp_mpaaaaadma,m3gnet,competitor,Na6 O6,-50.076408,-4.173034,12,22,1
+comp_mpaaaaabuv,m3gnet,competitor,K32 Si32,-198.058929,-3.094671,64,15,1
+comp_mpaaacrvrs,m3gnet,competitor,Ca20 Si4 P8 O48,-577.523010,-7.219038,80,17,1
+comp_mpaaabfuit,m3gnet,competitor,K4 Si8 O18,-216.019974,-7.200666,30,7,1
+comp_mpaaaaacol,m3gnet,competitor,Sr2 Si4,-26.708097,-4.451350,6,6,1
+comp_mpaaabrjwx,m3gnet,competitor,Mg3 Ti9 O20,-267.400024,-8.356251,32,5,1
+comp_mpaaabfnrm,m3gnet,competitor,Ti12 O2,-113.628624,-8.116330,14,6,1
+comp_mpaaablsbv,m3gnet,competitor,Ce8 Si8 O28,-366.544312,-8.330553,44,35,1
+comp_mpaaaaadya,m3gnet,competitor,Y16 O24,-365.823853,-9.145596,40,9,1
+comp_mpaaaaadks,m3gnet,competitor,La1 Mg3,-9.716905,-2.429226,4,0,1
+comp_mpaaaabrsk,m3gnet,competitor,Sr52 Mg8 Si80,-580.068359,-4.143345,140,34,1

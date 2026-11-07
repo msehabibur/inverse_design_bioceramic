@@ -1,0 +1,5 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_dentin_10_s6,omni,candidate,K5NaCaP2O9,-79.688774,-4.427154,18,250,0
+cand_implant_07_s0,omni,candidate,Sr2Ce2Ti4P2O19,nan,nan,,,0
+cand_implant_12_s3,omni,candidate,Sr4Ce4Mg2P2O19,-216.190460,-6.973886,31,250,0
+comp_mpaaaabxhm,omni,competitor,Ca11 Al14 O32,-407.324127,-7.146037,57,1,1

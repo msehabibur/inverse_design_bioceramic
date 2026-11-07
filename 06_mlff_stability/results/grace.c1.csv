@@ -1,0 +1,52 @@
+sid,model,kind,composition,energy_eV,energy_per_atom,nsites,nsteps,converged
+cand_enamel_01_s1,grace,candidate,Sr2Ca4Si4P6O29,-315.146045,-7.003245,45,400,0
+cand_enamel_02_s5,grace,candidate,Sr2Ca6Si6P6O35,-361.009154,-6.563803,55,400,0
+cand_enamel_04_s1,grace,candidate,Ca2Mg2Al2P4O17,-29948572572.103550,-1109206391.559391,27,400,0
+cand_enamel_05_s5,grace,candidate,Sr2Mg2Al2P4O17,-176.180829,-6.525216,27,400,0
+cand_enamel_07_s1,grace,candidate,Ca2MgSi2(PO6)2,-7539.675502,-396.825026,19,400,0
+cand_enamel_08_s5,grace,candidate,Ca6Mg2Si4P6O31,-281.211620,-5.739013,49,400,0
+cand_enamel_10_s1,grace,candidate,Sr2Ca2Al2P4O17,-172.066302,-6.372826,27,400,0
+cand_enamel_11_s5,grace,candidate,Ca4Mg2Si4P6O29,-579699101.756824,-12882202.261263,45,400,0
+cand_enamel_13_s1,grace,candidate,SrCa2Si2(PO6)2,-108.700017,-5.721054,19,93,1
+cand_enamel_14_s5,grace,candidate,SrCa2AlPO7,-74.581581,-6.215132,12,85,1
+cand_dentin_01_s1,grace,candidate,K5Na2Ca(PO4)3,-1864845148.336734,-81080223.840728,23,400,0
+cand_dentin_02_s5,grace,candidate,K8Na2Ca2P4O17,-416540.289143,-12622.433004,33,400,0
+cand_dentin_04_s1,grace,candidate,K6Na4Ca2P4O17,-166.597436,-5.048407,33,400,1
+cand_dentin_05_s5,grace,candidate,K4Ca(PO4)2,-50.881914,-3.392128,15,213,1
+cand_dentin_07_s1,grace,candidate,K3NaCa(PO4)2,-67.958822,-4.530588,15,400,0
+cand_dentin_08_s5,grace,candidate,K10Ca2Al2P6O25,-253.846590,-5.641035,45,400,0
+cand_dentin_10_s1,grace,candidate,K5NaCaP2O9,-92.518174,-5.139899,18,400,0
+cand_dentin_11_s5,grace,candidate,K6Ca2SiP4O17,-150.892740,-5.029758,30,400,0
+cand_dentin_13_s1,grace,candidate,K8Na4Ca2P6O23,-205.975378,-4.790125,43,400,0
+cand_dentin_14_s5,grace,candidate,K12Ca4Si2P6O29,-278.108197,-5.247324,53,400,0
+cand_implant_01_s1,grace,candidate,SrCaLaPO6,-54.429486,-5.442949,10,93,1
+cand_implant_02_s5,grace,candidate,Sr2La4Al2P4O21,-233.158564,-7.065411,33,400,0
+cand_implant_04_s1,grace,candidate,Sr2LaSiPO8,-81.573271,-6.274867,13,400,0
+cand_implant_05_s5,grace,candidate,Sr2CaLa2P2O11,-115.001558,-6.388975,18,400,1
+cand_implant_07_s1,grace,candidate,Sr2Ce2Ti4P2O19,-224.811988,-7.752138,29,344,1
+cand_implant_08_s5,grace,candidate,Ce2Mg2Ti2P2O15,-159.791112,-6.947440,23,400,0
+cand_implant_10_s1,grace,candidate,SrLaSiPO7,-75.092979,-6.826634,11,399,1
+cand_implant_11_s5,grace,candidate,Sr4Ce2Si2P2O17,-168.873336,-6.254568,27,400,0
+cand_implant_13_s1,grace,candidate,Sr2Ca2Ce2P2O13,-2819357289.140670,-134255109.006699,21,400,0
+cand_implant_14_s5,grace,candidate,Sr2Ce2Y2P4O19,-181.107256,-6.245078,29,400,0
+comp_mpaaacqydb,grace,competitor,K2 P30,-167.650474,-5.239077,32,8,1
+comp_mpaaabrduv,grace,competitor,Ca4 P12 O34,-360.551952,-7.211039,50,9,1
+comp_mpaaaaaien,grace,competitor,K16 Al16 O32,-400.499289,-6.257801,64,0,1
+comp_mpaaaaahyy,grace,competitor,Ca4 P2 O1,-35.467976,-5.066854,7,0,1
+comp_mpaaackvmm,grace,competitor,K3 Ca1 P2 O8,-88.758862,-6.339919,14,42,1
+comp_mpaaaaawvt,grace,competitor,Mg4 P16 O44,-453.057599,-7.079025,64,1,1
+comp_mpaaaaadrc,grace,competitor,Sr1 O1,-12.098860,-6.049430,2,0,1
+comp_mpaaacrjco,grace,competitor,Sr10 P6 O25,-291.882201,-7.119078,41,15,1
+comp_mpaaaaaahs,grace,competitor,La4 P28,-185.011387,-5.781606,32,15,1
+comp_mpaaaabbij,grace,competitor,Sr4 Mg4 P8 O28,-313.061172,-7.115027,44,0,1
+comp_mpaaacgahd,grace,competitor,Ce8 P32 O96,-1020.455248,-7.503347,136,4,1
+comp_mpaaacgbxb,grace,competitor,Na2 Ca2 P6 O18,-195.895376,-6.996263,28,1,1
+comp_mpaaaaaimn,grace,competitor,Ca12 Si12 O36,-449.226508,-7.487108,60,0,1
+comp_mpaaaaamet,grace,competitor,K4 Si2 P4,-41.751650,-4.175165,10,10,1
+comp_mpaaaaaicn,grace,competitor,Ca4 Mg4 Si4,-41.378129,-3.448177,12,9,1
+comp_mpaaaaadyj,grace,competitor,Sr2 Si2,-16.096632,-4.024158,4,6,1
+comp_mpaaabfvsk,grace,competitor,Ti20 P16 O80,-948.446779,-8.176265,116,4,1
+comp_mpaaaaaarq,grace,competitor,Ti4 O6,-90.103742,-9.010374,10,9,1
+comp_mpaaabfpxx,grace,competitor,Ce10 Si8 O3,-144.623706,-6.886843,21,0,1
+comp_mpaaabfodz,grace,competitor,Y8 P24 O72,-801.691588,-7.708573,104,0,1
+comp_mpaaaaadbi,grace,competitor,La2 Si4,-35.587933,-5.931322,6,19,1

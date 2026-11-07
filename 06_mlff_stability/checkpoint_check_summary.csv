@@ -1,0 +1,12 @@
+model,checkpoint,n_phases,mean_abs_difference_meV_per_atom,max_abs_difference_meV_per_atom,result
+m3gnet,"M3GNet-PES-MatPES-PBE-2025.2, Hugging Face revision 8414b23 (matgl 3.0.5)",22,0.000,0.001,identified
+m3gnet,"M3GNet-PES-MatPES-PBE-2025.2, Hugging Face revision a972e0d (retrained 2026-09-30)",10,214.541,881.540,rejected; first 10 phases only
+m3gnet,M3GNet-PES-MatPES-r2SCAN-2025.2,22,5258.816,15767.980,rejected
+omni,"7net-omni-i12, mpa head (sevenn 0.13.0)",22,0.000,0.001,identified
+omni,"7net-omni-i12, omat24 head",22,21.494,81.490,rejected
+omni,"7net-omni-i12, matpes_pbe head",22,20.989,83.690,rejected
+omni,"7net-omni, mpa head",22,3.445,11.550,rejected
+omni,"7net-mf-ompa, mpa head",22,1.824,9.770,rejected
+omni,7net-omat,22,22.778,100.940,rejected
+omni,7net-0,22,9.659,72.080,rejected
+chgnet,CHGNet v0.3.0 (control: checkpoint named in the run records),22,0.000,0.000,control
