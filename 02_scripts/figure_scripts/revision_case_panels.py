@@ -10,9 +10,9 @@ Panels, in the layout the manuscript already describes:
               objective value, with their nominal 90 percent prediction intervals
 
 Arrows name example compounds in every panel: three familiar oxides and salts of the
-training pool in (a) to (c), the best composition of the five runs in (d), the
-lowest- and highest-modulus reachable formulas in (e) and the three top-ranked
-candidates in (f).
+training pool in (a) to (c), the best composition of the five runs, the best composition
+of the run that ends highest and the fast early drop of the mean in (d), the lowest- and
+highest-modulus reachable formulas in (e) and the three top-ranked candidates in (f).
 
 Writes Figure4_enamel_panels_rev, Figure5_dentin_panels_rev and
 Figure6_implant_panels_rev into 04_manuscript/revision_figures/.
@@ -188,12 +188,30 @@ for case, cfg in CASES.items():
         raise SystemExit("%s: best population member %.4f differs from the pooled best %.4f"
                          % (case, best.fitness, pooled[-1]))
     span = hi - lo
-    ax.set_ylim(lo - 0.45 * span, hi)
+    ax.set_ylim(lo - 0.58 * span, hi)
     # the label sits below the pooled-best line, which is the lowest curve, on the
     # side of the last-improvement line that has room
     note(ax, best.composition, (last, float(pooled[last - 1])),
          (last + 2.5 if last < 13 else last - 2.5, float(pooled[last - 1]) - 0.30 * span),
          "left" if last < 13 else "right", (0.5, 1.0))
+    # the run that ends highest, named at the end of its trace: from above, where the
+    # other runs have dropped below it, unless the last-improvement line runs through
+    # that place; then from below the curves, where the line does not reach
+    ends = piv.iloc[-1]
+    slow = int(ends.idxmax())
+    sp = pop[(pop.case == case) & (pop.seed == slow)].sort_values("fitness").iloc[0]
+    if abs(float(sp.fitness) - float(ends[slow])) > 1e-6:
+        raise SystemExit("%s: seed %d population best %.4f differs from its running best %.4f"
+                         % (case, slow, sp.fitness, ends[slow]))
+    ng = int(piv.index.max())
+    note(ax, sp.composition, (ng, float(ends[slow])),
+         (ng - 0.5, float(ends[slow]) + 0.22 * span) if last < ng - 8 else
+         (ng - 0.3, float(pooled[-1]) - 0.45 * span), "right",
+         (1.0, 0.0) if last < ng - 8 else (0.8, 1.0))
+    # most of the drop of the mean happens in the first generations
+    g3 = 3
+    note(ax, ps.tc("fast early drop"), (g3, float(m.loc[g3])),
+         (g3 + 1.0, float(m.loc[1]) + 0.12 * span), "left", (0.0, 0.0))
     ax.set_xlabel("Generation")
     ax.set_ylabel("Best Objective Value")
     ps.headroom(ax, 0.52)
