@@ -1,10 +1,9 @@
-"""Redraw the three author-supplied schematics with the revised claims.
+"""Redraw two author-supplied schematics with the revised claims.
 
-The originals are raster images with no source file, and three statements inside
+The originals are raster images with no source file, and two statements inside
 them survived the revision: the graphical abstract says one surrogate is trained
-once, the design-target figure calls the dentin target unreachable by any
-single-phase oxide, and the workflow figure advertises about forty experiments,
-an optimal search and a years-to-months saving that this work never measured.
+once, and the design-target figure calls the dentin target unreachable by any
+single-phase oxide.
 Captions cannot fix text that is inside a picture, so the pictures are redrawn
 here, plainly, in the style of the rest of the figures: no icons, no colour
 coding beyond the case colours, sentence case throughout.
@@ -167,16 +166,16 @@ def design_targets():
               weight="bold")
     top = head.y - 0.040
 
-    col = [("enamel", "Case study 1", "Enamel", "Target fingerprint",
+    col = [("enamel", "Case study 1", "Enamel", "Targets and hardness reference",
             ("85", "4", "3.0"), "Sr–Ca–Mg–Si–P phospho-silicate",
             "e.g. SrCaSiP$_{2}$O$_{9}$ · phosphosilicate composition",
             "Leading genetic-algorithm\ncandidate: %.1f GPa" % _best["enamel"]),
-           ("dentin", "Case study 2", "Dentin", "Target fingerprint",
+           ("dentin", "Case study 2", "Dentin", "Targets and hardness reference",
             ("20", "0.7", "2.1"), "K–Na–Ca–P alkali phosphate",
             "e.g. K$_{5}$Na$_{2}$Ca(PO$_{4}$)$_{3}$ · alkali-rich phosphate",
             "Lowest prediction in the reachable\nset is %.1f GPa under\n"
-            "this surrogate model" % _floor),
-           ("implant", "Case study 3", "Implant interface", "Target fingerprint (Ti-6Al-4V)",
+            "this model" % _floor),
+           ("implant", "Case study 3", "Implant interface", "Targets and hardness reference (Ti-6Al-4V)",
             ("110", "3.5", "4.4"), "Sr–Ca–La/Ce phospho-oxide",
             "e.g. SrCaLaPO$_{6}$ · rare-earth phospho-oxide",
             "Leading genetic-algorithm\ncandidate: %.1f GPa" % _best["implant"])]
@@ -208,7 +207,7 @@ def design_targets():
             boxes.append((bx, box_low, bw, box_top - box_low))
         f.y = box_low
         f.skip(0.030); rules.append((x, f.y)); f.skip(0.030)
-        f.text(c, "Genetic-algorithm family", 18, colour="#555555")
+        f.text(c, "Candidate composition family", 18, colour="#555555")
         f.text(c, fam, 20, weight="bold", gap=0.008)
         f.text(c, ex, 18, gap=0.014)
         f.skip(0.030); rules.append((x, f.y)); f.skip(0.030)
@@ -223,54 +222,6 @@ def design_targets():
     _save(fig, "Figure1_design_targets_rev")
 
 
-# ------------------------------------------------------------------ workflow
-def workflow():
-    fig = plt.figure(figsize=(13.0, 9.2))
-    head = Flow(fig, 0.985)
-    head.text(0.5, "Conventional and data-driven materials design", 27, weight="bold")
-    head.text(0.5,
-              "Conceptual comparison of experimental development and the computational "
-              "workflow; no development-time comparison was measured", 17,
-              colour="#555555", gap=0.010)
-    top = head.y - 0.040
-
-    left = [("Chemical intuition", "expert-guided, narrow scope"),
-            ("Bulk synthesis", "material cost per variant"),
-            ("Full characterisation", "weeks per candidate"),
-            ("Failure and iteration", "local optima, reactive"),
-            ("Clinical trials", "in vitro to in vivo gap")]
-    right = [("Data curation", "database records, high-dimensional"),
-             ("Surrogate model training", "nonlinear, uncertainty quantified"),
-             ("In silico screening", "no material consumed"),
-             ("Genetic-algorithm inverse design", "charge-balanced integer compositions"),
-             ("Computational shortlist", "requires experimental testing")]
-
-    xs, bottoms, rules, colours = [], [], [], []
-    w = 0.425
-    for k, (title, items, colour) in enumerate(
-            (("Conventional trial-and-error cycle", left, "#8c6d1f"),
-             ("Data-driven design, this work", right, "#1f6f8c"))):
-        x = 0.045 + k * 0.485
-        f = Flow(fig, top - 0.026)
-        f.text(x + w / 2, title, 22, colour=colour, weight="bold")
-        f.skip(0.030)
-        for n, (name, sub) in enumerate(items):
-            if n:
-                f.skip(0.024); rules.append((x, f.y)); f.skip(0.024)
-            f.text(x + 0.025, name, 20, weight="bold", ha="left")
-            f.text(x + 0.025, sub, 17, colour="#555555", ha="left", gap=0.006)
-        xs.append(x); bottoms.append(f.y); colours.append(colour)
-    low = _cards(fig, xs, w, top, bottoms, colours)
-    for x, y in rules:
-        line(fig, x + 0.025, y, w - 0.05)
-    Flow(fig, low - 0.030).text(
-        0.5, "The computational workflow prioritizes compositions for subsequent testing.\n"
-             "No specimen was synthesized, and no experimental reduction in development "
-             "time or experiment count was measured.", 17,
-        colour="#333333")
-    _save(fig, "FigureS1_workflow_rev")
-
-
 if __name__ == "__main__":
     plt.rcParams.update({"font.family": ps.FAMILY, "pdf.fonttype": 42,
                          "ps.fonttype": 42,
@@ -281,5 +232,4 @@ if __name__ == "__main__":
                             if k.startswith("mathtext.")}})
     graphical_abstract()
     design_targets()
-    workflow()
     print("REVISION_SCHEMATICS_DONE", flush=True)

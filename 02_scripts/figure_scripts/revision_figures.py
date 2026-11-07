@@ -29,23 +29,6 @@ SPLIT_LABEL = {"random": "random folds",
                "chemsys": "folds grouped by chemical system"}
 
 
-def sub(formula):
-    """Chemical formula with mathtext subscripts, e.g. Ca3(PO4)2."""
-    out, i = "", 0
-    while i < len(formula):
-        ch = formula[i]
-        if ch.isdigit():
-            j = i
-            while j < len(formula) and formula[j].isdigit():
-                j += 1
-            out += "$_{%s}$" % formula[i:j]
-            i = j
-        else:
-            out += ch
-            i += 1
-    return out
-
-
 def group_names(fig, ax, xs, pools, pool_name, per):
     """Pool names under the upright tick labels, a fixed number of points below the
     tallest of them, so they read as the group label of their own panel and not
@@ -183,7 +166,6 @@ def figure_r1():
 
 def figure_r2():
     m = pd.read_csv(os.path.join(DATA, "revision_mixture_modulus.csv"))
-    ph = pd.read_csv(os.path.join(DATA, "revision_phase_moduli.csv"))
 
     fig = plt.figure(figsize=(28.0, 8.4), constrained_layout=True)
     gs = fig.add_gridspec(1, 3)
@@ -246,26 +228,6 @@ def figure_r2():
     p = ps.save(fig, "FigureR2_mixture_and_solubility", OUT)
     print("wrote", p, flush=True)
 
-    # separate, taller panel for the 42 product phases
-    fig = plt.figure(figsize=(13.0, 20.0), constrained_layout=True)
-    ax = fig.add_subplot(111)
-    ph = ph.sort_values("E")
-    isdb = (ph.E_source != "surrogate").values
-    y = np.arange(len(ph))
-    ax.barh(y[isdb], ph.E.values[isdb], color=ps.COLORS[0], height=0.74,
-            label=ps.tc("database elastic tensor"))
-    ax.barh(y[~isdb], ph.E.values[~isdb], color=ps.COLORS[1], height=0.74,
-            hatch="//", edgecolor="white", linewidth=0.8,
-            label=ps.tc("model, database structure"))
-    ax.axvline(20.0, color=ps.COLORS[2], linewidth=3.0, linestyle="--",
-               label="Dentin Target, 20 GPa")
-    ax.set_yticks(y)
-    ax.set_yticklabels([sub(f) for f in ph.formula], fontsize=ps.BASE - 6)
-    ax.set_ylim(-0.8, len(ph) - 0.2)
-    ax.set_xlabel(ps.tc("Young's modulus of the product phase (GPa)"))
-    ax.legend(loc="lower right", fontsize=ps.BASE - 6)
-    p = ps.save(fig, "FigureR2b_product_phase_moduli", OUT)
-    print("wrote", p, flush=True)
 
 
 def figure_r3():
@@ -330,79 +292,6 @@ def figure_r3():
     ps.panel_tag(ax, "b")
 
     p = ps.save(fig, "FigureR3_search_and_enumeration", OUT)
-    print("wrote", p, flush=True)
-
-
-def figure_r4():
-    f = os.path.join(DATA, "revision_sampling.csv")
-    g = os.path.join(DATA, "revision_sampling_summary.csv")
-    if not (os.path.exists(f) and os.path.exists(g)):
-        print("FigureR4 skipped: sampling output not present yet", flush=True)
-        return
-    samp = pd.read_csv(f)
-    sm = pd.read_csv(g)
-
-    fig = plt.figure(figsize=(28.0, 8.4), constrained_layout=True)
-    gs = fig.add_gridspec(1, 3)
-
-    # (a) how many relaxations reached the force criterion
-    ax = fig.add_subplot(gs[0, 0])
-    # the fraction is over the trials that returned an energy, the denominator
-    # Table S15 states, so the bar and the table print the same percentage
-    by = samp.groupby("model").agg(tr=("n_energies", "sum"),
-                                   cv=("n_converged", "sum"),
-                                   sp=("spread_eV_atom", "median")).reset_index()
-    by = by.sort_values("cv", ascending=False)
-    frac = 100.0 * by.cv / by.tr
-    x = np.arange(len(by))
-    ax.bar(x, frac, width=0.62, color=ps.COLORS[0], edgecolor="white", linewidth=1.2)
-    for xi, v, c, t in zip(x, frac, by.cv, by.tr):
-        ax.text(xi, v + 1.2, f"{int(c)} of {int(t)}", ha="center", va="bottom",
-                fontsize=ps.BASE - 6)
-    proper = {"mace": "MACE", "mattersim": "MatterSim", "m3gnet": "M3GNet",
-              "sevennet": "SevenNet", "chgnet": "CHGNet"}
-    ax.set_xticks(x)
-    ax.set_xticklabels([proper.get(m, m) for m in by.model], fontsize=ps.BASE - 6)
-    ax.set_ylabel(ps.tc("converged trials (percent)"))
-    ax.set_ylim(0, 45)
-    ps.panel_tag(ax, "a")
-
-    # (b) energy above hull against the spread the sampling shows
-    ax = fig.add_subplot(gs[0, 1])
-    for sc in ("enamel", "dentin", "implant"):
-        t = sm[sm.showcase == sc]
-        ax.plot(t.median_spread, t.ehull_median, ps.CASE_MARKER[sc],
-                color=ps.CASE_COLOR[sc], markersize=16, linestyle="none",
-                label=ps.tc(ps.CASE_LABEL[sc]))
-    lim = [0.15, 6.0]
-    # the dashed line is the equality spread = energy above hull, and nothing more:
-    # the spread across eight trials is not a bound on how much lower an unsampled
-    # structure could lie
-    ax.plot(lim, lim, color="0.30", linewidth=2.4, linestyle="--",
-            label="Spread Equals Energy Above Hull")
-    ax.set_xscale("log"); ax.set_yscale("log")
-    ps.log_ticks(ax)
-    ax.set_xlim(*lim); ax.set_ylim(0.1, 6.0)
-    ax.set_xlabel(ps.tc("median trial spread (eV/atom)"))
-    ax.set_ylabel(ps.tc("energy above hull (eV/atom)"))
-    ps.legend_above(ax, ncol=2)
-    ps.panel_tag(ax, "b")
-
-    # (c) how much of the required improvement the sampling noise already covers
-    ax = fig.add_subplot(gs[0, 2])
-    ax.hist(sm.margin_over_spread, bins=22, color=ps.COLORS[1],
-            edgecolor="white", linewidth=1.2)
-    ax.axvline(1.0, color="0.20", linewidth=3.0, linestyle="--")
-    ax.text(1.08, ax.get_ylim()[1] * 0.82,
-            f"{int((sm.margin_over_spread < 1).sum())} of {len(sm)} Candidates\n"
-            f"Fall Below One", fontsize=ps.BASE - 6, va="top")
-    ax.set_xlabel(ps.tc("required margin, in units of the spread"))
-    ax.set_ylabel(ps.tc("number of candidates"))
-    ax.set_xlim(0, 1.65)
-    ax.set_xticks([0.5, 1.0, 1.5])
-    ps.panel_tag(ax, "c")
-
-    p = ps.save(fig, "FigureR4_sampling_convergence", OUT)
     print("wrote", p, flush=True)
 
 
@@ -513,6 +402,5 @@ def figure_r5():
 figure_r1()
 figure_r2()
 figure_r3()
-figure_r4()
 figure_r5()
 print("REVISION_FIGURES_DONE", flush=True)
