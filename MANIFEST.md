@@ -47,14 +47,14 @@ versions. `02_scripts/chain.py` refits this chain inside each fold for validatio
 |---|---|---|
 | 1, the three design targets | `01_data/designed_*compositions.csv` | `figure_scripts/revision_schematics.py` |
 | 2 to 4, enamel, dentin and implant panels | `01_data/revision_parity_oof.csv`, `01_data/revision_ga_history.csv`, `01_data/revision_enumeration_full.csv`, `01_data/revision_uncertainty.csv` | `figure_scripts/revision_case_panels.py` |
-| 5, force-field screen | `06_mlff_stability/stability_mlff.csv` | `figure_scripts/revision_stability_panels.py` |
-| 6, Pareto fronts and weight sweep | `01_data/revision_pareto_exact.csv`, `01_data/audit_weight_sweep_full.csv` | `analysis/revision_sweep_and_front.py` |
-| 7, prediction performance across the modulus range | `01_data/audit_oof_enamel_implant.csv`, `01_data/audit_oof_dentin.csv`, `01_data/revision_enumeration_full.csv`, `01_data/revision_validation.csv` | `figure_scripts/revision_figures.py` |
+| 5, prediction performance across the modulus range | `01_data/audit_oof_enamel_implant.csv`, `01_data/audit_oof_dentin.csv`, `01_data/revision_enumeration_full.csv`, `01_data/revision_validation.csv` | `figure_scripts/revision_figures.py` |
 | S1, examples of machine-learning methods | (drawn by the authors, no data) | |
 | S2, effect of the validation protocol | `01_data/revision_validation.csv`, `01_data/revision_uncertainty.csv`, `01_data/uncertainty_intervals.csv` | `figure_scripts/revision_figures.py` |
 | S3, random search and enumeration | `01_data/revision_search_baseline.csv`, `01_data/revision_enumeration_full.csv` | `figure_scripts/revision_figures.py` |
 | S4 and S5, mixture moduli and phase moduli | `01_data/revision_mixture_modulus.csv`, `01_data/revision_phase_moduli.csv` | `figure_scripts/revision_figures.py` |
 | S6, structure-sampling convergence | `01_data/revision_sampling.csv`, `01_data/revision_sampling_summary.csv` | `figure_scripts/revision_figures.py` |
+| S7, force-field screen | `06_mlff_stability/stability_mlff.csv` | `figure_scripts/revision_stability_panels.py` |
+| S8, Pareto fronts and weight sweep | `01_data/revision_pareto_exact.csv`, `01_data/audit_weight_sweep_full.csv` | `analysis/revision_sweep_and_front.py` |
 
 Figure scripts write to `04_manuscript/revision_figures/`.
 
