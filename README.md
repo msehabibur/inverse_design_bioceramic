@@ -1,7 +1,5 @@
 # Inverse design of bioceramics by machine learning
 
-Jwearia Hoque Nowrin, Saifuddin Zafar, Md Habibur Rahman (imd.habiburrahman@gmail.com)
-
 Code and data for the paper. Gradient-boosting and random-forest models trained on 1,721
 oxygen-bearing Materials Project compounds predict Young's modulus, hardness and volume per
 atom, and a genetic algorithm uses them to search oxide formulas for enamel, dentin and
