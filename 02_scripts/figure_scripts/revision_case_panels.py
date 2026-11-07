@@ -1,13 +1,18 @@
 """Rebuild the three case-study figures in the revision style.
 
 Panels, in the layout the manuscript already describes:
-  (a) to (c)  surrogate parity for modulus, hardness and density, out-of-fold
+  (a) to (c)  parity for modulus, hardness and density, out-of-fold
   (d)         convergence, across-seed mean running best with a standard-deviation band
               and the five individual seed traces
   (e)         the pooled final population in the plane of predicted modulus and predicted
               density, with the target marked
   (f)         the fifteen candidates selected from the genetic-algorithm searches,
               objective value, with their nominal 90 percent prediction intervals
+
+Arrows name example compounds in every panel: three familiar oxides and salts of the
+training pool in (a) to (c), the best composition of the five runs in (d), the
+lowest- and highest-modulus reachable formulas in (e) and the three top-ranked
+candidates in (f).
 
 Writes Figure4_enamel_panels_rev, Figure5_dentin_panels_rev and
 Figure6_implant_panels_rev into 04_manuscript/revision_figures/.
@@ -45,6 +50,16 @@ enum = pd.read_csv(os.path.join(DATA, "revision_enumeration_full.csv"))
 # prints as 57.1 while the text, from the unrounded value, says 57.2
 FLOOR = pd.read_csv(os.path.join(DATA, "revision_enumeration.csv")).set_index("pool").modulus_floor_GPa
 POOL_OF = {"enamel": "enamel", "implant": "enamel", "dentin": "dentin"}
+FLOORC = pd.read_csv(os.path.join(DATA, "revision_enumeration.csv")).set_index("pool").floor_composition
+pop = pd.read_csv(os.path.join(DATA, "revision_ga_population.csv"))
+# the polymorph named in (a) to (c) is the lowest-energy one of that formula in the pool
+HULL = pd.concat([pd.read_csv(os.path.join(DATA, f), usecols=["material_id", "energy_above_hull"])
+                  for f in ("mp_data.csv", "dentin_data.csv")]).drop_duplicates("material_id")
+HULL = HULL.set_index("material_id").energy_above_hull
+LANDMARKS = {"mp_data.csv": ("CaCO3", "CaSiO3", "Al2O3"),
+             "dentin_data.csv": ("K3PO4", "CaSiO3", "Al2O3")}
+COLS = {"E": ("E_GPa", "E_pred_GPa"), "H": ("H_GPa", "H_pred_GPa"),
+        "rho": ("density_gcc", "density_pred_gcc")}
 
 _cache = {}
 
@@ -66,6 +81,34 @@ def parity(poolfile):
            "rho": (d["density_gcc"].values, d["density_pred_gcc"].values)}
     _cache[poolfile] = out
     return out
+
+
+def landmarks(poolfile):
+    """Ground-state polymorphs of the named compounds, among those with a hardness value,
+    so the same material is marked in all three parity panels."""
+    d = pd.read_csv(os.path.join(DATA, "revision_parity_oof.csv"))
+    d = d[d.pool == ("dentin" if poolfile == "dentin_data.csv" else "enamel_implant")]
+    d = d.dropna(subset=["H_GPa"]).assign(ehull=lambda t: t.material_id.map(HULL))
+    rows = []
+    for f in LANDMARKS[poolfile]:
+        g = d[d.formula == f].dropna(subset=["ehull"]).sort_values("ehull")
+        if g.empty:
+            raise SystemExit("landmark %s is not in the %s pool" % (f, poolfile))
+        rows.append(g.iloc[0])
+    return rows
+
+
+def note(ax, formula, xy, at, ha, side, coords="data"):
+    """Name one compound with an arrow pointing at its marker.
+
+    The label is a plain text, so the overlap check tests it against every text and
+    data mark like any other label; the arrow leaves from `side` of the label, given as
+    a fraction of its box, and is meant to reach into the data."""
+    t = ax.text(at[0], at[1], sub(formula), ha=ha, va="center", fontsize=ps.BASE - 6,
+                color="0.10", transform=ax.transAxes if coords == "axes fraction" else ax.transData)
+    ax.annotate("", xy=xy, xycoords="data", xytext=side, textcoords=t,
+                arrowprops=dict(arrowstyle="-|>", color="0.10", linewidth=2.0,
+                                mutation_scale=24, shrinkA=3, shrinkB=5))
 
 
 def sub(formula):
@@ -105,9 +148,15 @@ for case, cfg in CASES.items():
         lim = [-0.045 * top, top]
         ax.plot([0, top], [0, top], color="0.30", linewidth=2.2, linestyle=":")
         ax.axhline(tgt, color=ps.COLORS[3], linewidth=2.8, linestyle="--")
-        ax.text(top * 0.97, tgt, " Target %g" % tgt, color=ps.COLORS[3],
+        ax.text(top * 0.97, tgt, (" Reference %g GPa" if key == "H" else " Target %g") % tgt, color=ps.COLORS[3],
                 fontsize=ps.BASE - 6, ha="right", va="bottom")
         ax.set_xlim(*lim); ax.set_ylim(*lim)
+        # labels in a row across the empty top of the panel, in the order of the
+        # database values, so the arrows run down without crossing a label
+        marks = sorted(landmarks(cfg["pool"]), key=lambda r: float(r[COLS[key][0]]))
+        for j, r in enumerate(marks):
+            note(ax, r.formula, (float(r[COLS[key][0]]), float(r[COLS[key][1]])),
+                 (0.10 + 0.22 * j, 0.88), "center", (0.5, 0.0), coords="axes fraction")
         ax.set_xlabel(xl); ax.set_ylabel(yl)
         ps.panel_tag(ax, "abc"[i])
 
@@ -134,7 +183,17 @@ for case, cfg in CASES.items():
     top = float(max(piv.max().max(), (m + sd_).max()))
     ax.vlines(last, lo, top, color="0.30", linewidth=2.2, linestyle=":",
               label="Last Improvement, Generation %d" % last)
-    ax.set_ylim(lo, hi)
+    best = pop[pop.case == case].sort_values("fitness").iloc[0]
+    if abs(float(best.fitness) - float(pooled[-1])) > 1e-6:
+        raise SystemExit("%s: best population member %.4f differs from the pooled best %.4f"
+                         % (case, best.fitness, pooled[-1]))
+    span = hi - lo
+    ax.set_ylim(lo - 0.45 * span, hi)
+    # the label sits below the pooled-best line, which is the lowest curve, on the
+    # side of the last-improvement line that has room
+    note(ax, best.composition, (last, float(pooled[last - 1])),
+         (last + 2.5 if last < 13 else last - 2.5, float(pooled[last - 1]) - 0.30 * span),
+         "left" if last < 13 else "right", (0.5, 1.0))
     ax.set_xlabel("Generation")
     ax.set_ylabel("Best Objective Value")
     ps.headroom(ax, 0.52)
@@ -162,7 +221,15 @@ for case, cfg in CASES.items():
     ax.set_xlabel("Predicted Young's Modulus (GPa)")
     ax.set_ylabel("Reachable Formulas")
     ax.set_ylim(0, hmax * 1.04)
-    ps.headroom(ax, 0.40)
+    top = en.loc[en.pred_modulus_GPa.idxmax()]
+    if en.loc[en.pred_modulus_GPa.idxmin()].composition != FLOORC[POOL_OF[case]]:
+        raise SystemExit("%s: lowest reachable formula differs from the floor table" % case)
+    # the floor label sits above the tallest bar and below the legend band
+    note(ax, FLOORC[POOL_OF[case]], (float(v.min()), 0.45 * hmax),
+         (float(v.min()), 1.16 * hmax), "left", (0.0, 0.0))
+    note(ax, top.composition, (float(top.pred_modulus_GPa), 0.02 * hmax),
+         (float(top.pred_modulus_GPa), 0.60 * hmax), "right", (1.0, 0.0))
+    ps.headroom(ax, 0.48)
     ax.legend(loc="upper right", fontsize=ps.BASE - 6, labelspacing=0.35)
     ps.panel_tag(ax, "e")
 
@@ -182,7 +249,14 @@ for case, cfg in CASES.items():
     ax.set_xlabel("Candidate, Ranked by Objective")
     ax.set_ylabel("Predicted Modulus (GPa)")
     ax.set_ylim(0, float(u.E_hi_GPa.max()) * 1.04)
-    ps.headroom(ax, 0.30)
+    ps.headroom(ax, 0.58)
+    ytop = ax.get_ylim()[1]
+    # a staircase of labels whose arrows leave from their left ends, so no arrow
+    # crosses a label
+    for i in range(3):
+        r = u.iloc[i]
+        note(ax, r.composition, (x[i], float(r.E_hi_GPa)),
+             (x[i] + 0.3, ytop * (0.90 - 0.165 * i)), "left", (0.0, 0.0))
     ax.legend(loc="upper right", fontsize=ps.BASE - 6, labelspacing=0.35)
     ps.panel_tag(ax, "f", dx=-0.20)
 
