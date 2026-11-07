@@ -256,7 +256,7 @@ def figure_r2():
             label=ps.tc("database elastic tensor"))
     ax.barh(y[~isdb], ph.E.values[~isdb], color=ps.COLORS[1], height=0.74,
             hatch="//", edgecolor="white", linewidth=0.8,
-            label=ps.tc("surrogate, database structure"))
+            label=ps.tc("model, database structure"))
     ax.axvline(20.0, color=ps.COLORS[2], linewidth=3.0, linestyle="--",
                label="Dentin Target, 20 GPa")
     ax.set_yticks(y)
@@ -276,6 +276,8 @@ def figure_r3():
         return
     bl = pd.read_csv(f)
     en = pd.read_csv(g)
+    # the legend minimum comes from the unrounded summary that Table S17 prints
+    floor = pd.read_csv(os.path.join(DATA, "revision_enumeration.csv")).set_index("pool").modulus_floor_GPa
 
     fig = plt.figure(figsize=(20.5, 8.2), constrained_layout=True)
     gs = fig.add_gridspec(1, 2)
@@ -295,12 +297,12 @@ def figure_r3():
            label=ps.tc("random search, same budget"))
     # the random bar carries an error bar, so its label clears the whisker cap
     for xi, g, rm, sd in zip(x, ga, rand_mean, rand_sd):
-        ax.text(xi - 0.2, g + 0.03, f"{g:.3f}", ha="center", va="bottom",
+        ax.text(xi - 0.2, g + 0.03, f"{g:.2f}", ha="center", va="bottom",
                 fontsize=ps.BASE - 6)
         ax.text(xi + 0.2, rm + (0.0 if np.isnan(sd) else sd) + 0.05,
-                f"{rm:.3f}", ha="center", va="bottom", fontsize=ps.BASE - 6)
+                f"{rm:.2f}", ha="center", va="bottom", fontsize=ps.BASE - 6)
     ax.set_xticks(x)
-    ax.set_xticklabels([ps.tc(ps.CASE_LABEL[c]) for c in cases])
+    ax.set_xticklabels([ps.tc(ps.CASE_LABEL[c]).replace(" ", "\n") for c in cases])
     ax.set_ylabel(ps.tc("best objective value reached"))
     ax.set_ylim(0, 1.18)
     ps.legend_above(ax)
@@ -316,7 +318,7 @@ def figure_r3():
         ax.hist(s.pred_modulus_GPa, bins=60, histtype="step", linewidth=3.0,
                 color=ps.CASE_COLOR[pool],
                 label=f"{ps.tc(name)} Pool, {len(s):,} Formulas, "
-                      f"Minimum Prediction {s.pred_modulus_GPa.min():.1f} GPa")
+                      f"Minimum Prediction {floor[pool]:.1f} GPa")
     ax.axvline(20.0, color=ps.COLORS[2], linewidth=3.0, linestyle="--")
     ax.text(22, ax.get_ylim()[1] * 0.72, "Dentin Target", color=ps.COLORS[2],
             fontsize=ps.BASE - 4, rotation=90, va="center")
@@ -346,7 +348,7 @@ def figure_r4():
     # (a) how many relaxations reached the force criterion
     ax = fig.add_subplot(gs[0, 0])
     # the fraction is over the trials that returned an energy, the denominator
-    # Table S14 states, so the bar and the table print the same percentage
+    # Table S15 states, so the bar and the table print the same percentage
     by = samp.groupby("model").agg(tr=("n_energies", "sum"),
                                    cv=("n_converged", "sum"),
                                    sp=("spread_eV_atom", "median")).reset_index()
@@ -472,12 +474,11 @@ def figure_r5():
         for xi, c in zip(x, cov):
             ax.text(xi, 1.03 + 0.10 * i, f"{c:.2f}", ha="center", va="bottom",
                     color=ps.COLORS[i], fontsize=ps.BASE - 8)
-        if i == 0:
-            ticks = ["%.0f" % c for c in cen]
-    ax.axhline(0.90, color="0.20", linewidth=2.6, linestyle="--", label="Nominal, 0.90")
+        ticks = [str(k + 1) for k in range(len(cov))]
+    ax.axhline(0.90, color="0.20", linewidth=2.6, linestyle="--", label="Target, 0.90")
     ax.set_xticks(np.arange(len(ticks)))
     ax.set_xticklabels(ticks)
-    ax.set_xlabel(ps.tc("database modulus quintile (GPa)"))
+    ax.set_xlabel("Within-Pool Modulus Quintile")
     ax.set_ylabel(ps.tc("interval coverage"))
     ax.set_ylim(0, 1.34)
     ps.legend_above(ax)

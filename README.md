@@ -13,9 +13,9 @@ https://material-hub.github.io/bioceramics.
 - Modulus error under cross-validation grouped by chemical system, with the structural inputs
   predicted as in the search: 38.5 GPa for the enamel and implant model and 49.7 GPa for the
   dentin model.
-- Lowest objective values: 0.0899 for enamel, 0.7962 for dentin and 0.0064 for the implant
-  target. A random search with the same budget did better in 2 of 10 campaigns for enamel, in
-  all 10 for the implant target before rounding, and in none for dentin.
+- Lowest objective values: 0.09 for enamel, 0.80 for dentin and 0.01 for the implant target.
+  A random search with the same budget did better in 2 of 10 campaigns for enamel, by a very
+  small margin in all 10 for the implant target, and in none for dentin.
 - The phase mixtures listed for each candidate are the competing phases on each force field's
   hull, and their moduli are mixing-model estimates.
 

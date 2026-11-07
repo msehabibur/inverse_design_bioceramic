@@ -125,7 +125,7 @@ for i, case in enumerate(("enamel", "dentin", "implant")):
     ax.axhline(TARGET[case][0], color=ps.CASE_COLOR[case], linewidth=1.8,
                linestyle=":")
 ax.set_xlabel(ps.tc("modulus weight"))
-ax.set_ylabel(ps.tc("best enumerated modulus (GPa)"))
+ax.set_ylabel(ps.tc("modulus of the best formula (GPa)"))
 ps.legend_above(ax, ncol=2)
 ps.panel_tag(ax, "b", dy=1.30)
 
